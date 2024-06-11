@@ -12,8 +12,8 @@ function Footer() {
     const [isInsHovered, setIsInsHovered] = useState(false);
     const [isInsHove, setIsInsHove] = useState(false);
     const [isIns, setIsIns] = useState(false);
-    const [youq, setYouq] = useState(false);
-    const [whated, setWhated] = useState(false);
+    // const [youq, setYouq] = useState(false);
+    // const [whated, setWhated] = useState(false);
     const [plus, setPlus] = useState(false);
 
     const [first, setFirst] = useState('');
@@ -136,8 +136,12 @@ function Footer() {
                                 <div className='build--section-begin'>
                                     <div className='build--section-back'>
                                         <div className='build--section-new'>
-                                            <img src={IMAGES.bag} alt='Background' ref={brand} />
-                                            <h1 className='get-bg' ref={elementor}>Get a Quote to Build a New Shopify Store.</h1>
+                                            <div className='build--section-first-to'>
+                                                <div className='build--section-first-image'>
+                                                    <img src={IMAGES.whitelogo} alt='Background' ref={brand} /></div>
+                                                <div className='build--section-first-elements'>
+                                                    <h2 className='get-bg' ref={elementor}>Get a Quote to Build a New Shopify Store.</h2></div>
+                                            </div>
                                             <p className='use--hub' ref={technologyElement}>
                                                 Use HubSyntax to grow your Shopify plus brand via checkout
                                                 upsells, one-click upsells, and thank you page

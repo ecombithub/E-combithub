@@ -206,8 +206,30 @@ import k from '../images/kk.png';
 import pd from '../images/pad.png'
 import fw1 from '../images/fr.png';
 import h0 from '../images/h0.png';
+import company1 from '../images/company1.png';
+import company2 from '../images/company2.png';
+import company3 from '../images/company3.png';
+import company4 from '../images/company4.png';
+import company5 from '../images/company5.png';
+import company6 from '../images/company6.png';
+import company7 from '../images/company7.png';
+import company8 from '../images/company8.png';
+import company9 from '../images/company9.png';
+import company10 from '../images/company10.png';
+import whitelogo from '../images/whitelogo.png';
 
 const IMAGES = {
+    whitelogo: whitelogo,
+    company10: company10,
+    company9: company9,
+    company8: company8,
+    company7: company7,
+    company6: company6,
+    company5: company5,
+    company4: company4,
+    company3: company3,
+    company2: company2,
+    company1: company1,
     h0: h0,
     fw1: fw1,
     pd: pd,

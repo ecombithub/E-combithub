@@ -263,31 +263,31 @@ function Cube() {
                                     <h3>Trusted by company all over the world</h3>
                                     <div className="slider-cube-section" ref={ref}>
                                         <div className="slide--cube-section">
-                                            <img src={IMAGES.cube1} ref={elementor1} style={{ display: showFirstImage ? 'block' : 'none' }} />
-                                            <img src={IMAGES.cube2} ref={elementor2} style={{ display: showFirstImage ? 'none' : 'block' }} />
+                                            <img src={IMAGES.company1} ref={elementor1} style={{ display: showFirstImage ? 'block' : 'none' }} />
+                                            <img src={IMAGES.company8} ref={elementor2} style={{ display: showFirstImage ? 'none' : 'block' }} />
                                         </div>
 
                                         <div className="slide--cube-section">
-                                            <img src={IMAGES.cube2} ref={elementor3} style={{ display: showSecondImage ? 'block' : 'none' }} />
-                                            <img src={IMAGES.cube4} ref={elementor4} style={{ display: showSecondImage ? 'none' : 'block' }} />
+                                            <img src={IMAGES.company2} ref={elementor3} style={{ display: showSecondImage ? 'block' : 'none' }} />
+                                            <img src={IMAGES.company9} ref={elementor4} style={{ display: showSecondImage ? 'none' : 'block' }} />
                                         </div>
 
                                         <div className="slide--cube-section">
-                                            <img src={IMAGES.cube4} ref={elementor5} style={{ display: showThirdImage ? 'block' : 'none' }} />
-                                            <img src={IMAGES.cube5} ref={elementor6} style={{ display: showThirdImage ? 'none' : 'block' }} />
+                                            <img src={IMAGES.company3} ref={elementor5} style={{ display: showThirdImage ? 'block' : 'none' }} />
+                                            <img src={IMAGES.company6} ref={elementor6} style={{ display: showThirdImage ? 'none' : 'block' }} />
                                         </div>
 
                                         <div className="slide--cube-section">
-                                            <img src={IMAGES.cube5} ref={elementor7} style={{ display: showFourImage ? 'block' : 'none' }} />
-                                            <img src={IMAGES.cube6} ref={elementor8} style={{ display: showFourImage ? 'none' : 'block' }} />
+                                            <img src={IMAGES.company4} ref={elementor7} style={{ display: showFourImage ? 'block' : 'none' }} />
+                                            <img src={IMAGES.company3} ref={elementor8} style={{ display: showFourImage ? 'none' : 'block' }} />
                                         </div>
                                         <div className="slide--cube-section">
-                                            <img src={IMAGES.cube6} ref={elementor9} style={{ display: showFiveImage ? 'block' : 'none' }} />
-                                            <img src={IMAGES.cube1} ref={elementor10} style={{ display: showFiveImage ? 'none' : 'block' }} />
+                                            <img src={IMAGES.company5} ref={elementor9} style={{ display: showFiveImage ? 'block' : 'none' }} />
+                                            <img src={IMAGES.company2} ref={elementor10} style={{ display: showFiveImage ? 'none' : 'block' }} />
                                         </div>
                                         <div className="slide--cube-section">
-                                            <img src={IMAGES.cube1} ref={elementor11} style={{ display: showSixImage ? 'block' : 'none' }} />
-                                            <img src={IMAGES.cube2} ref={elementor12} style={{ display: showSixImage ? 'none' : 'block' }} />
+                                            <img src={IMAGES.company6} ref={elementor11} style={{ display: showSixImage ? 'block' : 'none' }} />
+                                            <img src={IMAGES.company7} ref={elementor12} style={{ display: showSixImage ? 'none' : 'block' }} />
                                         </div>
 
                                     </div>

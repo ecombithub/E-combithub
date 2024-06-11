@@ -234,8 +234,11 @@ function Navbar() {
                                         </div>
                                     )}
                                 </li>
+                                <li className='first-blog-section'>
+                                    <NavLink activeClassName="active" style={{ color: "black" }} className="nav-link" aria-current="page" exact to="/blog" onClick={handleOtherLinkClick} onMouseEnter={handleOtherLinkMouseEnter}>Blog</NavLink>
+                                </li>
 
-                                <li onClick={handleBlogClick} style={{ backgroundColor: blogClicked ? 'rgb(90, 133, 61)' : 'transparent' }}>
+                                <li className='second-blog-section' onClick={handleBlogClick} style={{ backgroundColor: blogClicked ? 'rgb(90, 133, 61)' : 'transparent' }}>
                                     <div className='blog-section-navabr' >
                                         <div className="blog-flex" >
                                             <div className="blog-image-flex">
