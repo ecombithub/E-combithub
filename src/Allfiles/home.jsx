@@ -14,7 +14,7 @@ import Local from "../Blog/local";
 function Home() {
     return (
         <>
-        
+
             <Complete />
             <Cube />
             <Discover />
@@ -22,10 +22,11 @@ function Home() {
             <Stunn />
             <Store />
             {/* <Every />
-            <Trun /> */}
+            // <Trun /> */}
+         
             <Cost />
             <Cursor />
-           
+
         </>
     )
 }

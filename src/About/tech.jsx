@@ -6,7 +6,7 @@ function Tech() {
     const settgs = {
         dots: false,
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow:8,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 0,
@@ -19,6 +19,19 @@ function Tech() {
         rtl: true,
 
         responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 6,
+                    vertical: true,
+                    verticalSwiping: true,
+                    swipeToSlide: true,
+                    swipeToSlide: true,
+                    reverseDirection: true,
+                    rtl: true,
+
+                }
+            },
 
             {
                 breakpoint: 850,
@@ -72,7 +85,7 @@ function Tech() {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow:8,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 0,
@@ -84,6 +97,17 @@ function Tech() {
         
         responsive: [
 
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 6,
+                    vertical: true,
+                    verticalSwiping: true,
+                    swipeToSlide: true,
+
+
+                }
+            },
 
             {
                 breakpoint: 850,

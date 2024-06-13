@@ -18,6 +18,7 @@ function Store() {
                 { opacity: 0, y: -250 },
                 { opacity: 1, y: 0, duration: 1, delay: 0.3, stagger: 0.2 }
             );
+            document.querySelector('.store-bottom-section').classList.add('in-view');
             setAnimationTriggered(true);
         }
     }, [inView, animationTriggered]);
@@ -62,7 +63,7 @@ function Store() {
                                         <span className="rotate-text">c</span>
                                         <span className="rotate-text">e</span>
                                         <span className="rotate-text">s</span>
-                                        
+
 
                                     </span>
                                 </button>
@@ -72,26 +73,56 @@ function Store() {
                             <div className="store-bottom-app" ref={el => brandRefs.current[0] = el}>
                                 <img src={IMAGES.aa} alt="" />
                                 <h4>Shopify Store Setup</h4>
+                                <div className="store-one">
+                                    <svg viewBox="0 0 100 20" strokeWidth="1.2" width="162.890625" height="224">
+                                        <text x="0" y="15" className="text-stroke-store">01</text>
+                                    </svg>
+                                </div>
                             </div>
                             <div className="store-bottom-app" ref={el => brandRefs.current[1] = el}>
                                 <img src={IMAGES.aa1} alt="" />
                                 <h4>Shopify App Integration & Configuration</h4>
+                                <div className="store-two">
+                                    <svg viewBox="0 0 100 20" strokeWidth="1.2" width="162.890625" height="224">
+                                        <text x="0" y="15" className="text-stroke-store">02</text>
+                                    </svg>
+                                </div>
                             </div>
                             <div className="store-bottom-app" ref={el => brandRefs.current[2] = el}>
                                 <img src={IMAGES.aa2} alt="" />
                                 <h4>Shopify Store Design and Development</h4>
+                                <div className="store-three">
+                                    <svg viewBox="0 0 100 20" strokeWidth="1.2" width="162.890625" height="224">
+                                        <text x="0" y="15" className="text-stroke-store">03</text>
+                                    </svg>
+                                </div>
                             </div>
                             <div className="store-bottom-app" ref={el => brandRefs.current[3] = el}>
                                 <img src={IMAGES.aa3} alt="" />
                                 <h4>Payment & Shipping Zones Set-Up</h4>
+                                <div className="store-four">
+                                    <svg viewBox="0 0 100 20" strokeWidth="1.2" width="162.890625" height="224">
+                                        <text x="0" y="15" className="text-stroke-store">04</text>
+                                    </svg>
+                                </div>
                             </div>
                             <div className="store-bottom-app" ref={el => brandRefs.current[4] = el}>
                                 <img src={IMAGES.aa4} alt="" />
                                 <h4>Theme Development</h4>
+                                <div className="store-five">
+                                    <svg viewBox="0 0 100 20" strokeWidth="1.2" width="162.890625" height="224">
+                                        <text x="0" y="15" className="text-stroke-store">05</text>
+                                    </svg>
+                                </div>
                             </div>
                             <div className="store-bottom-app" ref={el => brandRefs.current[5] = el}>
                                 <img src={IMAGES.aa5} alt="" />
                                 <h4>Product & Inventory Set-Up</h4>
+                                <div className="store-six">
+                                    <svg viewBox="0 0 100 20" strokeWidth="1.2" width="162.890625" height="224">
+                                        <text x="0" y="15" className="text-stroke-store">06</text>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>

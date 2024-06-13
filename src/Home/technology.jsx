@@ -251,7 +251,7 @@ function Tech() {
         autoplay: true,
         autoplaySpeed: 0,
         speed: 15000,
-        cssEase: 'linear', 
+        cssEase: 'linear',
         pauseOnHover: false,
         pauseOnFocus: false
     }

@@ -17,6 +17,7 @@ import Blogdata from '../src/Allfiles/blogpage';
 import Animation  from '../src/Allfiles/Animation';
 import Header from './Header';
 import Footer from './Footer';
+import ScrollTo from './Allfiles/scroll-to-top';
 
 import '../src/assest/homes.css';
 import '../src/assest/Blog.css';
@@ -63,7 +64,7 @@ function AppContent() {
     <div className="main_root">
       {isLoading && <Animation />}
       {!shouldHideHeader && <Header />}
-
+      <ScrollTo/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/blog" element={<Blog />} />

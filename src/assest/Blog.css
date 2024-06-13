@@ -3378,3 +3378,6 @@ bar .about li {
 .blogdata .blog-sectiondata .product-details-section {
     width: 60%;
 }
+.digital--section-solid .slick-arrow.slick-next {
+    display: block !important;
+}

@@ -1865,6 +1865,7 @@ h2 {
     grid-column-gap: 28px;
     grid-row-gap: 28px;
     width: 70%;
+    position: relative;
 }
 
 .store-bottom-app {
@@ -7870,3 +7871,259 @@ footer {
 .brand-image-start-flex button.slick-arrow.slick-next {
     display: none !important;
 }
+
+
+
+
+
+
+
+@keyframes dashboard {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillinging {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: transparent;
+    }
+}
+
+@keyframes hide {
+    to {
+        stroke-dashoffset: 500;
+    }
+}
+
+.store-bottom-section .store-one,
+.store-two,
+.store-three,
+.store-four,
+.store-five,
+.store-six {
+    width: 200px;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 50px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.store-bottom-section svg {
+    width: 100%;
+    height: auto;
+}
+
+.store-bottom-section .text-stroke-store {
+    fill: transparent;
+    stroke: rgb(122, 122, 122);
+    stroke-width: 1px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation-play-state: paused;
+}
+
+.store-bottom-section.in-view .store-one .text-stroke-store {
+    animation: dashboard 5s linear forwards, fillinging 0.2s ease-in forwards, hide 3s linear forwards;
+    animation-delay: 1s;
+    animation-play-state: running;
+}
+
+.store-bottom-section.in-view .store-two .text-stroke-store {
+    animation: dashboard 5s linear forwards, fillinging 0.2s ease-in forwards, hide 5s linear forwards;
+    animation-delay: 4s;
+    animation-play-state: running;
+}
+
+.store-bottom-section.in-view .store-three .text-stroke-store {
+    animation: dashboard 5s linear forwards, fillinging 0.2s ease-in forwards, hide 5s linear forwards;
+    animation-delay: 9s;
+    animation-play-state: running;
+}
+
+.store-bottom-section.in-view .store-four .text-stroke-store {
+    animation: dashboard 5s linear forwards, fillinging 0.2s ease-in forwards, hide 4s linear forwards;
+    animation-delay: 14s;
+    animation-play-state: running;
+}
+
+.store-bottom-section.in-view .store-five .text-stroke-store {
+    animation: dashboard 5s linear forwards, fillinging 6s ease-in forwards, hide 5s linear forwards;
+    animation-delay: 18s;
+    animation-play-state: running;
+}
+
+.store-bottom-section.in-view .store-six .text-stroke-store {
+    animation: dashboard 5s linear forwards, fillinging 6s ease-in forwards, hide 5s linear forwards;
+    animation-delay: 23s;
+    animation-play-state: running;
+}
+
+.store-bottom-app .store-one,
+.store-two,
+.store-three,
+.store-four,
+.store-five,
+.store-six {
+    position: absolute;
+    top: -68%;
+    z-index: -99;
+}
+
+.scroll-to-top-section .scroll-to-top {
+    background-color: white;
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 9px 25px 0 rgba(132, 128, 177, 0.28);
+    border: none;
+}
+
+.scroll-to-top-section .scroll-to-top {
+    left: 40px !important;
+    right: auto;
+    z-index: 999 !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.mobile--app--section-all{
+    background-color: #fbf7ed;
+}
+
+.mobile--app--section-all .slick-prev {
+    display: block !important;
+    right: -116px;
+    width: 64px !important;
+    height: 64px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 6px 20px -6px #1e2e4826;
+    border-radius: 40px;
+    position: absolute;
+    top: 32% !important;
+    bottom: auto;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mobile--app--section-all .slick-next {
+    display: block !important;
+    right: -116px;
+    width: 64px !important;
+    height: 64px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #1a1a1a;
+    border: 5px solid #FFFFFF !important;
+    box-shadow: 0 6px 20px -6px #1e2e4826 !important;
+    border-radius: 40px !important;
+    position: absolute !important;
+    top: 32% !important;
+    bottom: auto ;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.mobile--app--section-all .slider-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 10px;
+   
+
+}
+
+.mobile--app--section-all .video-wrapper {
+    position: relative;
+
+}
+
+.mobile--app--section-all .video-wrapper video {
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0 0
+}
+
+.mobile--app--section-all .center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.mobile--app--section-all .slick-prev:before,
+.slick-next:before {
+    content: '' !important;
+
+}
+
+.block__homereview-video-infocontent {
+    background: #fff;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 6px 20px -6px #1e2e4826;
+    padding: 40px 46px;
+}
+
+.block__homereview-video-projectdesc p {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    color: #000;
+    margin: 0 0 54px;
+}
+.block__homereview-video-personinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.block__homereview-video-leftinfo {
+    width: 60%;
+}
+.block__homereview-video-rightinfo {
+    width: 32%;
+}
+.block__homereview-video-personname {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #000;
+    margin: 0 0 2px;
+}
+.block__homereview-video-partnerlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .block__homereview-video-partnerlogo img {
+    max-width: 100%;
+} */
