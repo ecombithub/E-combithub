@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
@@ -12,9 +12,10 @@ function Footer() {
     const [isInsHovered, setIsInsHovered] = useState(false);
     const [isInsHove, setIsInsHove] = useState(false);
     const [isIns, setIsIns] = useState(false);
+    const [plus, setPlus] = useState(false);
     // const [youq, setYouq] = useState(false);
     // const [whated, setWhated] = useState(false);
-    const [plus, setPlus] = useState(false);
+
 
     const [first, setFirst] = useState('');
     const [last, setLast] = useState('');
@@ -24,46 +25,53 @@ function Footer() {
     const [web, setWeb] = useState('');
     const [scheduleCall, setScheduleCall] = useState(false);
     const [message, setMessage] = useState('');
-
+    const [loading, setLoading] = useState(false);
+    
     const upload = async (e) => {
         e.preventDefault();
 
-        if (!first || !last || !email || !number || !company || !web || !scheduleCall) {
-            setMessage('Please fill in all fields.');
+        if (!first || !last || !email || !number || !company || !web) {
+            setMessage('Kindly complete all required fields before proceeding.');
             return;
         }
 
-        console.log('Submitting form data:', { first, last, email, number, company, web });
+        setLoading(true);
+               
+        setTimeout(() => {
+            setLoading(false);
+            setMessage('Email sent successfully');
+                
+            setFirst('');
+            setLast('');
+            setEmail('');
+            setNumber('');
+            setCompany('');
+            setWeb('');
+        }, 2000); 
 
         try {
-            const response = await axios.post('https://same-3.onrender.com/api/items', {
+            const response = await axios.post('http://localhost:8006/register', {
                 first,
                 last,
                 email,
                 number,
                 company,
                 web,
+
             });
 
             console.log('Response:', response);
 
-            if (response.status === 201) {
-                console.log('Email sent successfully');
-                setMessage('Email sent successfully');
-                setFirst('');
-                setLast('');
-                setEmail('');
-                setNumber('');
-                setCompany('');
-                setWeb('');
-                setScheduleCall(true);
+            if (response.status === 200) {
+               
+             console.log('Email sent successfully');
             } else {
-                console.error('Error sending email');
-                setMessage('Error sending email');
+                throw new Error('Error sending email');
             }
         } catch (error) {
             console.error('Error submitting form data:', error);
             setMessage('Error sending email');
+            setLoading(false);
         }
     };
 
@@ -120,174 +128,227 @@ function Footer() {
         }
     }, [inView, hasPlayedAnimation]);
 
-    useEffect(() => {
-        if (inView) {
-            document.querySelector('.build--section').classList.add('in-view');
-        }
-    }, [inView]);
 
     return (
         <>
             <footer>
-                <div className='build--section' ref={ref}>
-                    <div className='wrapper'>
-                        <div className='build--section-store'>
-                            <div className='build--section-tag'>
-                                <div className='build--section-begin'>
-                                    <div className='build--section-back'>
-                                        <div className='build--section-new'>
-                                            <div className='build--section-first-to'>
-                                                <div className='build--section-first-image'>
-                                                    <img src={IMAGES.whitelogo} alt='Background' ref={brand} /></div>
-                                                <div className='build--section-first-elements'>
-                                                    <h2 className='get-bg' ref={elementor}>Get a Quote to Build a New Shopify Store.</h2></div>
-                                            </div>
-                                            <p className='use--hub' ref={technologyElement}>
-                                                Use HubSyntax to grow your Shopify plus brand via checkout
-                                                upsells, one-click upsells, and thank you page
-                                                customization. Enjoy complimentary migration and frictionless
-                                                implementation with your own plus account manager.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <form ref={formSection}>
-                                        <div className='build--section-your'>
-                                            <div className='build--section-port'>
-                                                <div className='build--section-reoprt'>
-                                                    <div className='build--section-form'>
-                                                        <label>First Name</label>
-                                                        <br />
-                                                        <input
-                                                            type='text'
-                                                            placeholder='First Name'
-
-                                                            value={first}
-                                                            onChange={(e) => setFirst(e.target.value.replace(/[^a-z]/gi, ''))}
-                                                        ></input>{' '}
-                                                        <br />
-                                                        <br />
-                                                        <label>Email</label>
-                                                        <br />
-                                                        <input
-                                                            type='text'
-                                                            placeholder='Email'
-                                                            value={email}
-                                                            onChange={(e) => setEmail(e.target.value)}
-
-                                                        ></input>{' '}
-                                                        <br />
-                                                        <br />
-                                                        <label>Company Name</label>
-                                                        <br />
-                                                        <input
-                                                            type='text'
-                                                            placeholder='Company Name'
-                                                            value={company}
-                                                            onChange={(e) => setCompany(e.target.value.replace(/[^a-z]/gi, ''))}
-                                                        ></input>{' '}
-                                                        <br />
-                                                        <br />
+                <div className='footer-first-bg' >
+                    <div className='footer-second-bg' >
+                        <div className='build--section' ref={ref}>
+                            <div className='wrapper'>
+                                <div className='build--section-store'>
+                                    <div className='build--section-tag'>
+                                        <div className='build--section-begin'>
+                                            <div className='build--section-back'>
+                                                <div className='build--section-new'>
+                                                    <div className='build--section-first-to'>
+                                                        <div className='build--section-first-image'>
+                                                            <img src={IMAGES.whitelogo} alt='Background' ref={brand} /></div>
+                                                        <div className='build--section-first-elements'>
+                                                            <h2 className='get-bg' ref={elementor}>Get a Quote to Build a New Shopify Store</h2></div>
                                                     </div>
-                                                    <div className='build--section-second-form'>
-                                                        <label>Last Name</label>
-                                                        <br />
-                                                        <input
-                                                            type='text'
-                                                            placeholder='Last Name'
-                                                            value={last}
-                                                            onChange={(e) => setLast(e.target.value.replace(/[^a-z]/gi, ''))}
-                                                        ></input>{' '}
-                                                        <br />
-                                                        <br />
-                                                        <label>Phone Number</label>
-                                                        <br />
-                                                        <input
-                                                            type='text'
-                                                            placeholder='Phone Number'
-                                                            value={number}
-                                                            onChange={(e) => setNumber(e.target.value.replace(/[^0-9]/g, ''))}
-
-                                                        />
-                                                        {' '}
-                                                        <br />
-                                                        <br />
-                                                        <label>Website Url</label>
-                                                        <br />
-                                                        <input
-                                                            type='text'
-                                                            placeholder='Website Url'
-                                                            value={web}
-                                                            onChange={(e) => setWeb(e.target.value.replace(/[^a-z]/gi, ''))}
-                                                        ></input>{' '}
-                                                        <br />
-                                                    </div>
-                                                </div>
-                                                <div className='build--section-color'>
-                                                    <input
-                                                        type='checkbox'
-                                                        onChange={() => setScheduleCall(!scheduleCall)}
-                                                        checked={scheduleCall}
-
-                                                    />
-                                                    <p>
-                                                        I'd like to Schedule a call to discuss this before we
-                                                        start.
+                                                    <p className='use--hub' ref={technologyElement}>
+                                                        Are you ready to elevate your Shopify store to the next level?  Bithub Shopify experts are here to provide personalized solutions that meet your e-commerce needs. Whether you are looking to enhance store design, optimize performance, or integrate advanced features. Fill out the form to receive a detailed proposal customized to your specific requirements.
                                                     </p>
                                                 </div>
-                                                <button onClick={upload} id='build--btn'>
-
-                                                    <span className="rotate-container">
-                                                        <span className="rotate-text">G</span>
-                                                        <span className="rotate-text">e</span>
-                                                        <span className="rotate-text">t</span>
-                                                        <span className="rotate-text">&nbsp;</span>
-                                                        <span className="rotate-text">S</span>
-                                                        <span className="rotate-text">t</span>
-                                                        <span className="rotate-text">a</span>
-                                                        <span className="rotate-text">r</span>
-                                                        <span className="rotate-text">t</span>
-                                                        <span className="rotate-text">e</span>
-                                                        <span className="rotate-text">d</span>
-                                                    </span>
-                                                </button>
-                                                {message && <p style={{ color: "red" }}>{message}</p>}
                                             </div>
+                                            <form ref={formSection}>
+                                                <div className='build--section-your'>
+                                                    <div className='build--section-port'>
+                                                        <div className='build--section-reoprt'>
+                                                            <div className='build--section-form'>
+                                                                <label>First Name</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={first}
+                                                                    onChange={(e) => setFirst(e.target.value.replace(/[^a-z]/gi, ''))}
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Email</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={email}
+                                                                    onChange={(e) => setEmail(e.target.value)}
+
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Company Name - (Optional)</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={company}
+                                                                    onChange={(e) => setCompany(e.target.value.replace(/[^a-z]/gi, ''))}
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+                                                            </div>
+                                                            <div className='build--section-second-form'>
+                                                                <label>Last Name</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={last}
+                                                                    onChange={(e) => setLast(e.target.value.replace(/[^a-z]/gi, ''))}
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Phone Number - (Optional)</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={number}
+                                                                    onChange={(e) => setNumber(e.target.value.replace(/[^0-9]/g, ''))}
+
+                                                                />
+                                                                {' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Website Url - (Optional)</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={web}
+                                                                    onChange={(e) => setWeb(e.target.value)}
+                                                                ></input>{' '}
+                                                                <br />
+                                                            </div>
+
+                                                            {/* <div className='build-form-section'> */}
+                                                            <div className='build--section-form-all'>
+                                                                <label>First Name</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={first}
+                                                                    onChange={(e) => setFirst(e.target.value.replace(/[^a-z]/gi, ''))}
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+
+                                                                <label>Last Name</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={last}
+                                                                    onChange={(e) => setLast(e.target.value.replace(/[^a-z]/gi, ''))}
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Email</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={email}
+                                                                    onChange={(e) => setEmail(e.target.value)}
+
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Phone Number - (Optional)</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={number}
+                                                                    onChange={(e) => setNumber(e.target.value.replace(/[^0-9]/g, ''))}
+
+                                                                />
+                                                                {' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Company Name - (Optional)</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={company}
+                                                                    onChange={(e) => setCompany(e.target.value.replace(/[^a-z]/gi, ''))}
+                                                                ></input>{' '}
+                                                                <br />
+                                                                <br />
+                                                                <label>Website Url - (Optional)</label>
+                                                                <br />
+                                                                <input
+                                                                    type='text'
+                                                                    value={web}
+                                                                    onChange={(e) => setWeb(e.target.value)}
+                                                                ></input>{' '}
+                                                                <br />
+                                                            </div>
+                                                        </div>
+                                                        {/* </div> */}
+                                                        <div className='build--section-color'>
+                                                            <input
+                                                                type='checkbox'
+                                                                onChange={() => setScheduleCall(!scheduleCall)}
+                                                                checked={scheduleCall}
+
+                                                            />
+                                                            <p>
+                                                                I'd like to Schedule a call to discuss this before we
+                                                                start.
+                                                            </p>
+                                                        </div>
+                                                        <button onClick={upload} id='build--btn'>
+
+                                                            <span className="rotate-container">
+                                                                <span className="rotate-text">G</span>
+                                                                <span className="rotate-text">e</span>
+                                                                <span className="rotate-text">t</span>
+                                                                <span className="rotate-text">&nbsp;</span>
+                                                                <span className="rotate-text">S</span>
+                                                                <span className="rotate-text">t</span>
+                                                                <span className="rotate-text">a</span>
+                                                                <span className="rotate-text">r</span>
+                                                                <span className="rotate-text">t</span>
+                                                                <span className="rotate-text">e</span>
+                                                                <span className="rotate-text">d</span>
+                                                            </span>
+                                                        </button>
+                                                        {loading && <p>Loading...</p>}
+                                                        {message && !loading && <p style={{ color: "red" }}>{message}</p>}
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className='footer--section'>
+                            <div className="wrapper">
+                                <div className="container">
+                                    <div className="footer">
+                                        <div className='footer--section-rever'>
+                                            <Link to="/">< img src={IMAGES.blank} alt="Shop" /></Link>
+                                            <p>1600D Dove St, Newport Beach, CA 92660, United States D133C, Phase 7, Mohali, Punjab, 160062</p>
+                                        </div>
+                                        <div className='footer--section-right'>
+                                            <div className='footer-shopify-icon'>
+                                                <div className='footer-shopify-icon'>
+                                                    <img src={IMAGES.expert} alt="" />
+                                                </div>
+                                                <div className='footer-shopify-icon'>
+                                                    <img src={IMAGES.shopifyf} alt="" />
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <Link to="/terms-and-conditions" style={{ textDecoration: "none", color: "black" }}><li>Term of services</li></Link>
+                                                <Link to="/privacy-policy" style={{ textDecoration: "none", color: "black" }}><li>Privacy Policy</li></Link>
+                                            </ul>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div className='footer--section'>
-                    <div className="wrapper">
-                        <div className="container">
-                            <div className="footer">
-                                <div className='footer--section-rever'>
-                                    <Link to="/">< img src={IMAGES.shop} alt="Shop" /></Link>
-                                    <p>&copy; 2023 HubSyntax, All rights reserved.</p>
-                                </div>
-                                <div className='footer--section-right'>
-                                    <ul>
-                                        <a href='#' style={{ textDecoration: "none", color: "black" }}><li>About</li></a>
-                                        <a href='#' style={{ textDecoration: "none", color: "black" }}><li>Contacts</li></a>
-                                        <a href='#' style={{ textDecoration: "none", color: "black" }}><li>Privacy Policy</li></a>
-                                        <a href='#' style={{ textDecoration: "none", color: "black" }}><li>Term Condition</li></a>
-                                    </ul>
-                                    <div className='footer--section-face'>
-                                        <a href='https://www.facebook.com/HubSyntax/' target="_blank"><img src={isFbHovered ? IMAGES.f : IMAGES.fb} onMouseEnter={() => setIsFbHovered(true)} onMouseLeave={() => setIsFbHovered(false)} /></a>
-                                        <a href='https://www.instagram.com/hubsyntax/' target="_blank"><img src={isInsHovered ? IMAGES.ini : IMAGES.ins} onMouseEnter={() => setIsInsHovered(true)} onMouseLeave={() => setIsInsHovered(false)} /></a>
-                                        <a href='https://x.com/i/flow/login?redirect_after_login=%2FHubsyntaxdev' target="_blank"><img src={isInsHove ? IMAGES.t : IMAGES.twi} onMouseEnter={() => setIsInsHove(true)} onMouseLeave={() => setIsInsHove(false)} /></a>
-                                        <a href='https://www.linkedin.com/company/hubsyntax?originalSubdomain=in' target="_blank"><img src={isIns ? IMAGES.i : IMAGES.ink} onMouseEnter={() => setIsIns(true)} onMouseLeave={() => setIsIns(false)} /></a>
-                                        {/* <a href='#'><img src={youq ? y : you} onMouseEnter={() => setYouq(true)} onMouseLeave={() => setYouq(false)} /></a>
-                                        <a href='#'><img src={whated ? w : what} onMouseEnter={() => setWhated(true)} onMouseLeave={() => setWhated(false)} /></a> */}
-                                        <a href='https://in.pinterest.com/hubsyntax/' target="_blank"><img src={plus ? IMAGES.p : IMAGES.pl} onMouseEnter={() => setPlus(true)} onMouseLeave={() => setPlus(false)} /></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="copyright-footer">
+                        <p>Copyright @2020-2024 <a className='copy_link' target='blank'  href='https://www.hubsyntax.com/'>Hubsyntax</a> Limited. All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>

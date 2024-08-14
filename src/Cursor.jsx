@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function Cursor() {
-
+    
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [isOverButton, setIsOverButton] = useState(false);
     const [isOverInput, setIsOverInput] = useState(false);
@@ -167,84 +167,3 @@ export default Cursor;
 
 
 
-
-
-
-// import React, { useState, useEffect } from 'react';
-
-// function Cursor() {
-//     const [position, setPosition] = useState({ x: 0, y: 0 });
-//     const [isVisible, setIsVisible] = useState(true);
-//     const [isOverButton, setIsOverButton] = useState(false);
-//     const [isOverInput, setIsOverInput] = useState(false);
-
-//     useEffect(() => {
-//         const moveCursor = (e) => {
-//             setPosition({ x: e.clientX, y: e.clientY });
-//         };
-
-//         document.addEventListener('mousemove', moveCursor);
-
-//         return () => {
-//             document.removeEventListener('mousemove', moveCursor);
-//         };
-//     }, []);
-
-//     useEffect(() => {
-//         const handleMouseEnterButton = () => {
-//             setIsVisible(false);
-//             setIsOverButton(true);
-//             setIsOverInput(false);
-//         };
-
-//         const handleMouseLeaveButton = () => {
-//             setIsVisible(true);
-//             setIsOverButton(false);
-//         };
-
-//         const handleMouseEnterInput = () => {
-//             setIsVisible(false);
-//             setIsOverInput(true);
-//             setIsOverButton(false);
-//         };
-
-//         const handleMouseLeaveInput = () => {
-//             setIsVisible(true);
-//             setIsOverInput(false);
-//         };
-
-//         document.querySelectorAll('button').forEach((btn) => {
-//             btn.addEventListener('mouseenter', handleMouseEnterButton);
-//             btn.addEventListener('mouseleave', handleMouseLeaveButton);
-//         });
-
-//         document.querySelectorAll('input').forEach((input) => {
-//             input.addEventListener('mouseenter', handleMouseEnterInput);
-//             input.addEventListener('mouseleave', handleMouseLeaveInput);
-//         });
-
-//         return () => {
-//             document.querySelectorAll('button').forEach((btn) => {
-//                 btn.removeEventListener('mouseenter', handleMouseEnterButton);
-//                 btn.removeEventListener('mouseleave', handleMouseLeaveButton);
-//             });
-//             document.querySelectorAll('input').forEach((input) => {
-//                 input.removeEventListener('mouseenter', handleMouseEnterInput);
-//                 input.removeEventListener('mouseleave', handleMouseLeaveInput);
-//             });
-//         };
-//     }, []);
-
-//     return (
-//         <div
-//             className={`cursor ${isVisible ? '' : 'hidden'}`}
-//             style={{
-//                 left: position.x - 8,
-//                 top: position.y - 8,
-//                 animation: isOverButton || isOverInput ? '' : 'cursorhandle 0.5s infinite alternate'
-//             }}
-//         />
-//     );
-// }
-
-// export default Cursor;

@@ -2,7 +2,7 @@ import IMAGES from "../Allfiles/image";
 function Bar() {
     return (
         <>
-            <bar>
+            {/* <bar>
                 <div className="wrapper">
                     <div className="container">
                         <div className='bar--section'>
@@ -18,7 +18,7 @@ function Bar() {
                         </div>
                     </div>
                 </div>
-            </bar>
+            </bar> */}
         </>
     )
 }

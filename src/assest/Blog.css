@@ -1,12 +1,12 @@
 .header--section {
     width: 100%;
     display: inline-block;
-    border-radius: 6px;
+    background-color: #262626;
     box-shadow: 0 -5px 5px -5px #c0c0c0, 0 5px 5px -5px #e9e9e9;
-    background-color: white;
     z-index: 99;
     position: sticky;
     top: 0;
+
 }
 
 mrk li:hover {
@@ -22,38 +22,53 @@ mrk li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 30px 0;
 
 }
 
 img.sol_br {
     position: absolute;
-    right: 6px;
-    top: 12px;
+    right: 17px;
+    top: 16px;
+    width: 20px;
+}
+
+.header--section-left img {
+    width: 100%;
 }
 
 .header--section-search-bar {
     float: right;
-    margin-top: -9px;
     position: relative;
 }
 
 .header--section .header--section-flex .header--section-right li {
     display: inline;
-    color: black;
-    padding-right: 50px;
-    font-family: Work Sans;
+    color: white;
+    padding-left: 50px;
     font-size: 18px;
 
 }
 
+.header--section-right ul {
+    display: flex;
+    align-items: center;
+}
+
 input.header--section-search {
-    font-size: 17px;
-    padding: 9px 10px;
-    font-family: Work Sans;
+    font-size: 18px;
+    padding: 14px 20px;
     border-radius: 5px;
     outline: none;
     border: 1px solid rgb(190, 189, 189);
+    background-color: #262626;
+    color: white;
+    width: 240px;
+
+}
+
+input.header--section-search::placeholder {
+    color: white;
 }
 
 img.sec_br {
@@ -95,7 +110,6 @@ bar {
     width: 100%;
     float: left;
     padding-top: 10px;
-    border-radius: 3px;
     box-shadow: 0 -5px 5px -5px #c0c0c0, 0 5px 5px -5px #dfdede;
     background-color: #FC5A66;
     z-index: 99;
@@ -119,7 +133,7 @@ bar .about {
 
 .header--section-search-bar {
     float: right;
-    margin-top: -9px;
+
 }
 
 bar .about li {
@@ -233,17 +247,12 @@ bar .about li {
 }
 
 .loacal--section-online-global .loacal--section-online-global-per .loacal--section-online-drive h2 {
-    font-family: Anuphan;
-    font-size: 40px;
-    font-weight: 700;
     line-height: 63px;
     margin-top: -10px;
     margin-bottom: 27px;
 }
 
 .loacal--section-online-global .loacal--section-online-global-per .loacal--section-online-drive p {
-    font-family: Anuphan light;
-    font-size: 19px;
     line-height: 32px;
     max-width: 94%;
 }
@@ -252,7 +261,6 @@ bar .about li {
     height: 30px;
     width: 160px;
     font-size: 16px;
-    font-family: Work Sans;
     color: #FC5A66;
     border-radius: 5px;
     background-color: white;
@@ -266,7 +274,6 @@ bar .about li {
     height: 30px;
     width: 160px;
     font-size: 16px;
-    font-family: Work Sans;
     color: #bdbdbd;
     border-radius: 5px;
     background-color: white;
@@ -296,7 +303,6 @@ bar .about li {
     width: 170px;
     border-radius: 5px;
     color: #9e9e9e;
-    font-family: Work Sans;
     background-color: white;
     border: 1px solid #e9e5e5;
     font-size: 14px;
@@ -307,7 +313,6 @@ bar .about li {
 .loacal--section-find .loacal--section-keyworld .loacal--section-competitor h2 {
     font-weight: 600;
     font-size: 30px;
-    font-family: Anuphan;
     margin-top: 3px;
     margin-bottom: 0px;
     line-height: 38px;
@@ -318,7 +323,6 @@ bar .about li {
 .loacal--section-find .loacal--section-keyworld .loacal--section-competitor p {
     margin-top: 7px;
     line-height: 26px;
-    font-family: Anuphan;
     font-size: 16px;
     margin-bottom: 0px;
 
@@ -338,16 +342,15 @@ bar .about li {
     padding-bottom: -47px;
     margin-bottom: 22px;
     margin-top: 17px;
-    font-family: Work Sans;
-
     background-color: transparent;
     color: #FC5A66;
+    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
 
 }
 
 .loacal--section-find .loacal--section-keyworld .loacal--section-conner-lahey p {
-    font-family: Work Sans;
     font-size: 17px;
     color: #9e9e9e;
     margin: 0;
@@ -381,7 +384,6 @@ bar .about li {
 .loacal--section-find .loacal--section-create-key .loacal--section-word-key h2 {
     font-size: 30px;
     font-weight: 600;
-    font-family: Anuphan;
     margin-top: 3px;
     margin-bottom: 0px;
     line-height: 38px;
@@ -392,7 +394,6 @@ bar .about li {
 
     margin-top: 7px;
     line-height: 26px;
-    font-family: Anuphan;
     font-size: 16px;
     margin-bottom: 0px;
 }
@@ -410,7 +411,6 @@ bar .about li {
     padding-bottom: -47px;
     margin-bottom: 22px;
     margin-top: 17px;
-    font-family: Work Sans;
     font-size: 16px;
     background-color: transparent;
     color: #FC5A66;
@@ -419,7 +419,6 @@ bar .about li {
 }
 
 .loacal--section-find .loacal--section-create-key .loacal--section-word-rachel p {
-    font-family: Work Sans;
     font-size: 17px;
     color: #9e9e9e;
     margin: 0;
@@ -487,7 +486,6 @@ bar .about li {
     width: 120px;
     margin-top: 20px;
     font-size: 14px;
-    font-family: Anuphan;
     color: #bdbdbd;
     border-radius: 5px;
     background-color: white;
@@ -499,7 +497,6 @@ bar .about li {
     margin-top: 10px;
     line-height: 29px;
     max-width: 90%;
-    font-family: Work Sans;
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 0px;
@@ -513,16 +510,20 @@ bar .about li {
 
 .digital--section-google .digital--section-google-mark h4 {
     border: none;
-    font-family: Anuphan;
     font-weight: 500;
     border-bottom: 1px solid #FC5A66;
-    margin-bottom: 28px;
+    margin-bottom: 43px;
+    margin-top: 21px;
+    font-size: 16px;
+}
+
+.digital--section-solid .slick-next {
+    display: block !important;
 }
 
 .digital--section-google .digital--section-google-mark p {
-    font-family: Work Sans !important;
     font-size: 16px !important;
-    margin-top: 24px !important;
+    margin-top: 23px !important;
     color: #9e9e9e !important;
 }
 
@@ -531,7 +532,6 @@ bar .about li {
     width: 160px;
     margin-top: 20px;
     font-size: 14px;
-    font-family: Anuphan;
     color: #bdbdbd;
     border-radius: 5px;
     background-color: white;
@@ -540,10 +540,9 @@ bar .about li {
 }
 
 .digital-marketing--section .digital--section-call h2 {
-    font-size: 40px;
-    font-family: Anuphan;
     margin-bottom: 0px;
     font-weight: 700;
+    margin-top: 60px;
 }
 
 .digital--section-call {
@@ -552,7 +551,6 @@ bar .about li {
 
 .digital-marketing--section .digital--section-call p {
     font-size: 20px;
-    font-family: Anuphan;
     margin-top: 22px;
     margin-bottom: 27px;
 }
@@ -564,8 +562,7 @@ bar .about li {
 .seo--section-google {
     width: 100%;
     background-color: #F6F7FA;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .seo--section-google .seo--section-rank-remover {
@@ -576,14 +573,14 @@ bar .about li {
 }
 
 .seo--section-google .seo--section-rank h2 {
-    font-family: Anuphan;
+    padding-top: 60px;
     margin-bottom: 0px;
     font-weight: 600;
 }
 
 .seo--section-google .seo--section-rank p {
     font-size: 20px;
-    font-family: Anuphan;
+
     margin-top: 14px;
     margin-bottom: 50px;
 }
@@ -596,7 +593,6 @@ bar .about li {
     height: 35px;
     width: 130px;
     font-size: 17px;
-    font-family: Work Sans;
     font-weight: 500;
     color: #686767;
     border-radius: 5px;
@@ -610,14 +606,12 @@ bar .about li {
     margin-top: 10px;
     line-height: 29px;
     max-width: 90%;
-    font-family: Work Sans;
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 0px;
 }
 
 .seo--section-rank-tool .seo--section-rank-result p {
-    font-family: Work Sans;
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 0px;
@@ -626,42 +620,40 @@ bar .about li {
 .seo--section-rank-tool .seo--section-rank-result .lee {
     display: flex;
     gap: 25px;
-    margin-top: -5px
+    margin-top: 20px
 }
 
 .seo--section-rank-tool .seo--section-rank-result .lee h4 {
     border: none;
-    font-family: Anuphan;
+    font-size: 16px;
     font-weight: 500;
     border-bottom: 1px solid #FC5A66;
-    margin-bottom: 28px;
+
 }
 
 .seo--section-rank-tool .seo--section-rank-result .lee p {
-    font-family: Work Sans;
+
     font-size: 16px;
-    margin-top: 22px;
+
     color: #9e9e9e;
 }
 
 .lee1 {
     display: flex;
     gap: 25px;
-    margin-top: -5px
+    margin-top: 20px;
 }
 
 .lee1 h4 {
     border: none;
-    font-family: Anuphan;
     font-weight: 500;
+    font-size: 16px;
     border-bottom: 1px solid #FC5A66;
-    margin-bottom: 28px;
 }
 
+
 .lee1 p {
-    font-family: Work Sans;
     font-size: 16px;
-    margin-top: 22px;
     color: #9e9e9e;
 }
 
@@ -670,7 +662,7 @@ bar .about li {
     grid-template-columns: auto auto auto;
     grid-row-gap: 50px !important;
     gap: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .content--section-all-template img {
@@ -678,19 +670,17 @@ bar .about li {
 }
 
 .content--section-desire-process {
-    margin-top: 80px;
+    margin-top: 60px;
 
 }
 
 .content--section-desire-process h2 {
-    font-family: Anuphan;
     margin-bottom: 0px;
     font-weight: 600;
 }
 
 .content--section-desire-process p {
     font-size: 20px;
-    font-family: Anuphan;
     margin-top: 14px;
     margin-bottom: 50px;
 }
@@ -699,7 +689,6 @@ bar .about li {
     height: 35px;
     width: 140px;
     font-size: 17px;
-    font-family: Work Sans;
     font-weight: 500;
     color: #686767;
     border-radius: 5px;
@@ -713,14 +702,12 @@ bar .about li {
     margin-top: 10px;
     line-height: 29px;
     max-width: 97%;
-    font-family: Work Sans;
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 0px;
 }
 
 .content--section-all-template-desire p {
-    font-family: Work Sans;
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 0px;
@@ -775,14 +762,12 @@ bar .about li {
 
 
 .people--section--search-explore h2 {
-    font-family: Anuphan;
     margin-bottom: 0px;
     font-weight: 700;
     margin-top: 0px;
 }
 
 .people--section--search-explore p {
-    font-family: Work Sans;
     line-height: 25px;
     margin-bottom: 0px;
     max-width: 92%;
@@ -796,7 +781,6 @@ bar .about li {
     font-size: 17px;
     color: white;
     background-color: #FC5A66;
-    font-family: Work Sans;
     border: none;
     border-radius: 5px;
     margin-top: 60px;
@@ -861,34 +845,34 @@ bar .about li {
 
 #more:before,
 #more:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background-color: #77af1e;
-  transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #77af1e;
+    transition: all 0.4s ease-in-out;
 
 }
 
 #more:before {
-  left: 0;
+    left: 0;
 }
 
 #more:after {
-  right: 0;
+    right: 0;
 }
 
 #more:hover {
-  color: #f8f8f8;
+    color: #f8f8f8;
 }
 
 #more:hover:before {
-  width: 50%;
+    width: 50%;
 }
 
 #more:hover:after {
-  width: 50%;
+    width: 50%;
 }
 
 
@@ -931,7 +915,6 @@ bar .about li {
     font-size: 17px;
     color: white;
     background-color: #FC5A66;
-    font-family: Work Sans;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
@@ -1007,34 +990,34 @@ bar .about li {
 
 #now:before,
 #now:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background-color: #77af1e;
-  transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #77af1e;
+    transition: all 0.4s ease-in-out;
 
 }
 
 #now:before {
-  left: 0;
+    left: 0;
 }
 
 #now:after {
-  right: 0;
+    right: 0;
 }
 
 #now:hover {
-  color: #f8f8f8;
+    color: #f8f8f8;
 }
 
 #now:hover:before {
-  width: 50%;
+    width: 50%;
 }
 
 #now:hover:after {
-  width: 50%;
+    width: 50%;
 }
 
 /* #now {
@@ -1086,7 +1069,6 @@ bar .about li {
 #you {
     height: 30px;
     width: 140px;
-    font-family: Work Sans;
     font-size: 17px;
     font-weight: 500;
     background-color: white;
@@ -1097,7 +1079,7 @@ bar .about li {
 }
 
 .store--section--right-shipping h4 {
-    font-family: Work Sans;
+
     font-size: 20px;
     font-weight: 600;
     margin-top: 13px;
@@ -1144,22 +1126,19 @@ bar .about li {
 }
 
 .store--section--more h4 {
-    font-family: Work Sans;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 0px;
 }
 
 .store--section--left-brand h2 {
-    font-family: Anuphan;
     margin-bottom: 0px;
     font-weight: 700;
-    max-width: 50%;
+    max-width: 78%;
     margin-top: 10px;
 }
 
 .store--section--left-brand p {
-    font-family: Work Sans;
     line-height: 25px;
     margin-top: 8px;
     max-width: 80%;
@@ -1180,7 +1159,6 @@ bar .about li {
 #ad {
     height: 35px;
     width: 140px;
-    font-family: Work Sans;
     font-size: 15px;
     font-weight: 500;
     background-color: white;
@@ -1191,7 +1169,6 @@ bar .about li {
 
 .business--section-long h2 {
     font-size: 36px;
-    font-family: Anuphan;
     margin-bottom: 0px;
     font-weight: 700;
     margin-top: 0px;
@@ -1199,7 +1176,6 @@ bar .about li {
 }
 
 .business--section-long p {
-    font-family: Work Sans;
     line-height: 25px;
     max-width: 81%;
     margin-top: 10px;
@@ -1244,7 +1220,6 @@ bar .about li {
 
 .business--section-engine-process h2 {
     font-size: 25px;
-    font-family: Anuphan;
     font-weight: 600;
     padding-top: 30px;
     padding-left: 90px;
@@ -1252,7 +1227,6 @@ bar .about li {
 
 .business--section-engine-process p {
     max-width: 95%;
-    font-family: Work Sans;
     font-size: 16px;
     line-height: 25px;
     margin-left: 40px;
@@ -1415,6 +1389,7 @@ bar .about li {
     img.sec_br {
         left: 96%;
     }
+
 }
 
 @media screen and (max-width:1390px) {
@@ -1455,13 +1430,18 @@ bar .about li {
 }
 
 @media screen and (max-width:1320px) {
-    .header--section .header--section-flex .header--section-right li {
-        padding-right: 25px;
+    input.header--section-search {
+        font-size: 15px;
+        padding: 15px 15px;
+        width: 200px;
     }
+
+
 
     .header--section .header--section-flex .header--section-right li {
         font-size: 15px;
     }
+
 
     .header--section-left img {
         width: 260px;
@@ -1516,6 +1496,16 @@ bar .about li {
 @media screen and (max-width:1290px) {
     .digital--section-solid .slick-prev {
         margin-left: -20px;
+    }
+
+    .blog-section-title h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    .blogging-section-title h2 {
+        font-size: 35px !important;
+        line-height: 40px;
     }
 }
 
@@ -1619,8 +1609,24 @@ bar .about li {
 }
 
 @media screen and (max-width:1024px) {
+    .blog-section-title {
+        width: 60% !important;
+    }
+
+    .header--section .header--section-flex {
+        padding: 20px 0;
+    }
+
+    .digital-marketing--section .digital--section-call h2 {
+        margin-top: 40px;
+    }
+
+    .seo--section-google .seo--section-rank h2 {
+        padding-top: 40px;
+    }
+
     .loacal--section-online-global .loacal--section-online-global-per .loacal--section-online-drive h2 {
-        line-height: 43px;
+
         margin-bottom: 0;
     }
 
@@ -1828,7 +1834,7 @@ bar .about li {
     .seo--section-rank-tool .seo--section-rank-result p {
         font-size: 14px;
         line-height: 18px;
-        margin: 8px 0 0 0;
+
     }
 
     .seo--section-rank-tool .seo--section-rank-result .lee h4 {
@@ -1837,7 +1843,6 @@ bar .about li {
 
     .seo--section-rank-tool .seo--section-rank-result .lee p {
         font-size: 12px;
-        margin-top: 17px;
     }
 
     .seo--section-google .seo--section-rank-remover {
@@ -1879,7 +1884,7 @@ bar .about li {
     .content--section-all-template-desire p {
         font-size: 14px;
         line-height: 17px;
-        margin: 10px 0 0 0;
+
     }
 
     .lee1 h4 {
@@ -1888,7 +1893,7 @@ bar .about li {
 
     .lee1 p {
         font-size: 13px;
-        margin: 16px 0 0 0;
+
     }
 
     .content--section-all-template-desire-team h3 {
@@ -1899,7 +1904,7 @@ bar .about li {
     .content--section-all-template-desire-team p {
         font-size: 14px;
         line-height: 17px;
-        margin: 10px 0 0 0;
+
     }
 
     .people--section--search-explore h2 {
@@ -2048,6 +2053,27 @@ bar .about li {
 }
 
 @media screen and (max-width:991px) {
+    .blogs-section .blog-section-app {
+        display: block !important;
+    }
+
+    .blog-section-title {
+        margin-bottom: 30px;
+        width: 100% !important;
+    }
+
+    .blogs-section {
+        padding-bottom: 120px !important;
+    }
+
+    .blog-section-image {
+        width: 100% !important;
+    }
+
+    .blogging-section-title h2 {
+        font-size: 26px !important;
+        line-height: 33px;
+    }
 
     .show-menu-btn,
     .hide-menu-btn {
@@ -2086,7 +2112,7 @@ bar .about li {
         font-size: 20px;
     }
 
-   
+
 
     #toggle-btn:checked~nav .navigation {
         top: -18px;
@@ -2125,6 +2151,7 @@ bar .about li {
         font-size: 18px;
         padding-left: 19px;
         margin-left: -20px;
+        padding-top: 40px;
     }
 
     .header--section-right li {
@@ -2150,6 +2177,11 @@ bar .about li {
 
     #togle-btn:checked~mrk .header--section-right {
         top: -18px;
+        background-color: #262626;
+    }
+
+    .header--section-right ul {
+        display: block;
     }
 
     .header--section-right {
@@ -2211,9 +2243,8 @@ bar .about li {
 
     }
 
-    .header--section .header--section-flex {
-        padding-top: 10px;
-        padding-bottom: 10px;
+    .header--section-flex svg path {
+        color: white;
     }
 
     .header--section .header--section-flex label.show-btn {
@@ -2717,6 +2748,13 @@ bar .about li {
 }
 
 @media screen and (max-width:640px) {
+    .blogging-section-sides {
+        width: 100% !important;
+    }
+
+    .blogging-section .blogging-section-show {
+        gap: 40px !important;
+    }
 
     img.sec_br {
         left: 32% !important;
@@ -2833,8 +2871,8 @@ bar .about li {
     }
 
     .seo--section-google {
-        padding-top: 10px;
-        padding-bottom: 15px;
+
+        padding-bottom: 40px;
     }
 
     .seo--section-google .seo--section-rank-remover {
@@ -2918,9 +2956,7 @@ bar .about li {
         top: 87% !important;
     }
 
-    .header--section-right {
-        padding-bottom: 10px;
-    }
+
 
     .header--section-right ul {
         margin: 8px;
@@ -2959,7 +2995,14 @@ bar .about li {
 }
 
 @media screen and (max-width: 480px) {
+    .blogs-section {
+        padding-top: 40px !important;
 
+    }
+
+    .blogging-section {
+        margin-bottom: 40px !important;
+    }
 
     nav .brand-logo1 img {
         width: 220px;
@@ -2975,7 +3018,7 @@ bar .about li {
         font-size: 18px !important;
     }
 
- 
+
 
     img.sec_br {
         margin-left: 41px;
@@ -3118,7 +3161,11 @@ bar .about li {
 
     .seo--section-rank-tool .seo--section-rank-result .lee p {
         font-size: 16px;
-        margin-top: 25px;
+
+    }
+
+    .lee p {
+        margin: 0 !important;
     }
 
     .content--section-desire-process {
@@ -3152,7 +3199,7 @@ bar .about li {
 
     .lee1 p {
         font-size: 16px !important;
-        margin: 24px 0 0 0;
+
     }
 
     .content--section-all-template-desire-team h3 {
@@ -3188,9 +3235,7 @@ bar .about li {
 }
 
 @media screen and (max-width:435px) {
-    .seo--section-google {
-        margin-top: 40px !important;
-    }
+
 
     .all img {
         width: 250px;
@@ -3235,9 +3280,6 @@ bar .about li {
 }
 
 @media screen and (max-width:411px) {
-    .seo--section-google {
-        margin-top: 70px !important;
-    }
 
     .right li {
         font-size: 12px;
@@ -3367,17 +3409,326 @@ bar .about li {
 .blogdata {
     width: 100%;
     display: inline-block;
+    margin-bottom: 150px;
+    background-color: #f8f8fa;
+}
+
+.blogdata .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .blogdata .blog-sectiondata {
-    display: flex;
-    margin-bottom: 150px;
-    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    border: 1px solid #dbdbdb;
+    padding: 25px 70px 70px 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 5px;
 }
 
-.blogdata .blog-sectiondata .product-details-section {
-    width: 60%;
+.blog-section-h3 h3 {
+    font-size: 30px;
 }
-.digital--section-solid .slick-arrow.slick-next {
-    display: block !important;
+
+.blogdata h1 {
+    font-size: 55px;
+}
+
+.blogdata h2 {
+    font-size: 45px;
+}
+
+
+.blogdata h5 {
+    font-size: 22px;
+
+}
+
+.blog-section-h1 {
+    margin-bottom: 25px;
+}
+
+.blog-section-h2 {
+    margin-bottom: 20px;
+}
+
+.blogpage-built li {
+    margin-bottom: 10px;
+}
+
+.blogpage-paragraph {
+    margin-bottom: 30px;
+}
+
+.blogpage-paragraph-list {
+    margin-bottom: 10px;
+}
+
+.blogpage-built {
+    margin-bottom: 30px;
+}
+
+.blog-section-h3 {
+    margin-bottom: 20px;
+}
+
+
+.blog-section-h5 {
+    margin-bottom: 10px;
+
+}
+
+.blogpage-paragraph-list-all {
+    margin-bottom: 30px;
+}
+
+.blog-video {
+    margin-bottom: 20px;
+}
+
+.blog-video iframe {
+    width: 100%;
+}
+.blogpage-paragraph-listing p{
+    font-size: 17px;
+}
+.blogpage-paragraph-listing {
+    margin-bottom: 15px;
+}
+.blogpage-paragraph-listing-store{
+    margin-bottom: 10px;
+}
+
+.blogpage-paragraph-listing-store p{
+    font-size: 17px;
+}
+.blogpage-gap{
+    margin-bottom: 30px;
+}
+.blog-section-h4 {
+    margin-bottom: 20px;
+}
+
+.blog-sectiondata .blog-section-build .blog-author {
+    border: 0px solid;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    max-width: 18.5%;
+    padding: 8px 11px;
+    border-radius: 5px;
+    background-color: #f8f8fa;
+}
+
+.blog-sectiondata .blog-section-build .blog-image img {
+    width: 100%;
+}
+
+.blog-sectiondata .blog-section-build .blog-image {
+    font-size: 0;
+    margin-bottom: 50px;
+}
+
+.blogdata .blog-sectiondata .blogpage-paragraph p {
+    font-size: 18px;
+    text-align: justify !important;
+
+}
+
+.blogdata .blog-sectiondata .blog-image-all img {
+    width: 100%;
+}
+
+.blogdata .blog-sectiondata .blog-image-all {
+    margin: 40px 0;
+    border: 12px solid white;
+    font-size: 0;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.blogpage-paragraph span.blog-p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.term-blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.blogpage-built li {
+    font-size: 17px;
+} 
+.blogpage-paragraph-cancel p{
+    font-size: 17px;
+}
+.blogpage-paragraph-cancel p{
+
+    margin-bottom: 5px;
+}
+
+.blogpage-cancel-built {
+    margin-bottom: 30px;
+}
+
+.blogpage-paragraph-all{
+    margin-bottom: 10px;
+
+}
+.blogpage-paragraph-all p{
+font-size: 17px;
+}
+
+
+@media screen and (max-width:768px) {
+    .blogdata .blog-sectiondata {
+        padding: 25px 40px 40px 40px;
+    }
+
+    .blogdata h1 {
+        font-size: 40px;
+    }
+
+    .blog-sectiondata .blog-section-build .blog-author {
+        max-width: 136px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .blog-sectiondata .blog-section-build h2 {
+        font-size: 30px;
+    }
+
+    .blogpage-paragraph {
+        margin-bottom: 20px;
+    }
+
+    .blog-section-h2 {
+        margin-bottom: 20px;
+    }
+
+    .blog-section-h1 {
+        margin-bottom: 20px;
+    }
+
+    .blog-sectiondata .blog-section-build .blog-image {
+        margin-bottom: 30px;
+    }
+
+
+    .blogdata .blog-sectiondata .blog-image-all {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .blogdata .blog-sectiondata {
+        padding: 25px 30px 30px 30px;
+    }
+
+    .blogdata .blog-sectiondata .blogpage-paragraph p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .blogdata h1 {
+        font-size: 40px;
+    }
+
+    .blogdata .blog-sectiondata {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+.blogs-section {
+    background-image: url(../images/back1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 201px;
+    width: 100%;
+    display: inline-block
+}
+
+.blog-section-image img {
+    width: 100%;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 10px;
+}
+
+.blog-section-image {
+    font-size: 0;
+}
+
+.blogs-section .blog-section-app {
+    border: 0px solid rgb(173, 173, 173);
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 5px 0 #dadada;
+    padding: 20px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.blog-section-title {
+    width: 50%;
+}
+
+.blog-section-image {
+    width: 50%;
+
+}
+
+.blog-section-title h1 {
+    margin-bottom: 20px;
+    line-height: 55px;
+}
+
+.blogs-section a {
+    color: black;
+    text-decoration: none;
+}
+
+.blogging-section {
+    margin-bottom: 60px;
+}
+
+.blogging-section .blogging-section-show {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blogging-section-sides {
+    width: 46%;
+}
+
+.blogging-section-image img {
+    width: 100%;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 10px;
+}
+
+.blogging-section-title h2 {
+    font-size: 40px;
+}
+
+.blogging-section-title {
+    margin-top: 25px;
+}
+
+.blog-discription p {
+    margin-top: 10px;
+    font-size: 16px;
 }

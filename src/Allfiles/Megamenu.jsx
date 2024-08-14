@@ -43,7 +43,7 @@ function Mega({ onLinkClick, onHideClick }) {
                                     </div>
 
                                     <div className="product-shopify-project-group">
-                                        <div className='product-items'>
+                                        {/* <div className='product-items'>
                                             <Link to='/build' onClick={handleClick} > <div className='product-shopify-start-flex-bg'>
                                                 <div className="product-shopify-project-image">
                                                     <img src={trowel} alt="" />
@@ -86,18 +86,18 @@ function Mega({ onLinkClick, onHideClick }) {
                                                     <p>Our dedicated Shopify designers bring your vision to life on Shopify.</p>
                                                 </div>
                                             </div></Link>
-                                        </div>
+                                        </div> */}
                                         <div className='product-items'>
                                             <Link to='/app' onClick={handleClick}>   <div className='product-shopify-start-flex-bg'>
                                                 <div className="product-shopify-project-image">
                                                     <img src={connection} alt="" />
                                                 </div>
                                                 <div className="product-shopify-project-elements">
-                                                    <h5>App <span className='life-shopify'>Integration</span></h5>
+                                                    <h5>Custum <span className='life-shopify'>App</span></h5>
                                                     <p>Our dedicated Shopify designers bring your vision to life on Shopify.</p>
                                                 </div>
                                             </div></Link></div>
-                                        <div className='product-items'>
+                                        {/* <div className='product-items'>
                                             <Link to='/speed' onClick={handleClick}>      <div className='product-shopify-start-flex-bg'>
                                                 <div className="product-shopify-project-image">
                                                     <img src={optimization} alt="" />
@@ -118,7 +118,7 @@ function Mega({ onLinkClick, onHideClick }) {
                                                     <p>Our dedicated Shopify designers bring your vision to life on Shopify.</p>
                                                 </div>
                                             </div></Link>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                 </div>

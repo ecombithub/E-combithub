@@ -3,28 +3,21 @@ function Expert() {
     return (
         <>
             <div className="expsion--section">
-                <div className = "wrapper">
-                <div className="container">
-                    <div className='expsion--section-main'>
-                    <div className="expsion--section-main-side">
-                        <div className="expsion--section-first">
-                        <img src={IMAGES.w7} />
-                        </div>
-                        <div className="expsion--section-second">
-                            <div className="expsion--section-second-side">
-                                <div className="expsion--section-form">
-                                    <div className="expsion--section-form--side">
-                                        <img src={IMAGES.w6} /> </div>
-                                    <div className="expsion--section-form--world">
-                                        <h4>From hello world to IPO.</h4></div>
+                <div className="wrapper">
+                        <div className='expsion--section-main'>
+                            <div className="expsion--section-main-side">
+                                <div className="expsion--section-first">
+                                    <img src={IMAGES.atsecond} />
                                 </div>
-                                <h2>At  <span style={{ color: "#FF546A" }}> Hubsyntax,</span> our expsion direct result wavering coment to helping  <span style={{ color: "#3A8634" }}>  chants achieve </span> </h2>
-                                <p>Use Hubsyntax to grow your Shopify plus brand via checkout upsells, one-click upsells and thank you page customization. Enjoy complimentary migration and frictionless implementation with a your own plus account manager.</p>
+                                <div className="expsion--section-second">
+                                    <div className="expsion--section-second-side">
+                                        <h2>Discover EcombitHub Your Ultimate Shopify Solution Partner</h2>
+                                        <p>Our platform is a launchpad for entrepreneurs and businesses, providing comprehensive and innovative Shopify solutions available. Our goal is to streamline your e-commerce journey with expert support, and customized strategies that drive success. With EcombitHub, you gain access to a dedicated partner focused on unlocking your full potential in the digital marketplace.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                </div>
+                 
                 </div>
             </div >
         </>

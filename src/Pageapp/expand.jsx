@@ -1,50 +1,22 @@
 import IMAGES from '../Allfiles/image';
 import React, { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
-import { useInView } from 'react-intersection-observer';
+
 function Expand() {
 
-    const [ref, inView] = useInView();
-
-    const brands = useRef(null);
-    const items = useRef(null);
-    const [autoplays, setAutoplays] = useState(false);
-
-    useEffect(() => {
-        if (inView && !autoplays) {
-            gsap.fromTo(
-                brands.current,
-                { opacity: 0, y: 250 },
-                { opacity: 1, y: 0, duration: 1, delay: 0.3 }
-            );
-
-            gsap.fromTo(
-                items.current,
-                { opacity: 0, y: -250 },
-                { opacity: 1, y: 0, duration: 1, delay: 0.3 }
-            );
-
-            setAutoplays(true);
-        }
-    }, [inView, autoplays]);
+  
 
     return (
         <>
-            <div className="connect--section-perfrom" ref={ref}>
+            <div className="connect--section-perfrom">
                 <div className="connect--section-perfrom-sides">
                     <div className="wrapper">
                         <div className="connect--section-perfrom-start">
-                            <div className="connect--section-perfrom-left" ref={brands}>
+                            <div className="connect--section-perfrom-left">
                                 <div className="expand-left">
-                                    <div className='laye-first'>
-                                        <div className='laye1-left'>
-                                            <img src={IMAGES.s100} /></div>
-                                        <div className='laye2-right-1'>
-                                            <h5>Meet Lemon</h5></div>
-                                    </div>
-                                    <h1>Connect, Expand, and Thrive </h1>
-                                    <p>Use HubSyntax to grow your Shopify plus brand via checkout upsells, one-click upsells  and thank you page customization. Enjoy complimentary migration and frictionless implementatioin with a your own plus account manager.</p>
-                                    <div className='connect--section-perfrom-btn'>
+                                    
+                                    <h1>Shopify App Build, Customize and Deploy </h1>
+                                    <p>EcombitHub Shopify app developers are experts in customizing apps that meet your business needs, ensuring a seamless user experience. Whether you need a simple plugin, an extension or a complex multi-feature app, we create customized solutions to fit your specific requirements and ensure smooth deployment for Shopify users.</p>
+                                    {/* <div className='connect--section-perfrom-btn'>
                                         <button className='view-to'><span className="rotate-container">
                                             <span className="rotate-text">V</span>
                                             <span className="rotate-text">i</span>
@@ -83,11 +55,11 @@ function Expand() {
                                             <span className="rotate-text">r</span>
                                             <span className="rotate-text">k</span>
                                         </span></button>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
-                            <div className='connect--section-perfrom-image' ref={items}>
-                                <img src={IMAGES.aa10} />
+                            <div className='connect--section-perfrom-image'>
+                                <img src={IMAGES.appbg} />
                             </div>
                         </div>
                     </div>

@@ -1,29 +1,34 @@
 .connect--section-perfrom {
     display: inline-block;
     width: 100%;
+    margin-top: -125px;
 }
 
 .connect--section-perfrom-sides {
-    background-image: url(../images/flo.png);
+    background-image: url(../images/apppage.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 880px;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start {
     display: flex;
     width: 100%;
+    color: white;
+    padding-top: 150px;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
     width: 100%;
-    max-width: 700px;
+    max-width: 609px;
     margin: 0 0 0 auto;
     display: flex;
     align-items: center;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-image {
-    width: 50%;
-    padding-top: 50px;
+    width: 55%;
+    font-size: 0;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-image img {
@@ -38,12 +43,13 @@
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
     margin-top: 0;
-    max-width: 80%;
-    margin-bottom: 10px;
+    max-width: 100%;
+    font-size: 50px;
+    line-height: 67px;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left p {
-
+margin-top: 15px;
     line-height: 22px;
 }
 
@@ -125,6 +131,7 @@
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:hover .rotate-text:nth-child(8) {
     animation: rotateLetter 0.8s ease 0.8s forwards;
+
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:hover .rotate-text:nth-child(9) {
@@ -172,36 +179,37 @@
         transform: rotateY(360deg);
     }
 }
+
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:before,
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background-color: #77af1e;
-  transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #77af1e;
+    transition: all 0.4s ease-in-out;
 
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:before {
-  left: 0;
+    left: 0;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:after {
-  right: 0;
+    right: 0;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:hover {
-  color: #f8f8f8;
+    color: #f8f8f8;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:hover:before {
-  width: 50%;
+    width: 50%;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to:hover:after {
-  width: 50%;
+    width: 50%;
 }
 
 
@@ -335,49 +343,51 @@
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side:before,
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background-color: #77af1e;
-  transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #77af1e;
+    transition: all 0.4s ease-in-out;
 
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side:before {
-  left: 0;
+    left: 0;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side:after {
-  right: 0;
+    right: 0;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side:hover {
-  color: #f8f8f8;
+    color: #f8f8f8;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side:hover:before {
-  width: 50%;
+    width: 50%;
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side:hover:after {
-  width: 50%;
+    width: 50%;
 }
 
 
-
 .explore--section-perfrom-store {
-    border: 1px solid rgb(232, 232, 232);
-   
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /* border: 1px solid rgb(232, 232, 232); */
+    padding: 90px 0px;
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    gap: 40px;
+}
+
+.explore-left-side {
+    width: 50%;
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-left-side img {
@@ -457,36 +467,37 @@
         transform: rotateY(360deg);
     }
 }
+
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right .more-figma:before,
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right .more-figma:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background-color: #77af1e;
-  transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #77af1e;
+    transition: all 0.4s ease-in-out;
 
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right .more-figma:before {
-  left: 0;
+    left: 0;
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right .more-figma:after {
-  right: 0;
+    right: 0;
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right .more-figma:hover {
-  color: #f8f8f8;
+    color: #f8f8f8;
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right .more-figma:hover:before {
-  width: 50%;
+    width: 50%;
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right .more-figma:hover:after {
-  width: 50%;
+    width: 50%;
 }
 
 
@@ -520,19 +531,15 @@
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
     margin-top: 5px;
-    max-width: 70%;
+    max-width: 82%;
     margin-bottom: 5px;
 }
 
 .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right p {
     max-width: 75%;
+    margin: 20px 0;
 }
 
-.explore--section-perfrom-store .explore--section-perfrom-title {
-    background-image: url(../images/bg1.png);
-    background-repeat: no-repeat;
-    background-position: bottom 50px right 100px;
-}
 
 .checkout--section-perfrom-flex .group-para {
     border: 1px solid rgb(245, 245, 245);
@@ -614,34 +621,34 @@
 
 .checkout--section-perfrom-flex .more-figma:before,
 .checkout--section-perfrom-flex .more-figma:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background-color: #77af1e;
-  transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #77af1e;
+    transition: all 0.4s ease-in-out;
 
 }
 
 .checkout--section-perfrom-flex .more-figma:before {
-  left: 0;
+    left: 0;
 }
 
 .checkout--section-perfrom-flex .more-figma:after {
-  right: 0;
+    right: 0;
 }
 
 .checkout--section-perfrom-flex .more-figma:hover {
-  color: #f8f8f8;
+    color: #f8f8f8;
 }
 
 .checkout--section-perfrom-flex .more-figma:hover:before {
-  width: 50%;
+    width: 50%;
 }
 
 .checkout--section-perfrom-flex .more-figma:hover:after {
-  width: 50%;
+    width: 50%;
 }
 
 
@@ -691,7 +698,8 @@
 .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-image {
     width: 50%;
 }
-.checkout--section-perfrom .checkout--section-perfrom-flex-short{
+
+.checkout--section-perfrom .checkout--section-perfrom-flex-short {
     display: flex;
     align-items: center;
     width: 100%;
@@ -699,9 +707,11 @@
     margin: 0 0 0 auto;
 
 }
+
 .checkout--section-perfrom-flex .group-para .checkout-section-group p {
     max-width: 679px;
 }
+
 .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex {
     width: 100%;
     max-width: 700px;
@@ -910,9 +920,101 @@
         width: 60%;
     }
 } */
+.app-blog-section {
+    padding: 80px 0;
+    background-color: #fef7f8;
+}
 
+.app-blog-show {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.blog-section-all-target {
+    width: 31.9%;
+}
+
+.blog-section-all-images img {
+    width: 100%;
+}
+
+.blog-section-all-elements {
+    margin-top: 15px;
+}
+
+.blog-section-all-elements h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.blog-section-all-target a {
+    color: black;
+    text-decoration: none;
+}
+
+.blog-section-all-elements p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.blog-section-all-images img {
+    border-radius: 10px;
+}
+
+.app-blog-section-h2 button.button {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-blog-section-h2 {
+    margin-bottom: 120px;
+}
+
+.brand-section-slider {
+    background-image: url(../images/apbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.brand-slides img {
+    width: 100%;
+}
+
+.brand-slider-flex {
+    border: 0px solid;
+    width: 235px !important;
+    padding: 50px 30px;
+    background: #fdf7f7;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+
+.brand-second-section {
+    margin-top: 35px;
+}
 
 @media screen and (max-width:1400px) {
+    .connect--section-perfrom-sides {
+        height: 680px;
+    }
+
+    .brand-slider-flex {
+        width: 170px !important;
+        padding: 35px 20px;
+        margin-right: 30px;
+    }
+
+    .brand-second-section {
+        margin-top: 30px;
+    }
+
     .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
         max-width: 100%;
     }
@@ -934,9 +1036,12 @@
     }
 }
 
-@media screen and (max-width:1300px) {
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
-        max-width: 650px;
+@media screen and (max-width:1280px) {
+    .brand-slider-flex{
+        width: 148px!important;
+    }
+    .blog-section-all-target {
+        width: 31.5%;
     }
 
     .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex {
@@ -950,8 +1055,17 @@
     .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex h2 {
         max-width: 100%;
     }
+
     .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-image {
         width: 100%;
+    }
+
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
+        max-width: 551px;
+    }
+
+    .connect--section-perfrom-sides {
+        height: 625px;
     }
 }
 
@@ -1007,59 +1121,88 @@
     }
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1024px) {
+    .blog-section-all-elements p {
+        line-height: 20px;
+    }
+    .blog-section-all-elements h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
+        line-height: 50px;
+    }
+    
+    
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
+        font-size: 40px;
+    }
+    .blog-section-all-target {
+        width: 31.5%;
+    }
+
+    .blog-section-all-elements h3 {
+        font-size: 16px;
+    }
+
+    .blog-section-all-elements p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .app-blog-section-h2 {
+        margin-bottom: 100px;
+    }
+
+    .app-blog-section {
+        padding: 60px 0;
+
+    }
+
+
+    .brand-slider-flex {
+        width: 124px !important;
+        padding: 30px 10px;
+    }
+
+    .brand-second-section {
+        margin-top: 20px;
+    }
+
+    .brand-section-slider {
+        padding: 70px 0;
+    }
+
+    .connect--section-perfrom-sides {
+        height: 535px;
+    }
+
     .checkout--section-perfrom .checkout--section-perfrom-flex-short {
         max-width: 100%;
     }
-    .explore--section-perfrom-store{
-        margin-bottom: 40px;
-    }
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
-        max-width: 500px;
+
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right p {
+        max-width: 100%;
+        margin-top: 15px;
     }
 
-    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start {
-        display: grid;
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right button.button {
+        margin-top: 26px;
+    }
+
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
+        max-width: 434px;
     }
 
     .explore--section-perfrom-store {
-        padding-top: 0;
-        padding-bottom: 0px;
+        padding: 50px 0px;
     }
 
-    .explore-left-side {
-        width: 100%;
-        order: 2;
-        font-size: 0;
-    }
-
-    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right {
-        width: 100%;
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    .checkout--section-perfrom .checkout--section-perfrom-start {
-        display: block;
-    }
-
-    .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex {
-        max-width: 100%;
-        padding-bottom: 30px;
-        text-align: center;
-    }
-
-    .checkout--section-perfrom {
-        padding: 0;
-    }
-
-    .explore-right-side .laye-first {
-        justify-content: center;
-    }
 
     .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
         max-width: 100%;
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right p {
@@ -1092,431 +1235,273 @@
         font-size: 15px;
     }
 
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to {
+        width: 170px;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side {
+        width: 170px;
+        font-size: 14px;
+        height: 35px;
+    }
+
 }
 
 @media screen and (max-width:991px) {
-
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start {
-        display: block;
-    }
-
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
-        max-width: 100%;
-        padding-top: 40px;
+        max-width: 370px;
     }
 
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-image {
+        width: 70%;
+    }
+
+    .brand-slider-flex {
+        width: 170px !important;
+    }
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start {
+        display: block;
+        text-align: center;
+
+    }
+
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
         width: 100%;
-    }
-
-    .custom--section-perfrom-dolor .scale {
-        display: grid;
-    }
-
-    .scale .scale-first {
         max-width: 100%;
-        display: block;
-        order: 2;
-        text-align: center;
-    }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high {
-        display: block;
-    }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high .custom--section-perfrom-custom-elements {
-        width: 100%;
-        padding-bottom: 20px;
-        text-align: center;
-        display: block;
-    }
-
-    .expand-left .laye-first {
-        justify-content: center;
-    }
-
-    .expand-left {
-        text-align: center;
     }
 
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn {
         justify-content: center;
     }
 
-    .expand-left .laye-first .laye2-right-1 h5 {
-        font-size: 18px;
-        margin-top: 2px;
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-image {
+        width: 100%;
+        margin-top: 40px;
     }
 
+    .connect--section-perfrom-sides {
+        height: 995px;
+    }
+
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to {
+        width: 210px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side {
+        width: 210px;
+        font-size: 16px;
+        height: 40px;
+    }
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left p {
-        font-size: 18px;
+        margin-top: 12px;
     }
 
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high .custom--section-perfrom-custom-elements h3 {
-        font-size: 40px;
-        margin: 5px 0 10px 0;
-        font-weight: 600;
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 0;
     }
 
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high .custom--section-perfrom-custom-elements p {
-        max-width: 73%;
-        margin: auto;
-        margin-bottom: 20px;
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right {
+        width: 100%;
     }
 
-    .custom--section-perfrom-custom-elements .tail-start {
-        max-width: 62%;
-        text-align: left;
-        margin: auto;
-        margin-bottom: 30px;
+    .explore-left-side {
+        width: 100%;
+        margin-top: 40px;
     }
 
-    .custom--section-perfrom-custom-elements .tail-start p {
-        margin: 0 !important;
-    }
-
-    .custom--section-perfrom-custom-elements .tail-start h3 {
-        font-size: 20px !important;
-        margin: 0 !important;
-        margin-bottom: 5px !important;
-    }
-
-    .custom--section-perfrom-dolor {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-cust h2 {
-        font-size: 45px;
-    }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high {
-        padding-top: 30px;
-    }
-
-    .custom--section-perfrom-custom-elements .tail-start1 {
-
+    .explore-right-side .laye-first {
         justify-content: center;
-        max-width: 83%;
     }
-
-    .custom--section-perfrom-custom-elements .tail-start1 h3 {
-        font-size: 20px !important;
-    }
-
-    .scale-second {
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-
-    .scale .scale-first h3 {
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
         font-size: 40px;
-        margin: 0;
-        font-weight: 600;
-    }
-
-    .scale .scale-first p {
-        max-width: 84%;
-        font-size: 18px;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .scale-first .tail-startt {
-        max-width: 62%;
-        text-align: left;
-        margin: auto;
-        margin-bottom: 25px;
-    }
-
-    .scale-first .tail-startt p {
-        margin: 0;
-        margin-top: 8px;
-    }
-
-    .scale-first .tail-startt1 {
-        justify-content: center;
-        max-width: 81%;
-    }
-
-    .scale-first .tail-startt h3 {
-        font-size: 20px !important;
-    }
-
-    .scale-first .tail-startt1 h3 {
-        font-size: 20px !important;
     }
 }
 
 @media screen and (max-width:840px) {
-    .custom--section-perfrom-custom-elements .tail-start1 {
-        max-width: 90%;
+ 
+    .connect--section-perfrom-sides {
+        height: 925px;
     }
+    .brand-slider-flex {
+        width: 140px !important;
+    }
+
+    .blog-section-all-target {
+        width: 30.9%;
+    }
+  
 }
 
 @media screen and (max-width:768px) {
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
-        max-width: 66%;
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h2 {
+        max-width: 54%;
         margin: auto;
     }
 
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left p {
-        font-size: 18px;
-        max-width: 85%;
+        margin: auto;
+        margin-top: 12px;
+        max-width: 81%;
+    }
+
+    .connect--section-perfrom-sides {
+        height: 955px;
+    }
+
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
+        font-size: 36px;
+        max-width: 81%;
+        margin: auto;
+    }
+
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right p {
+        font-size: 15px;
+        max-width: 86%;
         margin: auto;
         margin-top: 15px;
     }
 
-    .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex p {
-        font-size: 17px;
-        margin: auto;
-        margin-bottom: 20px;
+    .brand-section-slider {
+        padding: 40px 0;
     }
 
-    .checkout--section-perfrom-flex .group-para p {
-        margin: 0 !important;
+    .brand-slider-flex {
+        width: 130px !important;
     }
 
-    .checkout--section-perfrom-flex .group-para .checkout-section-group p {
-        max-width: 600px;
-    }
-    .checkout--section-perfrom-flex .group-para {
-        max-width: 80%;
+    .app-blog-section {
+        padding: 40px 0;
     }
 
-    .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex .group-para p {
-        font-size: 16px;
+    .blog-section-all-elements h3 {
+        font-size: 13px;
     }
 
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high .custom--section-perfrom-custom-elements p {
-        max-width: 61%;
+    .blog-section-all-elements p {
+        font-size: 11px;
     }
 
-    .scale .scale-first p {
-        max-width: 65%;
-    }
-
-    .scale-first .tail-startt p {
-        max-width: 93% !important;
-        font-size: 16px;
+    .app-blog-section-h2 button.button {
+        margin-top: 40px;
     }
 }
 
 
 @media screen and (max-width:640px) {
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
-        max-width: 91%;
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h2 {
+        max-width: 67%;
     }
 
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left p {
-        max-width: 91%;
+        max-width: 100%;
     }
 
-
-    .custom--section-perfrom-custom-elements .tail-start {
-        max-width: 81%;
+    .connect--section-perfrom-sides {
+        height: 875px;
     }
 
-    .custom--section-perfrom-custom-elements .tail-start1 {
-        max-width: 86%;
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
+        max-width: 100%;
     }
 
-    .scale .scale-first p {
-        max-width: 90%;
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right p {
+        max-width: 100%;
     }
 
-    .scale-first .tail-startt {
-        max-width: 90%;
+    .brand-slider-flex {
+        width: 103px !important;
+        padding: 20px 10px;
     }
 
-    .scale-first .tail-startt1 {
-        max-width: 75%;
+    .blog-section-all-target {
+        width: 47.9%;
     }
 }
 
 @media screen and (max-width:540px) {
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
-        font-size: 40px;
+    .connect--section-perfrom-sides {
+        height: 835px;
     }
 
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left {
-        padding-top: 20px;
-    }
-
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-image {
-        padding-top: 20px;
-    }
-
-    .explore--section-perfrom-store {
-        padding-bottom: 15px;
-        margin-bottom: 35px;
-    }
-
-    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
-        font-size: 35px;
-    }
-
-    .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex h2 {
-        font-size: 35px;
-    }
-
-    .custom--section-perfrom-dolor {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-cust h2 {
-        font-size: 35px;
-    }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high .custom--section-perfrom-custom-elements h3 {
-        font-size: 35px;
-    }
-
-    .scale .scale-first h3 {
-        font-size: 35px;
-    }
-
-    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right {
-        padding-top: 30px;
-    }
-
-    /* .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex p {
-        max-width: 100%;
-    } */
-    .checkout--section-perfrom-flex .group-para .checkout-section-group p {
-        max-width: 451px;
-    }
-
-    .checkout--section-perfrom-flex .group-para {
-        max-width: 100%;
-    }
-
-    .checkout--section-perfrom .checkout--section-perfrom-start .checkout--section-perfrom-flex .group-para p {
-        font-size: 14px;
-    }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high .custom--section-perfrom-custom-elements p {
-        max-width: 100%;
-    }
-
-    .custom--section-perfrom-custom-elements .tail-start {
-        max-width: 100%;
-    }
-
-    .custom--section-perfrom-custom-elements .tail-start1 {
-        max-width: 100%;
-        text-align: left;
-    }
-
-    .scale .scale-first p {
-        max-width: 100%;
-        font-size: 16px;
-    }
-
-    .scale-first .tail-startt {
-        max-width: 100%;
-    }
-
-    .scale-first .tail-startt1 {
-        max-width: 100%;
-        text-align: left;
-    }
-
-    button#call-ui {
-        width: 138px;
-        height: 30px;
-    }
-
-    button#work {
-        width: 161px;
-        font-weight: 600;
+    .blog-section-all-target {
+        width: 46.9%;
     }
 }
 
 @media screen and (max-width:480px) {
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn {
-        margin-top: 25px;
-
+    .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
+        font-size: 30px;
+    }
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
+        font-size: 35px;
+    }
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h2 {
+        max-width: 100%;
     }
 
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-to {
-        font-size: 15px;
-        width: 160px;
+        width: 170px;
+        font-size: 14px;
+        height: 35px;
     }
 
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn .view-side {
-        font-size: 15px;
-        width: 160px;
+        width: 170px;
+        font-size: 14px;
+        height: 35px;
     }
 
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
-        max-width: 100%;
+    .connect--section-perfrom-sides {
+        height: 765px;
     }
 
-    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left p {
-        max-width: 100%;
+    .explore--section-perfrom-store {
+        padding: 40px 0px;
     }
 }
 
-@media screen and (max-width:400px) {
-    .explore--section-perfrom-store {
-        padding-bottom: 30px;
+@media screen and (max-width:430px) {
+    .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
+        line-height: 45px;
     }
-
+    .brand-slider-flex{
+        width: 117px !important;
+    }
+    .blog-section-all-target {
+        width: 46.5%;
+    }
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn {
         display: grid;
     }
-
-    .custom--section-perfrom-dolor .custom--section-perfrom-custom-high .custom--section-perfrom-custom-elements h3 {
-        font-size: 35px;
-        margin: 0;
-
-    }
-
-    .scale-first .tail-startt1 h3 {
-        font-size: 19px !important;
-        text-align: left;
-    }
-    .checkout--section-perfrom-flex .group-para .checkout-section-group p {
-        max-width: 361px;
+    .connect--section-perfrom-sides {
+        height: 805px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-.explore--section-perfrom-store {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+@media screen and (max-width:390px) {
+    .connect--section-perfrom-sides {
+        height: 760px;
+    }
+    .app-blog-show {
+        display: block;
+    }
+    .blog-section-all-target {
+        width: 100%;
+        margin-bottom: 25px;
+    }
 }
 
-.explore--section-perfrom-store.in-view {
-    opacity: 1;
-}
-
-.checkout--section-perfrom {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.checkout--section-perfrom.in-view {
-    opacity: 1;
-}
-
-.custom--section-perfrom-dolor {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.custom--section-perfrom-dolor {
-    opacity: 1;
+@media screen and (max-width:320px) {
+    .connect--section-perfrom-sides {
+        height: 790px;
+    }
+    .brand-slider-flex {
+        width: 82px !important;
+    }
 }

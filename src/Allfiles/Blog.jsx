@@ -11,19 +11,21 @@ import Navbar from "../Header";
 import Bar from "../Blog/bar";
 import Mark from "../Blog/Mark";
 import Cursor from "../Cursor";
+import ScrollTo from "../Blog/scroll";
 function Blog() {
     return (
         <>
              <Bar/>
              <Mark/>
             <Local />
-            <Digital />
+            {/* <Digital />
             <Seo />
             <Cont />
             <People />
             <Store />
-            <Tech />
+            <Tech /> */}
             <Cursor/>
+            <ScrollTo/>
         </>
     )
 }
