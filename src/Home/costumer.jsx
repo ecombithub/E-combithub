@@ -27,10 +27,10 @@ function Cost() {
         slidesToScroll: 2,
         // nextArrow: <Arrow />,
         // prevArrow: <Arrow />,
-        adaptiveHeight: true,
-        variableWidth: true,
-        autoplay: true,
-        speed: 3000,
+        // adaptiveHeight: true,
+        // variableWidth: true,
+        // autoplay: true,
+        // speed: 3000,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         variableWidth: true,
@@ -100,7 +100,7 @@ function Cost() {
                             <Slider {...settings}>
                                 <div className="customer-section-slider">
                                     <img src={IMAGES.Ellipse1} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
+                                    <p>They transformed our basic Shopify theme into truly unique and tailored to our brand. The customization process is done properly and they were open to all our feedback and suggestions. The final theme is stunning and performs beautifully across all devices.</p>
                                     <div className="customer-section-slides">
                                         <div className="customer-section-all-sides">
                                             <div className="customer-section-slides-images">
@@ -117,26 +117,8 @@ function Cost() {
                                     </div>
                                 </div>
                                 <div className="customer-section-slider">
-                                    <img src={IMAGES.fum2} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
-                                    <div className="customer-section-slides">
-                                        <div className="customer-section-all-sides">
-                                            <div className="customer-section-slides-images">
-                                                <img src={IMAGES.fum102} />
-                                            </div>
-                                            <div className="customer-section-slides-test">
-                                                <h4>Jay</h4>
-                                                <p>Fum</p>
-                                            </div>
-                                        </div>
-                                        <div className="customer-section-image-star">
-                                            <img src={IMAGES.starrr120} />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="customer-section-slider">
                                     <img src={IMAGES.codester} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
+                                    <p>We were struggling with search engines visibility, but after their SEO optimization, our Shopify store is ranking much higher. Their knowledge of Shopify SEO is outstanding, and the results speak this.</p>
                                     <div className="customer-section-slides">
                                         <div className="customer-section-all-sides">
                                             <div className="customer-section-slides-images">
@@ -154,7 +136,9 @@ function Cost() {
                                 </div>
                                 <div className="customer-section-slider">
                                     <img src={IMAGES.psy3} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
+                                    <p>Migrating the store from woocommerce to Shopify is a difficult task, but they handled everything with ease. The transition was smooth, with no data loss or disruptions to our business. Their professionalism and expertise made the entire process stress-free.
+                                    </p>
+
                                     <div className="customer-section-slides">
                                         <div className="customer-section-all-sides">
                                             <div className="customer-section-slides-images">
@@ -171,8 +155,29 @@ function Cost() {
                                     </div>
                                 </div>
                                 <div className="customer-section-slider">
+                                    <img src={IMAGES.fum2} />
+
+                                    <p> The design and implementation of a custom section for our Shopify store were handled in a skillful manner. The final product is responsive and user-friendly.
+                                    </p>
+                                    <div className="customer-section-slides">
+                                        <div className="customer-section-all-sides">
+                                            <div className="customer-section-slides-images">
+                                                <img src={IMAGES.fum102} />
+                                            </div>
+                                            <div className="customer-section-slides-test">
+                                                <h4>Jay</h4>
+                                                <p>Fum</p>
+                                            </div>
+                                        </div>
+                                        <div className="customer-section-image-star">
+                                            <img src={IMAGES.starrr120} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="customer-section-slider">
                                     <img src={IMAGES.psy} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
+                                    <p>Our store was outdated, and needed redesign. Ecombithub gave it a completely new modern, user-friendly design and has improved our overall customer experience. Their creativity and attention to detail are exceptional.
+                                    </p>
                                     <div className="customer-section-slides">
                                         <div className="customer-section-all-sides">
                                             <div className="customer-section-slides-images">
@@ -191,7 +196,7 @@ function Cost() {
 
                                 <div className="customer-section-slider">
                                     <img src={IMAGES.tes2} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
+                                    <p>I was impressed with the level of expertise and professionalism. The app they created is not only functional but also visually appealing. The team was always available to address any concerns and made sure we were happy with the final product.</p>
                                     <div className="customer-section-slides">
                                         <div className="customer-section-all-sides">
                                             <div className="customer-section-slides-images">
@@ -210,7 +215,7 @@ function Cost() {
 
                                 <div className="customer-section-slider">
                                     <img src={IMAGES.neola} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
+                                    <p>I was a bit hesitant to hire a development agency for my Shopify store, but Ecombithub completely exceeded my expectations. Their team is not only technically proficient but also very creative. They took the time to understand my brand and created a website that perfectly reflects my business.  </p>
                                     <div className="customer-section-slides">
                                         <div className="customer-section-all-sides">
                                             <div className="customer-section-slides-images">
@@ -229,7 +234,7 @@ function Cost() {
 
                                 <div className="customer-section-slider">
                                     <img src={IMAGES.clientlogo} />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes que so llicitudin, tellus eu  volutpat  vehicula, sapien neque maxim us nisi, non s celerisque ex trupis mattis nisi. Praesent pharenta nisl vel ante porta bibendum.Aenean quis accumsan nulla. </p>
+                                    <p>I just finished working with ecombithub on our Shopify store, and it was a fantastic experience. They really know their stuff when it comes to Shopify and delivered a website that's not only functional but also looks amazing. </p>
                                     <div className="customer-section-slides">
                                         <div className="customer-section-all-sides">
                                             <div className="customer-section-slides-images">

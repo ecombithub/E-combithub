@@ -16,7 +16,7 @@ function Today() {
     const upload = async (e) => {
         e.preventDefault();
 
-        if (!first || !last || !email || !number || !company || !web) {
+        if (!first || !last || !email ) {
             setMessage('Kindly complete all required fields before proceeding.');
             return;
         }
@@ -25,9 +25,7 @@ function Today() {
                
         setTimeout(() => {
             setLoading(false);
-            setMessage('Email sent successfully');
-            
-            
+            setMessage("Thank you for your submission! We'll get back to you shortly.");
             setFirst('');
             setLast('');
             setEmail('');
@@ -40,7 +38,7 @@ function Today() {
 
 
         try {
-            const response = await axios.post('http://localhost:8006/register', {
+            const response = await axios.post('https://ecombithub.com/register', {
                 first,
                 last,
                 email,
@@ -54,7 +52,7 @@ function Today() {
 
             if (response.status === 200) {
                
-             console.log('Email sent successfully');
+             console.log("Thank you for your submission! We'll get back to you shortly.");
             } else {
                 throw new Error('Error sending email');
             }
@@ -76,7 +74,7 @@ function Today() {
                         <div className="container">
                             <div className="today-section-eco">
                                 <div className="today-section-eco-elements">
-                                    <h2>Contact <span style={{ color: '#fc5569' }}>Ecombithub Today!</span></h2>
+                                    <h2>Contact <span style={{ color: '#fc5569' }}>EcombitHub Today!</span></h2>
                                     <p>or Just reach out manually to <span className="today-email-info" style={{ color: "#b3414e" }}>hello@hubsyntax.com</span></p>
                                     <div className="today-section-inputs">
                                         <div className="today-section-inputs-all">
@@ -119,7 +117,7 @@ function Today() {
                                             </div>
                                         </div>
                                         <div className="today-section-inputs-all">
-                                            <label htmlFor="number">Phone Number</label><br />
+                                            <label htmlFor="number">Phone Number - (Optional)</label><br />
                                             <div className="today-section-inputs flexx">
                                                 <div className="today-section-input-images">
                                                     <img src={IMAGES.calling} alt="Phone Icon" />
@@ -132,7 +130,7 @@ function Today() {
                                             </div>
                                         </div>
                                         <div className="today-section-inputs-all">
-                                            <label htmlFor="company">Company Name</label><br />
+                                            <label htmlFor="company">Company Name - (Optional)</label><br />
                                             <div className="today-section-inputs flexx">
                                                 <div className="today-section-input-images">
                                                     <img src={IMAGES.url} alt="Company Icon" />
@@ -145,7 +143,7 @@ function Today() {
                                             </div>
                                         </div>
                                         <div className="today-section-inputs-all">
-                                            <label htmlFor="web">Website URL</label><br />
+                                            <label htmlFor="web">Website URL - (Optional)</label><br />
                                             <div className="today-section-inputs flexx">
                                                 <div className="today-section-input-images">
                                                     <img src={IMAGES.name} alt="Website Icon" />
@@ -181,8 +179,15 @@ function Today() {
                                             <span className="rotate-text">t</span>
                                         </span>
                                     </button>
-                                    {loading && <p>Loading...</p>}
-                                    {message && !loading && <p style={{ color: "red" }}>{message}</p>}
+                                    {message && !loading && (
+                                        <p className={
+                                            message === "Thank you for your submission! We'll get back to you shortly."
+                                                ? 'success-message'
+                                                : 'error-message'
+                                        }>
+                                            {message}
+                                        </p>
+                                    )}
                                 </div>
                                 <div className="today-section-eco-image">
                                     <img src={IMAGES.content} alt="Content" />

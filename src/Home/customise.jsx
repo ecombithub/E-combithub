@@ -129,10 +129,7 @@ function Customise() {
                                         <img src={IMAGES.cart101} alt="" />
                                     </div>
                                     <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart102} alt="" />
-                                    </div>
-                                    <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart101} alt="" />
+                                        <img src={IMAGES.check1} alt="" />
                                     </div>
                                     <div class="block__shopify-product-audit-images-slide-img">
                                         <img src={IMAGES.cart102} alt="" />
@@ -148,19 +145,22 @@ function Customise() {
                                     </div>
                                     <div class="block__shopify-product-audit-images-slide-img">
                                         <img src={IMAGES.cart102} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart101} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart102} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.check1} alt="" />
                                     </div>
                                 </Slider>
                             </div>
                             <div className='block__shopify-product-audit-images-slider-conttent'>
                                 <Slider {...setting}>
                                     <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart103} alt="" />
-                                    </div>
-                                    <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart104} alt="" />
-                                    </div>
-                                    <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart105} alt="" />
+                                        <img src={IMAGES.check2} alt="" />
                                     </div>
                                     <div class="block__shopify-product-audit-images-slide-img">
                                         <img src={IMAGES.cart103} alt="" />
@@ -179,19 +179,25 @@ function Customise() {
                                     </div>
                                     <div class="block__shopify-product-audit-images-slide-img">
                                         <img src={IMAGES.cart105} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart103} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart104} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart105} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.check2} alt="" />
                                     </div>
                                 </Slider>
                             </div>
                             <div className='block__shopify-product-audit-images-slider-conttent'>
                                 <Slider {...setting}>
-                                    <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart106} alt="" />
-                                    </div>
-                                    <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart107} alt="" />
-                                    </div>
-                                    <div class="block__shopify-product-audit-images-slide-img">
-                                        <img src={IMAGES.cart108} alt="" />
+                                <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.check3} alt="" />
                                     </div>
                                     <div class="block__shopify-product-audit-images-slide-img">
                                         <img src={IMAGES.cart106} alt="" />
@@ -210,6 +216,18 @@ function Customise() {
                                     </div>
                                     <div class="block__shopify-product-audit-images-slide-img">
                                         <img src={IMAGES.cart108} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart106} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart107} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.cart108} alt="" />
+                                    </div>
+                                    <div class="block__shopify-product-audit-images-slide-img">
+                                        <img src={IMAGES.check3} alt="" />
                                     </div>
                                 </Slider>
                             </div>
@@ -252,12 +270,12 @@ function Customise() {
                                         <span key={index} className={`char${index + 1}`}>{char}</span>
                                     ))}</span></h2>
                                 </div>
-                                
-                                <p>Transform your customer Shopping experience with Shopify custom  <span ref={ptitle} style={{ color: "rgb(252, 85, 105)", fontWeight:700 }} > {currentSlide.ptitle} </span> options. Tailor every aspect of the checkout process to reflect your brand unique identity. </p>
+
+                                <p>Transform your customer Shopping experience with Shopify custom  <span ref={ptitle} style={{ color: "rgb(252, 85, 105)", fontWeight: 700 }} > {currentSlide.ptitle} </span> options. Tailor every aspect of the checkout process to reflect your brand unique identity. </p>
                                 <div className='customise-prodcut-to-custom'>
                                     <div className='customise-prodcut'>
                                         <div className='customise-prodcut-image'>
-                                        <img ref={el => imageRefs.current[0] = el} src={currentSlide.images[0]} alt="Recommendations" />
+                                            <img ref={el => imageRefs.current[0] = el} src={currentSlide.images[0]} alt="Recommendations" />
                                         </div>
                                         <div className='customise-prodcut-elements'>
                                             <h4 ref={el => infoItems.current[0] = el}>{currentSlide.subtitle}</h4>
@@ -265,7 +283,7 @@ function Customise() {
                                     </div>
                                     <div className='customise-prodcut'>
                                         <div className='customise-prodcut-image'>
-                                        <img ref={el => imageRefs.current[1] = el} src={currentSlide.images[1]} alt="Recommendations" />
+                                            <img ref={el => imageRefs.current[1] = el} src={currentSlide.images[1]} alt="Recommendations" />
                                         </div>
                                         <div className='customise-prodcut-elements'>
                                             <h4 ref={el => infoItems.current[1] = el}>{currentSlide.extraSubtitle1}</h4>
@@ -273,7 +291,7 @@ function Customise() {
                                     </div>
                                     <div className='customise-prodcut'>
                                         <div className='customise-prodcut-image'>
-                                        <img ref={el => imageRefs.current[2] = el} src={currentSlide.images[2]} alt="Recommendations" />
+                                            <img ref={el => imageRefs.current[2] = el} src={currentSlide.images[2]} alt="Recommendations" />
                                         </div>
                                         <div className='customise-prodcut-elements'>
                                             <h4 ref={el => infoItems.current[2] = el}>{currentSlide.extraSubtitle2}</h4>
@@ -281,7 +299,7 @@ function Customise() {
                                     </div>
                                     <div className='customise-prodcut'>
                                         <div className='customise-prodcut-image'>
-                                        <img ref={el => imageRefs.current[3] = el} src={currentSlide.images[3]} alt="Recommendations" />
+                                            <img ref={el => imageRefs.current[3] = el} src={currentSlide.images[3]} alt="Recommendations" />
                                         </div>
                                         <div className='customise-prodcut-elements'>
                                             <h4 ref={el => infoItems.current[3] = el}>{currentSlide.extraSubtitle3}</h4>
@@ -290,15 +308,17 @@ function Customise() {
                                 </div>
                                 <Link to="https://calendly.com/ecom-support/shopify-expert">     <button className='button'>
                                     <span className="rotate-container">
-                                        <span className="rotate-text">V</span>
-                                        <span className="rotate-text">i</span>
+                                        <span className="rotate-text">G</span>
                                         <span className="rotate-text">e</span>
-                                        <span className="rotate-text">w</span>
+                                        <span className="rotate-text">t</span>
                                         <span className="rotate-text">&nbsp;</span>
-                                        <span className="rotate-text">D</span>
-                                        <span className="rotate-text">e</span>
+                                        <span className="rotate-text">S</span>
+                                        <span className="rotate-text">t</span>
                                         <span className="rotate-text">a</span>
-                                        <span className="rotate-text">l</span>
+                                        <span className="rotate-text">r</span>
+                                        <span className="rotate-text">t</span>
+                                        <span className="rotate-text">e</span>
+                                        <span className="rotate-text">d</span>
                                     </span>
                                 </button></Link>
                             </div>

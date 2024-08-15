@@ -877,6 +877,10 @@
 
 }
 
+.brand-section-slider button.slick-arrow.slick-prev {
+    display: none !important;
+}
+
 .tech-third .tech-last img {
     margin-left: -80px;
     margin-top: -40px;
@@ -1620,9 +1624,7 @@
         margin-top: 5px;
     }
 
-    .brand-logo img {
-        width: 350px;
-    }
+ 
 
     /* .logo .navigation {
          font-size: 18px;
@@ -2717,9 +2719,7 @@
 }
 
 @media screen and (max-width:500px) {
-    .brand-logo img {
-        width: 270px;
-    }
+ 
 
     label.show-menu-btn {
         font-size: 20px;

@@ -19,7 +19,7 @@ function Local() {
                                     </div>
                                 </div>
                                 <div className="blog-section-image">
-                                    <img src={IMAGES.build102} alt="" />
+                                    <img src={IMAGES.build102} alt="Build Shopify App" />
                                 </div>
                             </div>
                             </Link>
@@ -29,7 +29,7 @@ function Local() {
                                 <div className='blogging-section-sides'>
                                     <Link to='/shopify/app/api-key'>  <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                            <img src={IMAGES.apikey} alt="" />
+                                            <img src={IMAGES.apikey} alt="Shopify API Key Definition " />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>Shopify API Key: Definition, Generation, And Benefits</h2>
@@ -43,7 +43,7 @@ function Local() {
                                 <div className='blogging-section-sides'>
                                     <Link to='/shopify/app/cancel-subscription'> <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                        <img src={IMAGES.app1} alt="" />
+                                        <img src={IMAGES.app1} alt="Cancel Shopify app subscription " />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How To Cancel Shopify App Subscription? </h2>
@@ -57,7 +57,7 @@ function Local() {
                                 <div className='blogging-section-sides'>
                                     <Link to='/shopify/subscription-cancel'>  <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                            <img src={IMAGES.app5} alt="" />
+                                            <img src={IMAGES.app5} alt="Cancel Shopify Subscription" />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How To Cancel Shopify Subscription? </h2>
@@ -71,7 +71,7 @@ function Local() {
                                 <div className='blogging-section-sides'>
                                     <Link to='/shopify/app/publish'> <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                        <img src={IMAGES.pub} alt="" />
+                                        <img src={IMAGES.pub} alt="Publish App In Shopify App Store" />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How To Publish App In Shopify App Store? </h2>
@@ -83,9 +83,9 @@ function Local() {
                                     </Link>
                                 </div>
                                 <div className='blogging-section-sides'>
-                                    <Link to='/shopify/app/right-choose'>  <div className='blogging-section-sides-link'>
+                                    <Link to='/shopify/app/choose-right'>  <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                            <img src={IMAGES.app12} alt="" />
+                                            <img src={IMAGES.app12} alt="Choose Right Shopify App for Your Shopify Store" />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How to Choose Right Shopify App for Your Shopify Store? </h2>
@@ -99,7 +99,7 @@ function Local() {
                                 <div className='blogging-section-sides'>
                                     <Link to='/shopify/store-convert-to-mobile-app'> <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                            <img src={IMAGES.app9} alt="" />
+                                            <img src={IMAGES.app9} alt="Convert Shopify Store Into Mobile App" />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How To Convert Shopify Store Into Mobile App? </h2>
@@ -111,9 +111,9 @@ function Local() {
                                     </Link>
                                 </div>
                                 <div className='blogging-section-sides'>
-                                    <Link to='/shopify/app/developer-hire'>  <div className='blogging-section-sides-link'>
+                                    <Link to='/shopify/app/hire-developer'>  <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                            <img src={IMAGES.hire} alt="" />
+                                            <img src={IMAGES.hire} alt="Hire Shopify App Developers" />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How to Hire Shopify App Developers?   </h2>
@@ -127,7 +127,7 @@ function Local() {
                                 <div className='blogging-section-sides'>
                                     <Link to='/shopify/app/install'> <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                            <img src={IMAGES.app17} alt="" />
+                                            <img src={IMAGES.app17} alt="Install Shopify App " />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How To Install Shopify App? </h2>
@@ -141,7 +141,7 @@ function Local() {
                                 <div className='blogging-section-sides'>
                                     <Link to='/shopify/app/marketing-plan'> <div className='blogging-section-sides-link'>
                                         <div className="blogging-section-image">
-                                        <img src={IMAGES.mark} alt="" />
+                                        <img src={IMAGES.mark} alt="Create Marketing Plan For Shopify App" />
                                         </div>
                                         <div className="blogging-section-title">
                                             <h2>How To Create Marketing Plan For Shopify App?</h2>

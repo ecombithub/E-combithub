@@ -6,10 +6,26 @@ const cors = require('cors');
 const app = express();
 const port = 8006;
 
-app.use(express.json());
-app.use(cors());
 
+const allowedOrigins = ['https://ecombithub.com'];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
+
+
+app.use(express.json());
 const path = require('path');
+
+
 
 const sendEmail = async (first, last, email, number, company, web, sendmessage) => {
   try {
@@ -27,8 +43,11 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  
     .container {
-      font-family: Montserrat;
+      font-family: "Roboto", sans-serif!important;
       border: 1px solid #e3e3e3;
       height: 600px;
       width: 100%;
@@ -52,6 +71,7 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
   <div class="container">
     <p> First Name: ${first}</p>
      <p>last Name: ${last}</p>
+     <p>email: ${email}</p>
      <p>Company Name: ${company}</p>
      <p>Number Name: ${number}</p>
       <p>Website Name: ${web}</p>
@@ -68,6 +88,8 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -76,25 +98,24 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
       color: black!important;
       text-decoration: none !important;
       background-color: white;
-      font-family: Montserrat;
+      font-family: "Roboto", sans-serif!important;
     }
     .container {
-      font-family: Montserrat;
-      text-align: center;
-      border: 1px solid black;
-      height: auto;
-      width: 100%;
-      max-width: 800px;
-      margin: 50px auto;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
     h1 {
       margin: 0;
-      font-family: Montserrat;
     }
     p {
      font-size: 18px;
     text-align: left;
-    font-family: Montserrat;
     font-weight: 600;
     }
     
@@ -139,7 +160,8 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
        color: #f16273 !important;
     }
     .elements {
-      padding: 20px 20px 50px 50px;
+      padding: 20px 50px 50px 50px;
+
     }
   </style>
 </head>
@@ -148,6 +170,7 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
     <img src="cid:user-image" style="width: 100%;" alt="Service Image" />
     <div class="elements">
       <div class="need">
+      <p>Hello ${first}</p>
         <p>At <span class="text-color">EcombitHub,</span> we’re passionate about empowering e-commerce entrepreneurs like you to achieve success. Whether
           you’re just starting out or looking to scale your online store, we’ve got you covered with a range of services
           designed to meet your unique needs.</p>
@@ -197,17 +220,17 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
 `;
 
     const adminMailOptions = {
-      from: 'info@hubsyntax.com',
+      from: email,
       to: 'info@hubsyntax.com',
-      subject: 'Email Send',
+      subject: 'New Customer Query EcombitHub',
       html: adminHtmlContent,
 
     };
 
     const userMailOptions = {
-      from: 'info@hubsyntax.com',
+      from: '"EcombitHub Support" <info@hubsyntax.com>',
       to: email,
-      subject: 'Email Send User',
+      subject: 'Welcome to EcombitHub',
       html: userHtmlContent,
       attachments: [
         {

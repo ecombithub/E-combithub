@@ -239,7 +239,7 @@ function Desgineverything() {
         const handleResize = () => {
             let height;
             if (window.innerWidth >= 1280) {
-                height = showMore ? "100%" : "270px";
+                height = showMore ? "94%" : "270px";
             } else if (window.innerWidth > 1024) {
                 height = showMore ? "100%" : "200px";
             } else {

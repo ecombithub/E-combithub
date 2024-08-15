@@ -15,6 +15,22 @@ function Brand() {
         cssEase: 'linear',
         responsive: [
             {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 7,
+
+
+                }
+            },
+            {
+                breakpoint: 1950,
+                settings: {
+                    slidesToShow: 7,
+
+
+                }
+            },
+            {
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 5,
@@ -49,6 +65,22 @@ function Brand() {
         rtl: true,
         responsive: [
             {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 7,
+
+
+                }
+            },
+            {
+                breakpoint: 1950,
+                settings: {
+                    slidesToShow: 7,
+
+
+                }
+            },
+            {
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 5,
@@ -74,6 +106,7 @@ function Brand() {
  
     return (
         <div className='brand-section-slider'>
+            <div className="brand-section-container">
             <div className="brand-first-slide">
                 <Slider {...settings}>
                     <div className="brand-slider-flex">
@@ -189,6 +222,7 @@ function Brand() {
 
                     </div>
                 </Slider>
+            </div>
             </div>
         </div>
     )

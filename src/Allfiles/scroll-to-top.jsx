@@ -63,23 +63,33 @@ function ScrollTo() {
                 </button>
             </div> */}
             <div className='section-scroll'>
+                <div className='section-scroll-all'>
                 <div className='facebook'>
                     {isScrolled ? null : <a target='blank' href='https://www.facebook.com/HubSyntax/'><img src={IMAGES.scroll1} alt="" /></a>}
                 </div>
+                
                 {isScrolled ? <a target='blank' href='https://www.facebook.com/HubSyntax/'> <img src={IMAGES.scroll6} alt="" /></a> : null}
+                </div>
+                <div className='section-scroll-all'>
                 <div className='instagram'>
                     {isScrolled ? null : <a target='blank' href='https://www.instagram.com/hubsyntax/'> <img src={IMAGES.scroll2} alt="" /></a>}
                 </div>
                 {isScrolled ? <a target='blank' href='https://www.instagram.com/hubsyntax/'> <img src={IMAGES.scroll7} alt="" /> </a> : null}
+               </div>
+               <div className='section-scroll-all'>
                 <div className='xcom'>
                     {isScrolled ? null : <a target='blank' href='https://x.com/Hubsyntaxdev'> <img src={IMAGES.scroll3} alt="" /></a>}
                 </div>
                 {isScrolled ? <a target='blank' href='https://x.com/Hubsyntaxdev'><img src={IMAGES.scroll5} alt="" /> </a> : null}
+               </div>
+               <div className='section-scroll-all'>
                 <div className='inlinked'>
                     {isScrolled ? null : <a target='blank' href='https://www.linkedin.com/company/86417490/admin/feed/posts/'><img src={IMAGES.scroll4} alt="" /></a>}
                 </div>
                 {isScrolled ? <a target='blank' href='https://www.linkedin.com/company/86417490/admin/feed/posts/'> <img src={IMAGES.scroll8} alt="" /></a> : null}
             </div>
+            </div>
+          
         </>
     );
 }

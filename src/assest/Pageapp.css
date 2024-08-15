@@ -49,7 +49,7 @@
 }
 
 .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left p {
-margin-top: 15px;
+    margin-top: 15px;
     line-height: 22px;
 }
 
@@ -959,6 +959,7 @@ margin-top: 15px;
     font-size: 15px;
     margin-top: 10px;
 }
+
 .blog-section-all-images img {
     border-radius: 10px;
 }
@@ -1000,6 +1001,14 @@ margin-top: 15px;
     margin-top: 35px;
 }
 
+@media screen and (min-width:2000px) {
+    .brand-section-slider .brand-section-container .slick-slider.slick-initialized {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
 @media screen and (max-width:1400px) {
     .connect--section-perfrom-sides {
         height: 680px;
@@ -1037,9 +1046,10 @@ margin-top: 15px;
 }
 
 @media screen and (max-width:1280px) {
-    .brand-slider-flex{
-        width: 148px!important;
+    .brand-slider-flex {
+        width: 148px !important;
     }
+
     .blog-section-all-target {
         width: 31.5%;
     }
@@ -1125,19 +1135,21 @@ margin-top: 15px;
     .blog-section-all-elements p {
         line-height: 20px;
     }
+
     .blog-section-all-elements h2 {
         font-size: 24px;
         line-height: 30px;
     }
-    
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
         line-height: 50px;
     }
-    
-    
+
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
         font-size: 40px;
     }
+
     .blog-section-all-target {
         width: 31.5%;
     }
@@ -1261,6 +1273,7 @@ margin-top: 15px;
     .brand-slider-flex {
         width: 170px !important;
     }
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start {
         display: block;
         text-align: center;
@@ -1296,6 +1309,7 @@ margin-top: 15px;
         font-size: 16px;
         height: 40px;
     }
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left p {
         margin-top: 12px;
     }
@@ -1318,16 +1332,18 @@ margin-top: 15px;
     .explore-right-side .laye-first {
         justify-content: center;
     }
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width:840px) {
- 
+
     .connect--section-perfrom-sides {
         height: 925px;
     }
+
     .brand-slider-flex {
         width: 140px !important;
     }
@@ -1335,7 +1351,7 @@ margin-top: 15px;
     .blog-section-all-target {
         width: 30.9%;
     }
-  
+
 }
 
 @media screen and (max-width:768px) {
@@ -1438,9 +1454,11 @@ margin-top: 15px;
     .explore--section-perfrom-store .explore--section-perfrom-title .explore--section-perfrom-start .explore-right h2 {
         font-size: 30px;
     }
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
         font-size: 35px;
     }
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h2 {
         max-width: 100%;
     }
@@ -1470,15 +1488,19 @@ margin-top: 15px;
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-start .connect--section-perfrom-left h1 {
         line-height: 45px;
     }
-    .brand-slider-flex{
+
+    .brand-slider-flex {
         width: 117px !important;
     }
+
     .blog-section-all-target {
         width: 46.5%;
     }
+
     .connect--section-perfrom .connect--section-perfrom-sides .connect--section-perfrom-btn {
         display: grid;
     }
+
     .connect--section-perfrom-sides {
         height: 805px;
     }
@@ -1488,9 +1510,11 @@ margin-top: 15px;
     .connect--section-perfrom-sides {
         height: 760px;
     }
+
     .app-blog-show {
         display: block;
     }
+
     .blog-section-all-target {
         width: 100%;
         margin-bottom: 25px;
@@ -1501,6 +1525,7 @@ margin-top: 15px;
     .connect--section-perfrom-sides {
         height: 790px;
     }
+
     .brand-slider-flex {
         width: 82px !important;
     }

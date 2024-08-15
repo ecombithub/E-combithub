@@ -26,31 +26,31 @@ function Footer() {
     const [scheduleCall, setScheduleCall] = useState(false);
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
-    
+
     const upload = async (e) => {
         e.preventDefault();
 
-        if (!first || !last || !email || !number || !company || !web) {
+        if (!first || !last || !email) {
             setMessage('Kindly complete all required fields before proceeding.');
             return;
         }
 
         setLoading(true);
-               
+
         setTimeout(() => {
             setLoading(false);
-            setMessage('Email sent successfully');
-                
+            setMessage("Thank you for your submission! We'll get back to you shortly.");
+
             setFirst('');
             setLast('');
             setEmail('');
             setNumber('');
             setCompany('');
             setWeb('');
-        }, 2000); 
+        }, 2000);
 
         try {
-            const response = await axios.post('http://localhost:8006/register', {
+            const response = await axios.post('https://ecombithub.com/register', {
                 first,
                 last,
                 email,
@@ -63,8 +63,9 @@ function Footer() {
             console.log('Response:', response);
 
             if (response.status === 200) {
-               
-             console.log('Email sent successfully');
+
+
+                console.log("Thank you for your submission! We'll get back to you shortly.");
             } else {
                 throw new Error('Error sending email');
             }
@@ -294,21 +295,25 @@ function Footer() {
                                                         <button onClick={upload} id='build--btn'>
 
                                                             <span className="rotate-container">
-                                                                <span className="rotate-text">G</span>
-                                                                <span className="rotate-text">e</span>
-                                                                <span className="rotate-text">t</span>
-                                                                <span className="rotate-text">&nbsp;</span>
                                                                 <span className="rotate-text">S</span>
+                                                                <span className="rotate-text">u</span>
+                                                                <span className="rotate-text">b</span>
+                                                                <span className="rotate-text">m</span>
+                                                                <span className="rotate-text">i</span>
                                                                 <span className="rotate-text">t</span>
-                                                                <span className="rotate-text">a</span>
-                                                                <span className="rotate-text">r</span>
-                                                                <span className="rotate-text">t</span>
-                                                                <span className="rotate-text">e</span>
-                                                                <span className="rotate-text">d</span>
+
                                                             </span>
                                                         </button>
                                                         {loading && <p>Loading...</p>}
-                                                        {message && !loading && <p style={{ color: "red" }}>{message}</p>}
+                                                        {message && !loading && (
+                                                            <p className={
+                                                                message === "Thank you for your submission! We'll get back to you shortly."
+                                                                    ? 'success-message'
+                                                                    : 'error-message'
+                                                            }>
+                                                                {message}
+                                                            </p>
+                                                        )}
                                                     </div>
                                                 </div>
                                             </form>
@@ -348,7 +353,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="copyright-footer">
-                        <p>Copyright @2020-2024 <a className='copy_link' target='blank'  href='https://www.hubsyntax.com/'>Hubsyntax</a> Limited. All Rights Reserved.</p>
+                        <p>Copyright @2020-2024 <a className='copy_link' target='blank' href='https://www.hubsyntax.com/'>Hubsyntax</a> Limited. All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>

@@ -23,7 +23,7 @@ function BuildStore() {
                     <div className="buildstore-section-full">
                         <div className="buildstore-section-new">
                             <h2>Build a New  <span style={{ color: "rgb(252, 85, 105)" }}> Shopify Online Store</span></h2>
-                            <p>Transform your business vision into reality with a custom-built Shopify online store. Whether you're starting from scratch or migrating from another platform. Bithub Shopify experts make it simple to create a stunning, fully functional store that stands out and drives sales.</p>
+                            <p>Transform your business vision into reality with a custom-built Shopify online store. Whether you're starting from scratch or migrating from another platform. EcombitHub Shopify experts make it simple to create a stunning, fully functional store that stands out and drives sales.</p>
                         </div>
                     </div>
                     <div className="buildstore-section-new-image-show-bg">
@@ -83,17 +83,15 @@ function BuildStore() {
                             <img src={IMAGES.redbox} alt="" />
                         </div>
                         <Link to="https://calendly.com/ecom-support/shopify-expert"> <button class='button'> <span className="rotate-container">
-                            <span className="rotate-text">G</span>
+                            <span className="rotate-text">L</span>
                             <span className="rotate-text">e</span>
                             <span className="rotate-text">t</span>
                             <span className="rotate-text">&nbsp;</span>
-                            <span className="rotate-text">S</span>
-                            <span className="rotate-text">t</span>
-                            <span className="rotate-text">a</span>
-                            <span className="rotate-text">r</span>
-                            <span className="rotate-text">t</span>
-                            <span className="rotate-text">e</span>
-                            <span className="rotate-text">d</span>
+                            <span className="rotate-text">'s</span>
+                            <span className="rotate-text">&nbsp;</span>
+                            <span className="rotate-text">G</span>
+                            <span className="rotate-text">o</span>
+                            <span className="rotate-text">!</span>
                         </span></button></Link>
                     </div>
 

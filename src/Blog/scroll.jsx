@@ -37,22 +37,29 @@ function ScrollTo() {
                 </button>
             </div> */}
             <div className='section-scroll'>
-                <div className='facebook'>
-                    <a target='blank' href='https://www.facebook.com/HubSyntax/'> <img src={IMAGES.scroll6} alt="" /></a>
+                <div className='section-scroll-all'>
+                    <div className='facebook'>
+                        <a target='blank' href='https://www.facebook.com/HubSyntax/'> <img src={IMAGES.scroll6} alt="" /></a>
+                    </div>
                 </div>
+                <div className='section-scroll-all'>
 
-                <div className='instagram'>
-                    <a target='blank' href='https://www.instagram.com/hubsyntax/'> <img src={IMAGES.scroll7} alt="" /> </a>
+                    <div className='instagram'>
+                        <a target='blank' href='https://www.instagram.com/hubsyntax/'> <img src={IMAGES.scroll7} alt="" /> </a>
+                    </div>
                 </div>
-
-                <div className='xcom'>
-                    <a target='blank' href='https://x.com/Hubsyntaxdev'><img src={IMAGES.scroll5} alt="" /> </a>
+                <div className='section-scroll-all'>
+                    <div className='xcom'>
+                        <a target='blank' href='https://x.com/Hubsyntaxdev'><img src={IMAGES.scroll5} alt="" /> </a>
+                    </div>
                 </div>
-
-                <div className='inlinked'>
-                    <a target='blank' href='https://www.linkedin.com/company/86417490/admin/feed/posts/'> <img src={IMAGES.scroll8} alt="" /></a>
+                <div className='section-scroll-all'>
+                    <div className='inlinked'>
+                        <a target='blank' href='https://www.linkedin.com/company/86417490/admin/feed/posts/'> <img src={IMAGES.scroll8} alt="" /></a>
+                    </div>
                 </div>
             </div>
+
         </>
     );
 }

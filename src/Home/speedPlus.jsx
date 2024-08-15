@@ -33,6 +33,9 @@ function SpeedPlus() {
                                 <div className="speed-plus-optimization-first-slider">
                                     <div className="speed-plus-first-slide">
                                         <Slider {...settgs}>
+                                        <div className='speed pluss-images-slides'>
+                                                <img src={IMAGES.spd1} alt="" />
+                                            </div>
 
                                             <div className='speed pluss-images-slides'>
                                                 <img src={IMAGES.third101} alt="" />
@@ -66,6 +69,9 @@ function SpeedPlus() {
                                 <div className="speed-plus-optimization-second-slider">
                                     <div className="speed-plus-second-slide">
                                         <Slider {...settgs}>
+                                        <div className='speed pluss-images-slides'>
+                                                <img src={IMAGES.spd} alt="" />
+                                            </div>
                                             <div className='speed pluss-images-slides'>
                                                 <img src={IMAGES.section1} alt="" />
                                             </div>
@@ -300,17 +306,16 @@ function SpeedPlus() {
                                     </div>
                                     </div>
                                     <Link to="https://calendly.com/ecom-support/shopify-expert">   <button class='button'> <span className="rotate-container">
-                                        <span className="rotate-text">G</span>
+                                        <span className="rotate-text">L</span>
                                         <span className="rotate-text">e</span>
                                         <span className="rotate-text">t</span>
                                         <span className="rotate-text">&nbsp;</span>
-                                        <span className="rotate-text">S</span>
-                                        <span className="rotate-text">t</span>
-                                        <span className="rotate-text">a</span>
-                                        <span className="rotate-text">r</span>
-                                        <span className="rotate-text">t</span>
-                                        <span className="rotate-text">e</span>
-                                        <span className="rotate-text">d</span>
+                                        <span className="rotate-text">'s</span>
+                                        <span className="rotate-text">&nbsp;</span>
+                                        <span className="rotate-text">G</span>
+                                        <span className="rotate-text">o</span>
+                                        <span className="rotate-text">!</span>
+                                     
                                     </span></button></Link>
                                 </div>
                                 </div>

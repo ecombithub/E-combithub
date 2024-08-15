@@ -39,7 +39,7 @@ function Shopifyapp() {
                                     <p>Key components of Shopify app building are the essential elements required to develop a custom application that is functional, secure, and seamlessly integrated into the Shopify ecosystem.</p>
                                 </div>
                                 <div className='blog-image'>
-                                    <img src={IMAGES.building} alt="Key Components of Building a Shopify App" />
+                                    <img src={IMAGES.blog101} alt="Key Components of Building a Shopify App" />
                                 </div>
                                 <div className="blogpage-paragraph">
                                     <p><span style={{ fontWeight: 700 }}>App Authentication and Authorization</span> ensure secure and controlled access to the Shopify API and the store’s data. Authentication verifies the app's identity through OAuth 2.0. When a merchant installs the app, it initiates an OAuth flow where the app requests specific permissions to access the store's data. Upon authorization by the merchant, Shopify issues an access token to the app. This token enables the app to securely authenticate and make API requests on behalf of the merchant store, ensuring authorized access without exposing sensitive information.</p>
@@ -116,12 +116,13 @@ function Shopifyapp() {
                                     <div className="blogpage-paragraph">
                                         <p><span style={{ fontWeight: 700 }}>Polaris for Shopify App Design  </span>provides a comprehensive set of UI components, design principles, and best practices designed by Shopify to create a consistent and polished user experience across all their apps. By using Polaris, developers manage the design process, maintain compatibility across different app screens, and adhere to Shopify's UX standards. This ensures that the app not only functions well but also delivers a visually appealing and user-friendly experience. </p>
                                     </div>
+                                    <div className='blog-video'>
+                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/eM0Ebz_8J4Y?si=j7sPyAoC1dWJSPHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                     </div>
                                     <div className="blogpage-paragraph">
                                         <p>Creating a responsive and user-friendly  interface is essential for a Shopify app. Designing the app to function well on various devices and screen sizes ensures that all interactive elements are easy to use on both desktop and mobile devices. User-friendly design provides clear navigation, accessible buttons, and forms, as well as a clean layout. Testing the app on different devices and gathering user feedback can help identify areas for improvement and ensure that the app meets the needs of its users. </p>
                                     </div>
-                                     <div className='blog-video'>
-                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/eM0Ebz_8J4Y?si=j7sPyAoC1dWJSPHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                     </div>
+                                    
                                     <div className='blog-section-h3'>
                                         <h3>3. Testing and Debugging Shopify App   </h3>
                                     </div>
@@ -229,7 +230,7 @@ function Shopifyapp() {
                                         <p>Shopify apps are built using a variety of programming languages, choosing based largely on the apps requirements and the developers expertise. The most common language used for Shopify app development.</p>
                                     </div>
                                    <div className='blog-image'>
-                                    <img src={IMAGES.build103} alt="Programming Languages used to build Shopify app" />
+                                    <img src={IMAGES.build103} alt="Regenerate Shopify API Key" />
                                 </div>
                                     <div className="blogpage-paragraph">
                                         <p><span style={{ fontWeight: 700 }}> Ruby:</span>  Shopify's own backend, built with Ruby on Rails (RoR), makes Ruby a natural choice for app development. Ruby on Rails (RoR) is well-suited for creating server-side logic and integrating with the Shopify API. It is renowned for its rapid development capabilities, making it efficient for building Shopify applications.</p>

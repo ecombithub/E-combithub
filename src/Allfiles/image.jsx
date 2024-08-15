@@ -462,7 +462,7 @@ import app21 from '../images/app21.png'
 import app22 from '../images/app22.png'
 import app23 from '../images/app23.png'
 import content0 from '../images/content0.png'
-import trend from '../images/trend.png'
+import trend from '../images/apppage1.png'
 import bithub from '../images/bithub.png'
 import blank from '../images/blank.png'
 import power1 from '../images/power1.png'
@@ -559,7 +559,19 @@ import speed24 from '../images/speed24.png'
 import speed25 from '../images/speed25.png'
 import building from '../images/building.png'
 import agency from '../images/agency.png'
+import api1 from '../images/api1.png'
+import spd from '../images/spd.png'
+import spd1 from '../images/spd1.png'
+import check1 from '../images/check1.png'
+import check2 from '../images/check2.png'
+import check3 from '../images/check3.png'
 const IMAGES = {
+  check3:check3,
+  check2:check2,
+  check1:check1,
+  spd1:spd1,
+  spd:spd,
+  api1:api1,
   agency:agency,
   building:building,
   speed21:speed21,

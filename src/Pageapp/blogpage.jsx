@@ -14,7 +14,7 @@ function Blogpage() {
                             <div className='blog-section-all-target'>
                             <Link to='/shopify/app/build'>   <div className='blog-section-all-data'>
                                     <div className='blog-section-all-images'>
-                                        <img src={IMAGES.build102} alt="" />
+                                        <img src={IMAGES.build102} alt="Build Shopify App" />
                                     </div>
                                     <div className='blog-section-all-elements'>
                                         <h2>How To Build Shopify App?</h2>
@@ -26,7 +26,7 @@ function Blogpage() {
                             <div className='blog-section-all-target'>
                             <Link to='/shopify/app/api-key'>      <div className='blog-section-all-data'>
                                 <div className='blog-section-all-images'>
-                                    <img src={IMAGES.apikey} alt="" />
+                                    <img src={IMAGES.apikey} alt="Shopify API Key Definition " />
                                 </div>
                                 <div className='blog-section-all-elements'>
                                     <h2>Shopify API Key: Definition, Generation, And Benefits</h2>
@@ -38,7 +38,7 @@ function Blogpage() {
                             <div className='blog-section-all-target'>
                             <Link to='/shopify/app/cancel-subscription'>  <div className='blog-section-all-data'>
                                 <div className='blog-section-all-images'>
-                                    <img src={IMAGES.build102} alt="" />
+                                    <img src={IMAGES.app1} alt="Cancel Shopify app subscription " />
                                 </div>
                                 <div className='blog-section-all-elements'>
                                     <h2>How To Cancel Shopify App Subscription? </h2>
@@ -50,7 +50,7 @@ function Blogpage() {
                             <div className='blog-section-all-target'>
                             <Link to='/shopify/subscription-cancel'> <div className='blog-section-all-data'>   
                                 <div className='blog-section-all-images'>
-                                    <img src={IMAGES.app5} alt="" />
+                                    <img src={IMAGES.app5} alt="Cancel Shopify Subscription" />
                                 </div>
                                 <div className='blog-section-all-elements'>
                                     <h2>How To Cancel Shopify Subscription? </h2>
@@ -63,7 +63,7 @@ function Blogpage() {
                             <div className='blog-section-all-target'>
                             <Link to='/shopify/app/publish'>   <div className='blog-section-all-data'> 
                                   <div className='blog-section-all-images'>
-                                  <img src={IMAGES.pub} alt="" />
+                                  <img src={IMAGES.pub} alt="Publish App In Shopify App Store" />
                                 </div>
                                 <div className='blog-section-all-elements'>
                                     <h2>How To Publish App In Shopify App Store? </h2>
@@ -73,9 +73,9 @@ function Blogpage() {
                             </Link>
                             </div>
                             <div className='blog-section-all-target'>
-                            <Link to='/shopify/app/right-choose'>  <div className='blog-section-all-data'>
+                            <Link to='/shopify/app/choose-right'>  <div className='blog-section-all-data'>
                                        <div className='blog-section-all-images'>
-                                    <img src={IMAGES.app12} alt="" />
+                                    <img src={IMAGES.app12} alt="Choose Right Shopify App for Your Shopify Store" />
                                 </div>
                                 <div className='blog-section-all-elements'>
                                     <h2>How to Choose Right Shopify App for Your Shopify Store? </h2>

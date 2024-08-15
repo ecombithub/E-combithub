@@ -35,9 +35,9 @@ function Mega({ onLinkClick, onHideClick }) {
                                                 <img src={shopi} alt="" />
                                             </div>
                                             <div className="product-shopify-second">
-                                                <h3>Awsome Products for  your Project</h3>
-                                                <p>Our dedicated Shopify designers bring your vision to life on Shopify.</p>
-                                                <button className='mega-project'>View/Our/Services <FontAwesomeIcon style={{ fontSize: "13px" }} icon={faChevronRight} /> <FontAwesomeIcon style={{ fontSize: "13px" }} icon={faChevronRight} /></button>
+                                                <h3>Discover Our Awesome Shopify Expert Service </h3>
+                                                <p>Transform your Shopify store with our customized solution that aligns with your business objectives. </p>
+                                                {/* <button className='mega-project'>View Our Services <FontAwesomeIcon style={{ fontSize: "13px" }} icon={faChevronRight} /> <FontAwesomeIcon style={{ fontSize: "13px" }} icon={faChevronRight} /></button> */}
                                             </div>
                                         </div>
                                     </div>
@@ -93,8 +93,8 @@ function Mega({ onLinkClick, onHideClick }) {
                                                     <img src={connection} alt="" />
                                                 </div>
                                                 <div className="product-shopify-project-elements">
-                                                    <h5>Custum <span className='life-shopify'>App</span></h5>
-                                                    <p>Our dedicated Shopify designers bring your vision to life on Shopify.</p>
+                                                    <h5>Custom <span className='life-shopify'>App</span></h5>
+                                                    <p>Unlock new possibilities with a custom app. Explore and innovate.</p>
                                                 </div>
                                             </div></Link></div>
                                         {/* <div className='product-items'>

@@ -109,9 +109,13 @@ function Shopifyapi() {
                                         <li> Then save the setting, now you'll see the "API key" and "API secret key" under the Admin API section. Use these credentials to authenticate your private app.</li>
                                     </ul>
                                 </div>
-                                <div className='blog-video'>
+                                {/* <div className='blog-video'>
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/lyaPUc6ov9I?si=uiNchg3guKFDTCmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div> */}
+                                 <div className='blog-image'>
+                                    <img src={IMAGES.api1} alt="Generate Shopify APIKEY For Private App" />
                                 </div>
+
                                 <div className='blog-section-h2'>
                                     <h2>How To Generate Shopify API Key For Public App?  </h2>
                                 </div>

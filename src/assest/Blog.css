@@ -1414,9 +1414,9 @@ bar .about li {
 }
 
 @media screen and (max-width:1347px) {
-    .brand-logo img {
+    /* .brand-logo img {
         width: 300px;
-    }
+    } */
 
     .navigation {
         font-size: 15px;
@@ -2121,7 +2121,7 @@ bar .about li {
     nav .brand-logo1 img {
         margin-left: 0px;
         padding-bottom: 10px;
-        width: 350px;
+ 
     }
 
     .navigation input {
@@ -3313,10 +3313,6 @@ bar .about li {
 
 @media screen and (max-width:380px) {
 
-    .brand-logo img {
-        width: 225px !important;
-
-    }
 
     label.show-menu-btn {
         font-size: 20px;
