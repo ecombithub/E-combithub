@@ -3637,6 +3637,12 @@ bar .about li {
     font-size: 17px;
 }
 
+.blog-content p.ql-align-justify a {
+    text-decoration: none;
+    color: #fc5569;
+    font-weight: 600;
+}
+
 @media screen and (max-width:1024px) {
     .blogging-section-sides .blog-section-build {
         gap: 50px !important;

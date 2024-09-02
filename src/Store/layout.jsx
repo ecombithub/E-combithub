@@ -44,9 +44,9 @@ function Layout() {
     const settings = {
         infinite: true,
         slidesToShow: 2,
-        // autoplay: true,
-        // speed: 9000,
-        // cssEase: "linear",
+        autoplay: true,
+        speed: 9000,
+        cssEase: "linear",
         pauseOnHover: false,
         pauseOnFocus: false
     }
@@ -54,46 +54,54 @@ function Layout() {
     return (
         <div className="theme-and--section">
             <div className="wrapper">
-              
-                    <div className="theme-section-h1">
-                        <h1> <span style={{ color: "#5a853d" }}>Theme</span> and <span style={{ color: "#fc5569" }}>Layout</span> Customization</h1>
-                    </div>
+
+                <div className="theme-section-h1">
+                    <h1> <span style={{ color: "#5a853d" }}>Theme</span> and <span style={{ color: "#fc5569" }}>Layout</span> Customization</h1>
+                </div>
+                <div className="theme-section-layout-Customization">
                     <div className="theme-section-layout">
-                    <div className="theme-section-img">
-                        <img src={IMAGES.storebk} alt="" />
+                        <div className="theme-section-img">
+                            <img src={IMAGES.storeweb} alt="" />
+                        </div>
+                        <div className="theme-section-slider-first">
+                            <Slider {...settings}>
+                                <div className="theme-section-slides">
+                                    <img src={IMAGES.build50} alt="" />
+                                </div>
+                                <div className="theme-section-slides">
+                                    <img src={IMAGES.build49} alt="" />
+                                </div>
+                                <div className="theme-section-slides">
+                                    <img src={IMAGES.build48} alt="" />
+                                </div>
+                                <div className="theme-section-slides">
+                                    <img src={IMAGES.build47} alt="" />
+                                </div>
+                                <div className="theme-section-slides">
+                                    <img src={IMAGES.build46} alt="" />
+                                </div>
+                                <div className="theme-section-slides">
+                                    <img src={IMAGES.build45} alt="" />
+                                </div>
+                            </Slider>
+                        </div>
                     </div>
                     <div className='theme-section-sidebar'>
                         <img src={IMAGES.sidebarstore} alt="" />
                     </div>
-                     <div className="theme-section-circle">
+                    <div className="theme-section-circle">
                         <img src={IMAGES.storecircle} alt="" />
-                     </div>
-                     <div className='theme-section-shopify-image'>
+                    </div>
+                    <div className='theme-section-shopify-image'>
                         <img src={IMAGES.storeshopify} alt="" />
-                     </div>
-                     <div className="theme-section-slider-first">
-                                <Slider {...settings}>
-                                    <div className="theme-section-slides">
-                                        <img src={IMAGES.build50} alt="" />
-                                    </div>
-                                    <div className="theme-section-slides">
-                                        <img src={IMAGES.build49} alt="" />
-                                    </div>
-                                    <div className="theme-section-slides">
-                                        <img src={IMAGES.build48} alt="" />
-                                    </div>
-                                    <div className="theme-section-slides">
-                                        <img src={IMAGES.build47} alt="" />
-                                    </div>
-                                    <div className="theme-section-slides">
-                                        <img src={IMAGES.build46} alt="" />
-                                    </div>
-                                    <div className="theme-section-slides">
-                                        <img src={IMAGES.build45} alt="" />
-                                    </div>
-                                </Slider>
-                            </div>
-                      
+                    </div>
+                    <div className='theme-section-shopify-image-rename'>
+                        <img src={IMAGES.rename1} alt="" />
+                    </div>
+                    <div className='theme-section-shopify-image-red'>
+                        <img src={IMAGES.redmore} alt="" />
+                    </div>
+
 
                     <div className='theme-section-p'>
                         <p>You've come to the right place. Backlink the place for next-level SEO training and link building strategies.</p>

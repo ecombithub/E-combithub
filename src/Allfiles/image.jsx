@@ -215,7 +215,19 @@ import sidebarstore from '../images/sidebarstore2.webp'
 import storecircle from '../images/storecircle.webp'
 import storeshopify from '../images/storeshopify.webp'
 import buildblog from '../images/buildblog.webp'
+import storeweb from '../images/storeweb.png'
+import rename1 from '../images/rename1.webp'
+import custom1 from '../images/custom1.webp'
+import custom2 from '../images/custom2.webp'
+import cro1 from '../images/cro1.webp'
+import redmore from '../images/redmore.webp'
 const IMAGES = {
+  redmore:redmore,
+  cro1:cro1,
+  custom2:custom2,
+  custom1:custom1,
+  rename1:rename1,
+  storeweb:storeweb,
   buildblog:buildblog,
   storeshopify:storeshopify,
   storecircle:storecircle,

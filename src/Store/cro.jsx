@@ -41,7 +41,15 @@ function Cro() {
         <>
             <div className="cro--section-seo">
                 <div className="wrapper">
-                    
+                    <div className='cro-friendly customization-flex'>
+                        <div className='cro-friendly customization-image'>
+                            <img src={IMAGES.cro1} alt="" />
+                        </div>
+                        <div className='cro-friendly customization-element'>
+                            <h2>CRO/SEO friendly customization.</h2>
+                            <p>Use HubSyntax to grow your Shopify plus brand via checkout upsells, one-click upsells and thank you page customization. Enjoy complimentary migration and frictionless implementatioin with a your own plus account manager.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

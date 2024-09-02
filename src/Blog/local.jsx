@@ -134,7 +134,7 @@ function Local() {
                 fetch('https://ecombithub-database.onrender.com/posts?status=published'),
                 fetch('https://ecombithub-database.onrender.com/blog/posts?status=published')
             ]);
-         
+  
             if (!response1.ok || !response2.ok) {
                 throw new Error('Error fetching posts');
             }
@@ -198,7 +198,7 @@ function Local() {
                                             <Link key={post.id} to={`/shopify/${post.handle}`}>
                                                 <div className='blogging-section-sides-link'>
                                                     <div className='blogging-section-image'>
-                                                        <img src={`http://localhost:5000/image/${post.image}`} alt={post.title} />
+                                                        <img src={`https://ecombithub-database.onrender.com/image/${post.image}`} alt={post.title} />
                                                     </div>
                                                     <div className="blogging-section-title">
                                                         <h2>{post.title}</h2>

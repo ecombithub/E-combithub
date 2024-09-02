@@ -44,7 +44,7 @@ function Shopifyapi() {
                                             <h1>{post.title}</h1>
                                         </div>
                                         <div className='blog-image'>
-                                            <img src={`http://localhost:5000/image/${post.image}`} alt={post.title} />
+                                            <img src={`https://ecombithub-database.onrender.com/image/${post.image}`} alt={post.title} />
                                         </div>
 
                                         <div className='blog-content' dangerouslySetInnerHTML={{ __html: post.content }}

@@ -25,15 +25,23 @@
 
 .theme-and--section {
     text-align: center;
-    padding: 70px 0 90px 0;
+    padding: 70px 0 180px 0;
 }
 
-.theme-and--section .theme-section-layout {
+.theme-section-layout-Customization {
     position: relative;
-    z-index: 5;
-    overflow: hidden;
+}
+
+.theme-section-layout {
+    position: relative;
     width: 100%;
     max-width: 92%;
+    z-index: 7;
+    overflow: hidden;
+}
+
+.theme-and--section .theme-section-slides {
+    padding-right: 20px;
 }
 
 .theme-section-img img {
@@ -44,10 +52,16 @@
 .theme-and--section .theme-section-p {
     position: absolute;
     left: 32%;
-    bottom: -3%;
+    bottom: -22%;
 }
 
+.theme-and--section .slick-slider button.slick-arrow.slick-prev {
+    display: none !important;
+}
 
+.theme-and--section .slick-slider button.slick-arrow.slick-next {
+    display: none !important;
+}
 
 .theme-and--section .theme-section-sidebar img {
     width: 100%;
@@ -56,7 +70,7 @@
 .theme-and--section .theme-section-sidebar {
     position: absolute;
     right: 4.6%;
-    bottom: 16%;
+    bottom: -1%;
     z-index: 2;
 }
 
@@ -64,7 +78,18 @@
     position: absolute;
     top: -10%;
     right: 4%;
-    z-index: -1;
+
+}
+
+.theme-section-shopify-image-rename {
+    position: absolute;
+    left: 1%;
+    bottom: -10%;
+
+}
+
+.theme-section-shopify-image-rename img {
+    width: 100%;
 }
 
 .theme-and--section .theme-section-circle img {
@@ -73,7 +98,7 @@
 
 .theme-section-shopify-image {
     position: absolute;
-    top: -13%;
+    top: -15%;
     right: 9.9%;
     z-index: 4;
 }
@@ -86,6 +111,13 @@
     position: absolute;
     display: inline-block;
     width: 100%;
+    top: 10.9%;
+    left: 34%;
+    max-width: 89%;
+}
+
+.theme-section-img {
+    font-size: 0;
 }
 
 .theme-section-slides img {
@@ -105,7 +137,7 @@
 .branding--section-elementor .branding-section-element {
     width: 100%;
     max-width: 700px;
-    margin: 0 0 auto;
+    margin: 0 0 0 auto;
 }
 
 .branding--section-elementor .branding-section-image {
@@ -114,4 +146,125 @@
 
 .branding--section-elementor .branding-section-image img {
     width: 100%;
+}
+
+.display--section-product {
+    background-image: url(../images/custombg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.display--section-product .product-section-image {
+    width: 50%;
+}
+
+.display--section-product .product-section-image img {
+    width: 100%;
+}
+
+.display--section-product .product-section-element {
+    width: 50%;
+}
+
+
+.display--section-product .product-section-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display--section-product .product-section-element h2 {
+    max-width: 80%;
+}
+
+.display-section-Optimization-line {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.display-section-Optimization-elements p {
+    max-width: 76%;
+}
+
+.display-section-Optimization-icon svg {
+    margin-top: 5px;
+}
+
+.display-section-Optimization {
+    margin-top: 20px;
+}
+
+.custum--section-features {
+    background-image: url(../images/custombgg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.custum--section-features .custum-section-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custum--section-features .custum-section-item .custum-section-item-elements {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 0 0 auto;
+}
+
+.custum--section-features .custum-section-item .custum-section-item-image {
+    width: 50%;
+}
+
+.custum--section-features .custum-section-item .custum-section-item-elements h2 {
+    max-width: 82%;
+}
+
+.custum--section-features .display-section-Optimization-elements p {
+    max-width: 86%;
+}
+
+
+.cro--section-seo {
+    padding: 50px 0 170px;
+}
+
+.cro--section-seo .cro-friendly.customization-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cro--section-seo .cro-friendly.customization-flex .cro-friendly.customization-image {
+    width: 50%;
+}
+
+.cro--section-seo .cro-friendly.customization-flex .cro-friendly.customization-image img {
+    width: 100%;
+}
+
+.cro-friendly.customization-element {
+    width: 50%;
+}
+.cro-friendly.customization-element h2 {
+    max-width: 90%;
+}
+
+.cro-friendly.customization-element p {
+    max-width: 74%;
+    margin-top: 10px;
+}
+
+.theme-section-shopify-image-red {
+    position: absolute;
+    right: 9%;
+    bottom: -8%;
+    z-index: 10;
+}
+.theme-section-shopify-image-red img {
+    width: 85%;
 }
