@@ -9666,7 +9666,9 @@ p.description {
     margin: auto;
     margin-top: 15px;
 }
-
+.drop-servie li .servics-page-flex-nav {
+    margin-bottom: 20px;
+}
 
 
 .buildstore-section-slides img {

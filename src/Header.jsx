@@ -27,7 +27,7 @@ function Head() {
     const location = useLocation();
      useEffect(() => {
          const path = location.pathname;
-         if (path.includes('/services') || path.includes('/app')) {
+         if (path.includes('/services') || path.includes('/app','/store')) {
              setActiveLink('services');
          } else if (path.includes('/blog')) {
              setActiveLink('blog');
@@ -235,6 +235,21 @@ function Head() {
                                                 
                                                
                                             </ul>
+                                            <ul>
+                                                    <Link to="/store" onClick={handleOtherLinkClick} >  <li>
+                                                        <div className="servics-page-flex-nav">
+                                                            <div className="servics-images-start">
+                                                                <img src={IMAGES.settings} alt="logo" />
+                                                            </div>
+                                                            <div className="servics-elements-start">
+                                                                <NavLink activeClassName="active" style={{ color: "black" }} className="nav-link" aria-current="page" exact to="/store">Store <span className='life-shopify'>Customization</span></NavLink>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    </Link>
+
+
+                                                </ul>
                                         </div>
                                     )}
                                 </li>

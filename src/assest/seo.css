@@ -779,7 +779,7 @@
 
 .product-shopify {
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 50%;
     background-color: white;
     transform: translateX(-50%);
@@ -808,7 +808,7 @@
     border: 1px solid white;
     padding: 15px;
     border-radius: 15px;
-    background-color: rgb(80, 116, 28);
+    background-color:#111728;
     padding-right: 25px;
 }
 
@@ -941,7 +941,7 @@ span.life-shopify {
 }
 
 .product-shopify-start-flex-bg:hover {
-    background-color: #283c0c;
+    background-color: #111728;
 }
 
 .tail-for-bg-bottam h3 {

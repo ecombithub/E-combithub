@@ -3643,6 +3643,10 @@ bar .about li {
     font-weight: 600;
 }
 
+.blogdata-section-app p {
+    margin-bottom: 25px;
+}
+
 @media screen and (max-width:1024px) {
     .blogging-section-sides .blog-section-build {
         gap: 50px !important;

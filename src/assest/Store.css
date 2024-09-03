@@ -35,7 +35,7 @@
 .theme-section-layout {
     position: relative;
     width: 100%;
-    max-width: 92%;
+    max-width: 95%;
     z-index: 7;
     overflow: hidden;
 }
@@ -69,7 +69,7 @@
 
 .theme-and--section .theme-section-sidebar {
     position: absolute;
-    right: 4.6%;
+    right: 0.6%;
     bottom: -1%;
     z-index: 2;
 }
@@ -77,14 +77,14 @@
 .theme-and--section .theme-section-circle {
     position: absolute;
     top: -10%;
-    right: 4%;
+    right: 0%;
 
 }
 
 .theme-section-shopify-image-rename {
     position: absolute;
     left: 1%;
-    bottom: -10%;
+    bottom: -9.4%;
 
 }
 
@@ -99,7 +99,7 @@
 .theme-section-shopify-image {
     position: absolute;
     top: -15%;
-    right: 9.9%;
+    right: 5.9%;
     z-index: 4;
 }
 
@@ -250,6 +250,7 @@
 .cro-friendly.customization-element {
     width: 50%;
 }
+
 .cro-friendly.customization-element h2 {
     max-width: 90%;
 }
@@ -261,10 +262,359 @@
 
 .theme-section-shopify-image-red {
     position: absolute;
-    right: 9%;
+    right: 6%;
     bottom: -8%;
     z-index: 10;
 }
+
 .theme-section-shopify-image-red img {
     width: 85%;
+}
+
+.custum--section-features .custum-section-item .custum-section-item-image img {
+    width: 100%;
+}
+
+
+@media screen and (max-width:1400px) {
+    .theme-and--section .theme-section-sidebar img {
+        height: 590px;
+    }
+
+    .theme-section-shopify-image {
+        top: -20%;
+    }
+
+    .theme-section-shopify-image-rename {
+        position: absolute;
+        left: -3%;
+        bottom: -16.4%;
+    }
+
+    .theme-section-shopify-image-rename img {
+        width: 86%;
+    }
+
+    .theme-and--section .theme-section-p {
+        position: absolute;
+        left: 20%;
+        bottom: -29%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .theme-and--section .theme-section-h1 {
+        max-width: 85%;
+    }
+
+    .theme-and--section .theme-section-sidebar img {
+        height: 450px;
+    }
+
+    .theme-and--section {
+        padding: 40px 0 150px 0;
+    }
+
+    .theme-section-shopify-image img {
+        width: 70%;
+    }
+
+    .theme-and--section .theme-section-circle img {
+        width: 70%;
+    }
+
+    .theme-and--section .theme-section-p p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .theme-section-shopify-image-rename img {
+        width: 60%;
+    }
+
+    .theme-section-shopify-image-rename {
+        left: -9%;
+        bottom: -15.4%;
+    }
+
+    .theme-and--section .theme-section-p {
+        bottom: -32%;
+    }
+
+    .theme-section-shopify-image-red img {
+        width: 50%;
+    }
+
+    .theme-section-shopify-image-red {
+        right: 2%;
+    }
+
+    .branding--section-elementor {
+        padding: 40px 0;
+    }
+
+    .display-section-Optimization-elements p {
+        max-width: 100%;
+    }
+
+    .cro-friendly.customization-element p {
+        max-width: 100%;
+    }
+
+    .branding--section-elementor .branding-section-element {
+        max-width: 500px;
+    }
+
+    .branding--section-elementor .branding-section-image {
+        width: 70%;
+    }
+
+    .custum--section-features .custum-section-item .custum-section-item-elements {
+        max-width: 500px;
+    }
+
+    .custum--section-features .custum-section-item .custum-section-item-image {
+        width: 70%;
+    }
+
+    .custum--section-features .display-section-Optimization-elements p {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .theme-and--section .theme-section-h1 {
+        max-width: 100%;
+    }
+    .theme-and--section .theme-section-sidebar img {
+        height: 350px;
+    }
+
+    .theme-section-shopify-image img {
+        width: 55%;
+    }
+
+    .theme-section-shopify-image-rename img {
+        width: 50%;
+    }
+
+    .theme-section-shopify-image-rename {
+        left: -14%;
+        bottom: -20.4%;
+    }
+
+    .theme-and--section .theme-section-p {
+        bottom: -40%;
+    }
+
+    .theme-and--section .theme-section-p p {
+        margin-bottom: 10px;
+    }
+
+    .theme-section-shopify-image-red img {
+        width: 40%;
+    }
+
+    .theme-and--section .theme-section-p {
+        left: 15%;
+    }
+
+    .branding--section-elementor .branding-section-flex {
+        display: block;
+        text-align: center;
+    }
+
+    .branding--section-elementor .branding-section-element {
+        max-width: 100%;
+    }
+
+    .branding--section-elementor .branding-section-image {
+        width: 100%;
+    }
+
+    .display--section-product .product-section-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .display--section-product .product-section-element {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .display--section-product .product-section-image {
+        width: 100%;
+    }
+
+    .display-section-Optimization-elements p {
+        text-align: left;
+    }
+
+    .display--section-product .product-section-element h2 {
+        max-width: 100%;
+    }
+
+    .display-section-Optimization {
+        margin-top: 10px;
+    }
+
+    .branding--section-elementor .branding-section-element h2 {
+        margin-bottom: 10px;
+    }
+
+    .custum--section-features .custum-section-item {
+        display: block;
+        text-align: center;
+
+    }
+
+    .custum--section-features .custum-section-item .custum-section-item-elements {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .custum--section-features .custum-section-item .custum-section-item-image {
+        width: 100%;
+    }
+
+    .custum--section-features {
+
+        padding: 40px 0;
+    }
+
+    .cro--section-seo .cro-friendly.customization-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .cro-friendly.customization-element h2 {
+        max-width: 100%;
+    }
+
+    .cro--section-seo .cro-friendly.customization-flex .cro-friendly.customization-image {
+        width: 100%;
+    }
+
+    .cro-friendly.customization-element {
+        width: 100%;
+    }
+
+    .cro--section-seo {
+        padding: 50px 0 120px;
+    }
+
+    .custum--section-features .custum-section-item .custum-section-item-elements h2 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .theme-and--section .theme-section-sidebar img {
+        height: 250px;
+    }
+
+    .theme-section-shopify-image img {
+        width: 48%;
+    }
+
+    .theme-and--section .theme-section-circle {
+        display: none;
+    }
+
+    .theme-section-shopify-image-rename img {
+        width: 40%;
+    }
+
+    .theme-section-shopify-image-rename {
+        left: -20%;
+        bottom: -18.4%;
+    }
+
+    .theme-and--section .theme-section-p p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .theme-section-shopify-image-red {
+        display: none;
+    }
+
+    .theme-and--section {
+        padding: 40px 0 120px 0;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .theme-section-sidebar {
+        display: none;
+    }
+
+    .theme-section-layout {
+        max-width: 100%;
+    }
+
+    .theme-section-shopify-image-rename img {
+        width: 32%;
+    }
+
+    .theme-section-shopify-image-rename {
+        left: -26%;
+        bottom: -13.4%;
+    }
+
+    .theme-section-shopify-image {
+        display: none;
+    }
+
+    .theme-and--section .theme-section-p {
+        bottom: -45%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .theme-section-shopify-image-rename {
+        left: -31%;
+        bottom: -20.4%;
+    }
+
+    .theme-and--section .theme-section-p p {
+        max-width: 85%;
+    }
+
+    .theme-and--section .theme-section-p {
+        bottom: -50%;
+    }
+
+    .display--section-product {
+        padding: 40px 0;
+    }
+
+    .cro--section-seo {
+        padding: 40px 0 120px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .theme-section-shopify-image-rename {
+        left: -36%;
+        bottom: -27.4%;
+    }
+    .theme-and--section .theme-section-p {
+        bottom: -61%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .theme-and--section .theme-section-h1 h1 {
+        font-size: 40px;
+    }
+
+    .theme-section-shopify-image-rename {
+        left: -40%;
+        bottom: -31.4%;
+    }
+    .theme-and--section .theme-section-p {
+        bottom: -69%;
+    }
 }

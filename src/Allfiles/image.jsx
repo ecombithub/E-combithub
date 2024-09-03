@@ -219,7 +219,7 @@ import storeweb from '../images/storeweb.png'
 import rename1 from '../images/rename1.webp'
 import custom1 from '../images/custom1.webp'
 import custom2 from '../images/custom2.webp'
-import cro1 from '../images/cro1.webp'
+import cro1 from '../images/custom123.webp'
 import redmore from '../images/redmore.webp'
 const IMAGES = {
   redmore:redmore,

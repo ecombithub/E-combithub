@@ -6,47 +6,47 @@ import { useInView } from 'react-intersection-observer';
 
 function Product() {
 
-    // const [ref, inView] = useInView({
-    //     threshold: 0.2,
-    // });
+    const [ref, inView] = useInView({
+        threshold: 0.2,
+    });
 
-    // const technologyElement = useRef(null);
-    // const elementor = useRef(null);
-    // const [hasAnimated, setHasAnimated] = useState(false);
+    const technologyElement = useRef(null);
+    const elementor = useRef(null);
+    const [hasAnimated, setHasAnimated] = useState(false);
 
-    // useEffect(() => {
-    //     if (inView && !hasAnimated) {
-    //         gsap.fromTo(
-    //             technologyElement.current,
-    //             { opacity: 0, y: -250 },
-    //             { opacity: 1, y: 0, duration: 1, delay: 0.3 }
-    //         );
+    useEffect(() => {
+        if (inView && !hasAnimated) {
+            gsap.fromTo(
+                technologyElement.current,
+                { opacity: 0, y: -250 },
+                { opacity: 1, y: 0, duration: 1, delay: 0.3 }
+            );
 
-    //         gsap.fromTo(
-    //             elementor.current,
-    //             { opacity: 0, y: 250 },
-    //             { opacity: 1, y: 0, duration: 1, delay: 0.3 }
-    //         );
+            gsap.fromTo(
+                elementor.current,
+                { opacity: 0, y: 250 },
+                { opacity: 1, y: 0, duration: 1, delay: 0.3 }
+            );
 
-    //         setHasAnimated(true);
-    //     }
-    // }, [inView, hasAnimated]);
+            setHasAnimated(true);
+        }
+    }, [inView, hasAnimated]);
 
-    // useEffect(() => {
-    //     if (inView) {
-    //         document.querySelector('.display--section-product').classList.add('in-view');
-    //     }
-    // }, [inView]);
+    useEffect(() => {
+        if (inView) {
+            document.querySelector('.display--section-product').classList.add('in-view');
+        }
+    }, [inView]);
 
     return (
         <>
-            <div className='display--section-product'>
+            <div className='display--section-product' ref={ref}>
                 <div className='wrapper'>
                     <div className="product-section-flex">
-                        <div className="product-section-image">
+                        <div className="product-section-image" ref={technologyElement}>
                             <img src={IMAGES.custom1} alt="" />
                         </div>
-                        <div className="product-section-element">
+                        <div className="product-section-element" ref={elementor}>
                             <h2> <span style={{ color: '#95bf46' }}>Product Display </span> Optimization</h2>
                             <div className="display-section-Optimization">
                                 <div className="display-section-Optimization-line">

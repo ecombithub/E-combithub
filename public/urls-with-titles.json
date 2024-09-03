@@ -1,0 +1,70 @@
+[
+  {
+    "url": "/",
+    "title": "Home"
+  },
+  {
+    "url": "/blog",
+    "title": "Blog"
+  },
+  {
+    "url": "/about",
+    "title": "About Us"
+  },
+  {
+    "url": "/contact",
+    "title": "Contact Us"
+  },
+  {
+    "url": "/app",
+    "title": "App"
+  },
+  {
+    "url": "/terms-and-conditions",
+    "title": "Terms and Conditions"
+  },
+  {
+    "url": "/privacy-policy",
+    "title": "Privacy Policy"
+  },
+  {
+    "url": "/shopify/app/build",
+    "title": "Shopify App Build"
+  },
+  {
+    "url": "/shopify/app/api-key",
+    "title": "Shopify App API Key"
+  },
+  {
+    "url": "/shopify/app/cancel-subscription",
+    "title": "Shopify App Cancel Subscription"
+  },
+  {
+    "url": "/shopify/subscription-cancel",
+    "title": "Shopify Subscription Cancel"
+  },
+  {
+    "url": "/shopify/app/publish",
+    "title": "Shopify App Publish"
+  },
+  {
+    "url": "/shopify/app/choose-right",
+    "title": "Shopify App Choose Right"
+  },
+  {
+    "url": "/shopify/store-convert-to-mobile-app",
+    "title": "Shopify Store Convert to Mobile App"
+  },
+  {
+    "url": "/shopify/app/hire-developer",
+    "title": "Shopify App Hire Developer"
+  },
+  {
+    "url": "/shopify/app/install",
+    "title": "Shopify App Install"
+  },
+  {
+    "url": "/shopify/app/marketing-plan",
+    "title": "Shopify App Marketing Plan"
+  }
+]

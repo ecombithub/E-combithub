@@ -201,7 +201,7 @@ function AppContent() {
     const location = useLocation();
     const navigate = useNavigate();
     
-    const hideHeaderOnPaths = ['/blog', '/shopify/app/', '/shopify/', '/shopify/app/cancel-subscription', '/shopify/subscription-cancel', '/shopify/app/choose-right', '/shopify/store-convert-to-mobile-app', '/shopify/app/promote', '/shopify/app/hire-developer', '/shopify/app/install', '/shopify/app/marketing-plan', '/shopify-store-affiliate-program', '/terms-and-conditions', '/privacy-policy', '/shopify/app/publish','/login','/admin'];
+    const hideHeaderOnPaths = ['/store','/blog', '/shopify/app/', '/shopify/', '/shopify/app/cancel-subscription', '/shopify/subscription-cancel', '/shopify/app/choose-right', '/shopify/store-convert-to-mobile-app', '/shopify/app/promote', '/shopify/app/hire-developer', '/shopify/app/install', '/shopify/app/marketing-plan', '/shopify-store-affiliate-program', '/terms-and-conditions', '/privacy-policy', '/shopify/app/publish','/login','/admin'];
     const hideFooterOnPaths = ['/login','/admin'];
 
     const [isLoading, setIsLoading] = useState(true);
@@ -222,11 +222,19 @@ function AppContent() {
 
     useEffect(() => {
         setIsLoading(true); 
-        window.scrollTo(0, 0);  
+        window.scrollTo(0, 0);
         setTimeout(() => {
             setIsLoading(false);  
         }, 50);
     }, [location.pathname]);
+
+    useEffect(() => {
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    }, []);
+    
 
     const logout = () => {
         localStorage.removeItem('isAuthenticated');

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import IMAGES from '../Allfiles/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
+import imageCompression from 'browser-image-compression';
+
 function SpeedPlus() {
 
     const settgs = {
@@ -23,6 +25,64 @@ function SpeedPlus() {
         pauseOnHover: false,
         pauseOnFocus: false
     }
+
+    useEffect(() => {
+        const compressImages = async () => {
+            try {
+                const imageFiles = [
+                    IMAGES.spd1,
+                    IMAGES.third101,
+                    IMAGES.third102,
+                    IMAGES.third103,
+                    IMAGES.third104,
+                    IMAGES.third106,
+                    IMAGES.third107,
+                    IMAGES.third108,
+                    IMAGES.third109,
+                    IMAGES.spd,
+                    IMAGES.section1,
+                    IMAGES.section2,
+                    IMAGES.section3,
+                    IMAGES.section4,
+                    IMAGES.section5,
+                    IMAGES.section6,
+                    IMAGES.section7,
+                    IMAGES.section8,
+                    IMAGES.speed1,
+                    IMAGES.speed2,
+                    IMAGES.speed3,
+                    IMAGES.speed4,
+                    IMAGES.speed21,
+                    IMAGES.speed22,
+                    IMAGES.speed23,
+                    IMAGES.speed24,
+                    IMAGES.speed25,
+                    IMAGES.Group024,
+                    IMAGES.speedometer100,
+                    IMAGES.store102,
+                    IMAGES.rocket102
+                ];
+
+                for (const imageUrl of imageFiles) {
+                    const image = await fetch(imageUrl);
+                    const imageBlob = await image.blob();
+                    
+                    const options = {
+                        maxSizeMB: 1,         
+                        maxWidthOrHeight: 1920 
+                    };
+
+                    const compressedImageBlob = await imageCompression(imageBlob, options);
+                    
+                    console.log(`Compressed Image URL: ${URL.createObjectURL(compressedImageBlob)}`);
+                }
+            } catch (error) {
+                console.error('Image compression failed:', error);
+            }
+        };
+
+        compressImages();
+    }, []);
     return (
         <>
             <div className="speed-plus-shopify-section">

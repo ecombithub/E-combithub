@@ -14,7 +14,7 @@ function Shopifyapp() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await fetch(`https://ecombithub-database.onrender.com/posts?handle=${handle}`);
+                const response = await fetch(`https://ecombithub-server.onrender.com/posts?handle=${handle}`);
                 if (response.ok) {
                     const data = await response.json();
                     setPost(data[0]);
@@ -35,6 +35,7 @@ function Shopifyapp() {
         <>
             <Bar />
             <Mark />
+            <div className='blogdata-section-app'>
             <div className="blogdata">
                 <div className="wrapper">
                     <div className="container">
@@ -45,7 +46,7 @@ function Shopifyapp() {
                                             <h1>{post.title}</h1>
                                         </div>
                                         <div className='blog-image'>
-                                            <img src={`https://ecombithub-database.onrender.com/image/${post.image}`} alt={post.title} />
+                                            <img src={`https://ecombithub-server.onrender.com/image/${post.image}`} alt={post.title} />
                                         </div>
 
                                         <div className='blog-content' dangerouslySetInnerHTML={{ __html: post.content }}
@@ -55,6 +56,7 @@ function Shopifyapp() {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <ScrollTo />
             <Cursor />

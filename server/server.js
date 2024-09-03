@@ -141,6 +141,40 @@ app.post('/blog/admin', upload.single('image'), async (req, res) => {
   }
 });
 
+app.put('/blog/admin/:id', upload.single('image'), async (req, res) => {
+  const { id } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(400).json({ error: 'Invalid ID' });
+  }
+
+  try {
+      const existingPost = await Blogs.findById(id);
+      if (!existingPost) {
+          return res.status(404).json({ error: 'Post not found' });
+      }
+
+      const updatedPostData = {
+          title: req.body.title || existingPost.title,
+          description: req.body.description || existingPost.description,
+          content: req.body.content || existingPost.content,
+          author: req.body.author || existingPost.author,
+          date: req.body.date || existingPost.date,
+          handle: req.body.handle || existingPost.handle,
+          category: req.body.category || existingPost.category,
+          status: req.body.status || existingPost.status,
+          image: req.file ? req.file.filename : existingPost.image
+      };
+
+      const updatedPost = await Blogs.findByIdAndUpdate(id, updatedPostData, { new: true });
+
+      res.status(200).json({ message: 'Post updated successfully', updatedPost });
+  } catch (err) {
+      console.error('Error updating post:', err);
+      res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 app.get('/posts', async (req, res) => {
     const { status, handle } = req.query;
 
@@ -469,10 +503,6 @@ const sendEmail = async (first, last, email, number, company, web, sendmessage) 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
-
-
-
-
 
 
 

@@ -1,9 +1,12 @@
-import React from 'react'
+
 import IMAGES from '../Allfiles/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
+import imageCompression from 'browser-image-compression';
+import React, { useState, useEffect } from 'react';
+
 
 function SpeedUx() {
     const settings = {
@@ -19,6 +22,49 @@ function SpeedUx() {
         pauseOnHover: false,
         pauseOnFocus: false
     }
+
+    const [compressedImages, setCompressedImages] = useState([]);
+
+    const compressImage = async (imageSrc) => {
+        try {
+            const response = await fetch(imageSrc);
+            const blob = await response.blob();
+            const compressedFile = await imageCompression(blob, {
+                maxSizeMB: 1,
+                maxWidthOrHeight: 1024,
+                useWebWorker: true
+            });
+            return URL.createObjectURL(compressedFile);
+        } catch (error) {
+            console.error("Image compression failed:", error);
+            return imageSrc;
+        }
+    };
+
+    useEffect(() => {
+        const loadAndCompressImages = async () => {
+            const imageSrcs = [
+                IMAGES.Image1,
+                IMAGES.Image2,
+                IMAGES.Image3,
+                IMAGES.Image4,
+                IMAGES.Image5,
+                IMAGES.Image6,
+                IMAGES.Image7,
+                IMAGES.Image8,
+                IMAGES.Image9,
+                IMAGES.Image10,
+                IMAGES.Image11,
+                IMAGES.Image12
+            ];
+
+            const compressed = await Promise.all(imageSrcs.map(src => compressImage(src)));
+            setCompressedImages(compressed);
+        };
+
+        loadAndCompressImages();
+    }, []);
+
 
     return (
         <>
@@ -90,7 +136,7 @@ function SpeedUx() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="speed-ux--ui-display-slider">
+                            {/* <div className="speed-ux--ui-display-slider">
                                 <div className="speed-ux--ui-display-slider-slides">
                                     <Slider {...settings}>
                                         <div className="speedux-ui-images-slides">
@@ -138,6 +184,27 @@ function SpeedUx() {
                                      
                                         
 
+                                    </Slider>
+                                </div>
+                            </div> */}
+
+                            <div className="speed-ux--ui-display-slider">
+                                <div className="speed-ux--ui-display-slider-slides">
+                                    <Slider {...settings}>
+                                        {compressedImages.slice(0, 6).map((imgSrc, index) => (
+                                            <div key={index} className="speedux-ui-images-slides">
+                                                <img src={imgSrc} alt={`Slide ${index + 1}`} />
+                                            </div>
+                                        ))}
+                                    </Slider>
+                                </div>
+                                <div className="speed-ux--ui-display-slider-slides">
+                                    <Slider {...settings}>
+                                        {compressedImages.slice(6).map((imgSrc, index) => (
+                                            <div key={index} className="speedux-ui-images-slides">
+                                                <img src={imgSrc} alt={`Slide ${index + 7}`} />
+                                            </div>
+                                        ))}
                                     </Slider>
                                 </div>
                             </div>

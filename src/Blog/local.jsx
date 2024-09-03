@@ -8,7 +8,7 @@
 //     const [posts, setPosts] = useState([]);
 //     const fetchPosts = async () => {
 //         try {
-//             const response = await fetch('https://ecombithub-database.onrender.com/posts?status=published');
+//             const response = await fetch('https://ecombithub-server.onrender.com/posts?status=published');
 //             if (response.ok) {
 //                 const data = await response.json();
 //                 console.log('Posts:', data);
@@ -32,7 +32,7 @@
 //     const [error, setError] = useState(null);
 //     const fetchPost = async () => {
 //         try {
-//             const response = await fetch('http://localhost:5000/blog/posts?status=published');
+//             const response = await fetch('https://ecombithub-server.onrender.com/blog/posts?status=published');
 //             if (response.ok) {
 //                 const data = await response.json();
 //                 setData(data);
@@ -78,7 +78,7 @@
 //                                             <Link key={post.id} to={`/shopify/app/${post.handle}`}>
 //                                                 <div className='blogging-section-sides-link'>
 //                                                     <div className='blogging-section-image'>
-//                                                         <img src={`https://ecombithub-database.onrender.com/image/${post.image}`} alt={post.title} />
+//                                                         <img src={`https://ecombithub-server.onrender.com/image/${post.image}`} alt={post.title} />
 //                                                     </div>
 //                                                     <div className="blogging-section-title">
 //                                                         <h2>{post.title}</h2>
@@ -93,7 +93,7 @@
 //                                                 <Link key={post.id} to={`/shopify/${post.handle}`}>
 //                                                     <div className='blogging-section-sides-link'>
 //                                                         <div className='blogging-section-image'>
-//                                                             <img src={`http://localhost:5000/image/${post.image}`} alt={post.title} />
+//                                                             <img src={`https://ecombithub-server.onrender.com/image/${post.image}`} alt={post.title} />
 //                                                         </div>
 //                                                         <div className="blogging-section-title">
 //                                                             <h2>{post.title}</h2>
@@ -131,8 +131,8 @@ function Local() {
     const fetchPosts = async () => {
         try {
             const [response1, response2] = await Promise.all([
-                fetch('https://ecombithub-database.onrender.com/posts?status=published'),
-                fetch('https://ecombithub-database.onrender.com/blog/posts?status=published')
+                fetch('https://ecombithub-server.onrender.com/posts?status=published'),
+                fetch('https://ecombithub-server.onrender.com/blog/posts?status=published')
             ]);
   
             if (!response1.ok || !response2.ok) {
@@ -179,11 +179,11 @@ function Local() {
                             <div className='blogging-section-show'>
                                 <div className='blogging-section-sides'>
                                     <div className='blog-section-build'>
-                                        {posts.map((post) => (
+                                        {posts.slice(0,9).map((post) => (
                                             <Link key={post.id} to={`/shopify/app/${post.handle}`}>
                                                 <div className='blogging-section-sides-link'>
                                                     <div className='blogging-section-image'>
-                                                        <img src={`https://ecombithub-database.onrender.com/image/${post.image}`} alt={post.title} />
+                                                        <img src={`https://ecombithub-server.onrender.com/image/${post.image}`} alt={post.title} />
                                                     </div>
                                                     <div className="blogging-section-title">
                                                         <h2>{post.title}</h2>
@@ -194,11 +194,11 @@ function Local() {
                                                 </div>
                                             </Link>
                                         ))}
-                                        {data.map((post) => (
+                                        {data.slice(0,1).map((post) => (
                                             <Link key={post.id} to={`/shopify/${post.handle}`}>
                                                 <div className='blogging-section-sides-link'>
                                                     <div className='blogging-section-image'>
-                                                        <img src={`https://ecombithub-database.onrender.com/image/${post.image}`} alt={post.title} />
+                                                        <img src={`https://ecombithub-server.onrender.com/image/${post.image}`} alt={post.title} />
                                                     </div>
                                                     <div className="blogging-section-title">
                                                         <h2>{post.title}</h2>
