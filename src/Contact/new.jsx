@@ -48,7 +48,7 @@ function New() {
                                     </div>
                                     <div className='today-section-map-create-first-section'>
                                         <div className="today-section-map-image">
-                                            <img src={IMAGES.mail} alt="email" />
+                                            <img src={IMAGES.email00} alt="email" />
                                         </div>
                                         <div className="today-section-map-elements">
                                             <h3>Email</h3>

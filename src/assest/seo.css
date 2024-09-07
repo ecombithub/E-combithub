@@ -927,7 +927,6 @@
 .product-shopify-mega-start .project-shopfiy-one button.mega-project {
     padding: 8px 20px;
     font-size: 16px;
-    font-family: Work Sans;
     margin-bottom: 30px;
     background-color: #fc5569;
     color: white;
@@ -941,7 +940,12 @@ span.life-shopify {
 }
 
 .product-shopify-start-flex-bg:hover {
-    background-color: #111728;
+    background-color: #fc5569;
+}
+
+a.nav-link.active .product-shopify-start-flex-bg {
+    background-color: #fc5569;
+    
 }
 
 .tail-for-bg-bottam h3 {
@@ -1726,3 +1730,5 @@ span.life-shopify {
 .how--section-perfroms.in-view {
     opacity: 1;
 }
+
+

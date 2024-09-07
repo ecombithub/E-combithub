@@ -74,7 +74,7 @@ function SpeedPlus() {
 
                     const compressedImageBlob = await imageCompression(imageBlob, options);
                     
-                    console.log(`Compressed Image URL: ${URL.createObjectURL(compressedImageBlob)}`);
+                 
                 }
             } catch (error) {
                 console.error('Image compression failed:', error);

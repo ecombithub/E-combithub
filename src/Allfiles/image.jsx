@@ -214,14 +214,16 @@ import storebk from '../images/storebk.webp'
 import sidebarstore from '../images/sidebarstore2.webp'
 import storecircle from '../images/storecircle.webp'
 import storeshopify from '../images/storeshopify.webp'
-import buildblog from '../images/buildblog.webp'
+import buildblog from '../images/buildblog12.webp'
 import storeweb from '../images/storeweb.png'
 import rename1 from '../images/rename1.webp'
 import custom1 from '../images/custom1.webp'
-import custom2 from '../images/custom2.webp'
+import custom2 from '../images/storepage00.webp'
 import cro1 from '../images/custom123.webp'
 import redmore from '../images/redmore.webp'
+import email00 from '../images/email00.png'
 const IMAGES = {
+  email00:email00,
   redmore:redmore,
   cro1:cro1,
   custom2:custom2,

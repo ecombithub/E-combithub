@@ -5,7 +5,7 @@ import IMAGES from '../Allfiles/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { Link } from 'react-router-dom';
 function Layout() {
     // const [ref, inView] = useInView();
     // const technologyElement = useRef(null);
@@ -105,25 +105,18 @@ function Layout() {
 
                     <div className='theme-section-p'>
                         <p>You've come to the right place. Backlink the place for next-level SEO training and link building strategies.</p>
-                        <a href='/app'>  <button id="pxl-button"> <span className="rotate-container">
-                            <span className="rotate-text">V</span>
-                            <span className="rotate-text">i</span>
+                        <Link to="https://calendly.com/ecom-support/shopify-expert">   <button class='button'> <span className="rotate-container">
+                            <span className="rotate-text">L</span>
                             <span className="rotate-text">e</span>
-                            <span className="rotate-text">w</span>
+                            <span className="rotate-text">t</span>
                             <span className="rotate-text">&nbsp;</span>
-                            <span className="rotate-text">O</span>
-                            <span className="rotate-text">u</span>
-                            <span className="rotate-text">r</span>
+                            <span className="rotate-text">'s</span>
                             <span className="rotate-text">&nbsp;</span>
-                            <span className="rotate-text">S</span>
-                            <span className="rotate-text">e</span>
-                            <span className="rotate-text">r</span>
-                            <span className="rotate-text">v</span>
-                            <span className="rotate-text">i</span>
-                            <span className="rotate-text">c</span>
-                            <span className="rotate-text">e</span>
-                            <span className="rotate-text">s</span>
-                        </span></button></a>
+                            <span className="rotate-text">G</span>
+                            <span className="rotate-text">o</span>
+                            <span className="rotate-text">!</span>
+
+                        </span></button></Link>
 
                     </div>
 

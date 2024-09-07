@@ -49,7 +49,7 @@ function Brandto() {
                     <div className="branding-section-flex">
                         <div className="branding-section-element" ref={technologyElement}>
                             <h2>Branding  <span style={{ color: "#fc5569" }}>Element Integration</span> </h2>
-                            <p>Use HubSyntax to grow your Shopify plus brand via checkout upsells, one-click upsells and thank you page customization. Enjoy complimentary migration and frictionless implementatioin with a your own plus account manager.</p>
+                            <p>Integrating your brand's unique elements into your Shopify store for creating a cohesive shopping experience. This involves incorporating your brand's logo, color scheme,  tagline, and other branding elements across your website to reflect your identity and values. </p>
                         </div>
                         <div className='branding-section-image' ref={elementor}>
                             <img src={IMAGES.brand123} alt="" />

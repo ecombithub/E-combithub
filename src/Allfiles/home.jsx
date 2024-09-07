@@ -1,3 +1,5 @@
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Complete from "../Home/complete";
 import Ourclicent from "../Home/ourClient";
 import Powerfull from "../Home/powerFulltoo";
@@ -15,11 +17,17 @@ import SpeedPlus from "../Home/speedPlus";
 import SpeedUx from "../Home/speedUx";
 import BuildStore from "../Home/buildStore";
 import Customise from "../Home/customise";
+
 function Home() {
     return (
         <>
+            <Helmet>
+                <title>EcombitHub Shopify Expert Solution</title>
+                <meta name="description" content="Ecombithub offers complete Shopify store solutions, with expertise in speed optimization, UI/UX audits, new store builds, custom checkout, personalized elements, and custom made services. Enhance your Shopify experience with our expert solution. " />
+                <link rel="canonical" href="https://ecombithub.com/" />
+            </Helmet>
             {/* <Head /> */}
-            <Complete />
+            <Complete  />
             <Ourclicent />
             <Powerfull />
             <DesginEverything />
@@ -30,8 +38,8 @@ function Home() {
             <Customise />
             <Cost />
             <Cursor />
-
         </>
-    )
+    );
 }
+
 export default Home;

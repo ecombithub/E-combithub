@@ -4,7 +4,7 @@ import Mark from '../Blog/Mark';
 import ScrollTo from '../Blog/scroll';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet-async';
 
 function Shopifyapp() {
 
@@ -14,7 +14,7 @@ function Shopifyapp() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await fetch(`https://ecombithub-server.onrender.com/posts?handle=${handle}`);
+                const response = await fetch(`http://localhost:5000/posts?handle=${handle}`);
                 if (response.ok) {
                     const data = await response.json();
                     setPost(data[0]);
@@ -35,28 +35,33 @@ function Shopifyapp() {
         <>
             <Bar />
             <Mark />
+            <Helmet>
+                <title>{post.pagetitle || 'Default Title'}</title>
+                <meta name="description" content={post.pagedescription || 'Default Description'} />
+                <link rel="canonical" href={`https://ecombithub.com/shopify/app/${post.handle}`} />
+            </Helmet>
             <div className='blogdata-section-app'>
-            <div className="blogdata">
-                <div className="wrapper">
-                    <div className="container">
-                        <div className='blog-sectiondata'>
-                            <div className='blog-section-build'>
+                <div className="blogdata">
+                    <div className="wrapper">
+                        <div className="container">
+                            <div className='blog-sectiondata'>
+                                <div className='blog-section-build'>
                                     <div key={post.id}>
                                         <div className='blog-section-h1'>
                                             <h1>{post.title}</h1>
                                         </div>
                                         <div className='blog-image'>
-                                            <img src={`https://ecombithub-server.onrender.com/image/${post.image}`} alt={post.title} />
+                                            <img src={`http://localhost:5000/image/${post.image}`} alt={post.title} />
                                         </div>
 
                                         <div className='blog-content' dangerouslySetInnerHTML={{ __html: post.content }}
-                                         />
+                                        />
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
             <ScrollTo />
             <Cursor />
@@ -68,6 +73,80 @@ export default Shopifyapp;
 
 
 
+// import React, { useState, useEffect } from 'react';
+// import { useParams } from 'react-router-dom';
+// import { Helmet } from 'react-helmet-async';
+// import Cursor from '../Cursor';
+// import Bar from '../Blog/bar';
+// import Mark from '../Blog/Mark';
+// import ScrollTo from '../Blog/scroll';
+
+// function Shopifyapp() {
+//     const { handle } = useParams();
+//     const [post, setPost] = useState(null);
+//     const [metadata, setMetadata] = useState({ title: '', description: '' });
+
+//     useEffect(() => {
+//         const fetchPostAndMetadata = async () => {
+//             try {
+
+//                 const postResponse = await fetch(`http://localhost:5000/posts?handle=${handle}`);
+//                 if (postResponse.ok) {
+//                     const postData = await postResponse.json();
+//                     setPost(postData[0]);
+
+
+//                     const { title, description } = postData[0];
+//                     setMetadata({ title, description });
+//                 } else {
+//                     console.error('Error fetching post:', postResponse.statusText);
+//                 }
+//             } catch (error) {
+//                 console.error('Error fetching data:', error);
+//             }
+//         };
+
+//         fetchPostAndMetadata();
+//     }, [handle]);
+
+//     if (!post) return null;
+
+//     return (
+//         <>
+//             <Helmet>
+//                 <title>{metadata.title || 'Default Title'}</title>
+//                 <meta name="description" content={metadata.description || 'Default Description'} />
+//             </Helmet>
+//             <Bar />
+//             <Mark />
+//             <div className='blogdata-section-app'>
+//                 <div className="blogdata">
+//                     <div className="wrapper">
+//                         <div className="container">
+//                             <div className='blog-sectiondata'>
+//                                 <div className='blog-section-build'>
+//                                     <div key={post.id}>
+//                                         <div className='blog-section-h1'>
+//                                             <h1>{post.title}</h1>
+//                                         </div>
+//                                         <div className='blog-image'>
+//                                             <img src={`http://localhost:5000/image/${post.image}`} alt={post.title} />
+//                                         </div>
+//                                         <div className='blog-content' dangerouslySetInnerHTML={{ __html: post.content }} />
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//             <ScrollTo />
+//             <Cursor />
+//         </>
+//     );
+// }
+
+// export default Shopifyapp;
 
 
 

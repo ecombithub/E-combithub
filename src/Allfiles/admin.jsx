@@ -28,11 +28,13 @@ function Admin() {
     const [handle, setHandle] = useState('');
     const [category, setCategory] = useState('');
     const [imageUrl, setImageUrl] = useState('');
+    const [pagetitle, setPageTitle] = useState('');
+    const [pagedescription, setPageDescription] = useState('');
     const [message, setMessage] = useState('');
     const [show, setShow] = useState(false);
     const [posts, setPosts] = useState([]);
     const [selectedPost, setSelectedPost] = useState(null);
-
+    
     useEffect(() => {
         setDate(format(new Date(), "yyyy-MM-dd"));
     }, []);
@@ -59,11 +61,13 @@ function Admin() {
         formData.append('author', author);
         formData.append('date', date);
         formData.append('handle', handle);
+        formData.append('pagetitle', pagetitle);
+        formData.append('pagedescription', pagedescription);
         formData.append('category', category);
         formData.append('status', 'published');
 
         try {
-            const response = await fetch('https://ecombithub-server.onrender.com/admin', {
+            const response = await fetch('http://localhost:5000/admin', {
                 method: 'POST',
                 body: formData,
             });
@@ -82,7 +86,7 @@ function Admin() {
 
     const fetchPosts = async () => {
         try {
-            const response = await fetch('https://ecombithub-server.onrender.com/posts?status=published');
+            const response = await fetch('http://localhost:5000/posts?status=published');
             if (response.ok) {
                 const data = await response.json();
                 setPosts(data);
@@ -105,9 +109,11 @@ function Admin() {
         setEditorValue(post.content);
         setAuthor(post.author);
         setDate(post.date);
+        setPageTitle(post.pagetitle);
+        setDescription(post.pagedescription)
         setHandle(post.handle);
         setCategory(post.category);
-        setImageUrl(`https://ecombithub-server.onrender.com/image/${post.image}`);
+        setImageUrl(`http://localhost:5000/image/${post.image}`);
         setShow(true);
         console.log(post.image)
     };
@@ -120,6 +126,8 @@ function Admin() {
         setDescription('');
         setAuthor('');
         setHandle('');
+        setPageTitle('');
+        setDescription('')
         setCategory('');
         setMessage('');
         setShow(false);
@@ -147,11 +155,13 @@ function Admin() {
         formData.append('author', author);
         formData.append('date', date);
         formData.append('handle', handle);
+        formData.append('pagetitle', pagetitle);
+        formData.append('pagedescription', pagedescription);
         formData.append('category', category);
         formData.append('status', 'published');
     
         try {
-            const response = await fetch(`https://ecombithub-server.onrender.com/admin/${selectedPost._id}`, {
+            const response = await fetch(`http://localhost:5000/admin/${selectedPost._id}`, {
                 method: 'PUT',
                 body: formData,
             });
@@ -274,6 +284,28 @@ function Admin() {
                                                     <option value="option3">Option 3</option>
                                                 </select>
                                             </div>
+                                            <div className='admin-input'>
+                                            <div className='admin-label'>
+                                                    <label htmlFor="Pagetitle">Pagetitle</label>
+                                                </div>
+                                                <input
+                                                    type="text"
+                                                    placeholder="Pagetitle"
+                                                    value={pagetitle}
+                                                    onChange={(e) => setPageTitle(e.target.value)}
+                                                />
+                                            </div>
+                                            <div className='admin-input'>
+                                            <div className='admin-label'>
+                                                    <label htmlFor="Pagedescription">Pagedescription</label>
+                                                </div>
+                                                <input
+                                                    type="text"
+                                                    placeholder="Pagedescription"
+                                                    value={pagedescription}
+                                                    onChange={(e) => setPageDescription(e.target.value)}
+                                                />
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -347,6 +379,8 @@ export default Admin;
 //     const [handle, setHandle] = useState('');
 //     const [category, setCategory] = useState('');
 //     const [imageUrl, setImageUrl] = useState('');
+//     const [pagetitle, setPageTitle] = useState('');
+//     const [pagedescription, setPageDescription] = useState('');
 //     const [message, setMessage] = useState('');
 //     const [show, setShow] = useState(false);
 //     const [posts, setPosts] = useState([]);
@@ -378,11 +412,13 @@ export default Admin;
 //         formData.append('author', author);
 //         formData.append('date', date);
 //         formData.append('handle', handle);
+//         formData.append('pagetitle', pagetitle);
+//         formData.append('pagedescription', pagedescription);
 //         formData.append('category', category);
 //         formData.append('status', 'published');
 
 //         try {
-//             const response = await fetch('https://ecombithub-server.onrender.com/blog/admin', {
+//             const response = await fetch('http://localhost:5000/blog/admin', {
 //                 method: 'POST',
 //                 body: formData,
 //             });
@@ -401,7 +437,7 @@ export default Admin;
 
 //     const fetchPosts = async () => {
 //         try {
-//             const response = await fetch('https://ecombithub-server.onrender.com/blog/posts?status=published');
+//             const response = await fetch('http://localhost:5000/blog/posts?status=published');
 //             if (response.ok) {
 //                 const data = await response.json();
 //                 setPosts(data);
@@ -425,8 +461,10 @@ export default Admin;
 //         setAuthor(post.author);
 //         setDate(post.date);
 //         setHandle(post.handle);
+//         setPageTitle(post.pagetitle);
+//         setDescription(post.pagedescription)
 //         setCategory(post.category);
-//         setImageUrl(`https://ecombithub-server.onrender.com/image/${post.image}`);
+//         setImageUrl(`http://localhost:5000/image/${post.image}`);
 //         setShow(true);
 //         console.log(post.image)
 //     };
@@ -440,6 +478,8 @@ export default Admin;
 //         setAuthor('');
 //         setHandle('');
 //         setCategory('');
+//         setPageTitle('');
+//         setDescription('')
 //         setMessage('');
 //         setShow(false);
 //     };
@@ -466,11 +506,13 @@ export default Admin;
 //         formData.append('author', author);
 //         formData.append('date', date);
 //         formData.append('handle', handle);
+//         formData.append('pagetitle', pagetitle);
+//         formData.append('pagedescription', pagedescription);
 //         formData.append('category', category);
 //         formData.append('status', 'published');
     
 //         try {
-//             const response = await fetch(`https://ecombithub-server.onrender.com/blog/admin/${selectedPost._id}`, {
+//             const response = await fetch(`http://localhost:5000/blog/admin/${selectedPost._id}`, {
 //                 method: 'PUT',
 //                 body: formData,
 //             });
@@ -590,6 +632,28 @@ export default Admin;
 //                                                     <option value="option3">Option 3</option>
 //                                                 </select>
 //                                             </div>
+//                                             <div className='admin-input'>
+//                                             <div className='admin-label'>
+//                                                     <label htmlFor="Handle">Pagetitle</label>
+//                                                 </div>
+//                                                 <input
+//                                                     type="text"
+//                                                     placeholder="Handle"
+//                                                     value={pagetitle}
+//                                                     onChange={(e) => setPageTitle(e.target.value)}
+//                                                 />
+//                                             </div>
+//                                             <div className='admin-input'>
+//                                             <div className='admin-label'>
+//                                                     <label htmlFor="Handle">Pagedescription</label>
+//                                                 </div>
+//                                                 <input
+//                                                     type="text"
+//                                                     placeholder="Handle"
+//                                                     value={pagedescription}
+//                                                     onChange={(e) => setPageDescription(e.target.value)}
+//                                                 />
+//                                                 </div>
 //                                         </div>
 //                                     </div>
 //                                 </div>

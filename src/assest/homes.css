@@ -10406,6 +10406,12 @@ p.description {
     display: none;
 }
 
+.admin-input select {
+    margin-bottom: 20px;
+}
+
+
+
 footer {
     display: inline-block;
     width: 100%;
@@ -14444,3 +14450,8 @@ li.second-blog-section {
         width: 24px;
     }
 }
+
+
+
+
+

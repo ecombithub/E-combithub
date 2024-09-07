@@ -4,7 +4,7 @@ import Mark from '../Blog/Mark';
 import ScrollTo from '../Blog/scroll';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet-async';
 
 function Shopifyapi() {
 
@@ -14,7 +14,7 @@ function Shopifyapi() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await fetch(`https://ecombithub-server.onrender.com/blog/posts/?handle=${handle}`);
+                const response = await fetch(`http://localhost:5000/blog/posts/?handle=${handle}`);
                 if (response.ok) {
                     const data = await response.json();
                     setPost(data[0]);
@@ -34,6 +34,11 @@ function Shopifyapi() {
         <>
             <Bar />
             <Mark />
+            <Helmet>
+                <title>{post.pagetitle || 'Default Title'}</title>
+                <meta name="description" content={post.pagedescription || 'Default Description'} />
+                <link rel="canonical" href={`https://ecombithub.com/shopify/${post.handle}`} />
+            </Helmet>
             <div className="blogdata-section-app">
             <div className="blogdata">
                 <div className="wrapper">
@@ -45,7 +50,7 @@ function Shopifyapi() {
                                             <h1>{post.title}</h1>
                                         </div>
                                         <div className='blog-image'>
-                                            <img src={`https://ecombithub-server.onrender.com/image/${post.image}`} alt={post.title} />
+                                            <img src={`http://localhost:5000/image/${post.image}`} alt={post.title} />
                                         </div>
 
                                         <div className='blog-content' dangerouslySetInnerHTML={{ __html: post.content }}

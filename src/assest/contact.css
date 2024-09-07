@@ -52,6 +52,11 @@ span.today-email-info {
     margin-bottom: 40px;
 }
 
+.today-section-eco-elements h1 {
+    font-size: 35px;
+    line-height: 40px;
+}
+
 .today-section-inputs input[type="text"] {
     border: none;
     background: transparent;
@@ -570,6 +575,9 @@ textarea#w3review {
 }
 
 @media screen and (max-width:430px) {
+    .today-section-eco-elements h1 {
+        font-size: 30px;
+    }
     .today-section-inputs ::placeholder {
         font-size: 13px;
     }
@@ -605,7 +613,9 @@ textarea#w3review {
 
 @media screen and (max-width:320px) {
 
-
+    .today-section-contact {
+        height: 1090px;
+    }
     .today-section-eco-elements p {
         font-size: 9px;
     }

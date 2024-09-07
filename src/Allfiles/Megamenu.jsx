@@ -1,6 +1,6 @@
 import shopi from '../images/sho-pi.webp';
 import connection from '../images/connection.webp';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -84,27 +84,28 @@ function Mega({ onLinkClick, onHideClick }) {
                                             </div></Link>
                                         </div> */}
                                         <div className='product-items'>
-                                            <Link to='/app' onClick={handleClick}>   <div className='product-shopify-start-flex-bg'>
+                                            <NavLink to='/app' activeClassName="active" style={{ color: "white", backgroundColor: "#1a1a1b" }} className="nav-link" aria-current="page" onClick={handleClick}>   <div className='product-shopify-start-flex-bg'>
                                                 <div className="product-shopify-project-image">
                                                     <img src={connection} alt="" />
                                                 </div>
                                                 <div className="product-shopify-project-elements">
-                                                    <h5>Custom <span className='life-shopify'>App</span></h5>
+                                                    <NavLink activeClassName="active" style={{ color: "white" }} aria-current="page" exact to="/app">Custom <span className='life-shopify'>App</span></NavLink>
                                                     <p>Unlock new possibilities with a custom app. Explore and innovate.</p>
                                                 </div>
-                                            </div></Link></div>
 
-                                        <div className='product-items'>
-                                            <Link to='/store' onClick={handleClick} > <div className='product-shopify-start-flex-bg'>
+                                            </div></NavLink></div>
+
+                                        {/* <div className='product-items'>
+                                            <NavLink to='/store' activeClassName="active" style={{ color: "white", backgroundColor: "#1a1a1b" }} className="nav-link" aria-current="page" onClick={handleClick} > <div className='product-shopify-start-flex-bg'>
                                                 <div className="product-shopify-project-image">
                                                     <img src={IMAGES.settings} alt="" />
                                                 </div>
                                                 <div className="product-shopify-project-elements">
-                                                    <h5>Store <span className='life-shopify'>Customization</span></h5>
+                                                    <NavLink activeClassName="active" style={{ color: "white" }}  aria-current="page" exact to="/store">Store <span className='life-shopify'>Customization</span></NavLink>
                                                     <p>Our dedicated Shopify designers bring your vision to life on Shopify.</p>
                                                 </div>
-                                            </div></Link>
-                                        </div>
+                                            </div></NavLink>
+                                        </div> */}
 
                                         {/* <div className='product-items'>
                                             <Link to='/speed' onClick={handleClick}>      <div className='product-shopify-start-flex-bg'>

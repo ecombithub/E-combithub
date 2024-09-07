@@ -65,7 +65,7 @@ function Cost() {
                 totalStoresRef.current,
                 { textContent: "0" },
                 {
-                    textContent: "3000",
+                    textContent: "300",
                     duration: 1,
                     ease: "power1.inOut",
                     snap: { textContent: 1 },
@@ -73,7 +73,7 @@ function Cost() {
                         totalStoresRef.current.textContent = Math.floor(totalStoresRef.current.textContent);
                     },
                     onComplete: function () {
-                        totalStoresRef.current.textContent = "3000+";
+                        totalStoresRef.current.textContent = "300+";
                     }
                 }
             );

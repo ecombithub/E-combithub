@@ -4,6 +4,7 @@ const path = require('path');
 const multer = require('multer');
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer');
+const { type } = require('os');
 
 const app = express();
 const port = 5000;
@@ -34,6 +35,8 @@ const blogs = new mongoose.Schema({
     handle: { type: String, required: true },
     category: { type: String },
     content: { type: String },
+    pagetitle:{type:String},
+    pagedescription:{type:String},
     status: { type: String, enum: ['published'] }
 });
 
@@ -48,6 +51,8 @@ const blogPostSchema = new mongoose.Schema({
   handle: { type: String, required: true },
   category: { type: String },
   content: { type: String },
+  pagetitle:{type:String},
+  pagedescription:{type:String},
   status: { type: String, enum: ['published'] }
 });
 
@@ -126,12 +131,12 @@ app.get('/blog/posts', async (req, res) => {
 });
 
 app.post('/blog/admin', upload.single('image'), async (req, res) => {
-  const { title, description, author, date, handle, category, content, status } = req.body;
+  const { title, description, author, date, handle, category,pagetitle,pagedescription, content, status } = req.body;
   const image = req.file ? req.file.filename : null;
 
   try {
       const newPost = new Blogs({
-          title, description, image, author, date, handle, category, content, status
+          title, description, image, author, date, handle, category, pagetitle,pagedescription, content, status
       });
       await newPost.save();
       res.status(200).json({ message: "Article submitted successfully" });
@@ -162,6 +167,8 @@ app.put('/blog/admin/:id', upload.single('image'), async (req, res) => {
           date: req.body.date || existingPost.date,
           handle: req.body.handle || existingPost.handle,
           category: req.body.category || existingPost.category,
+          pagetitle: req.body.pagetitle || existingPost.pagetitle,
+          pagedescription: req.body.pagedescription || existingPost.pagedescription,
           status: req.body.status || existingPost.status,
           image: req.file ? req.file.filename : existingPost.image
       };
@@ -196,12 +203,12 @@ app.get('/posts', async (req, res) => {
 });
 
 app.post('/admin', upload.single('image'), async (req, res) => {
-    const { title, description, author, date, handle, category, content, status } = req.body;
+    const { title, description, author, date, handle, category,pagetitle,pagedescription, content, status } = req.body;
     const image = req.file ? req.file.filename : null;
 
     try {
         const newPost = new BlogPost({
-            title, description, image, author, date, handle, category, content, status
+            title, description, image, author, date, handle, category,pagetitle,pagedescription, content, status
         });
         await newPost.save();
         res.status(200).json({ message: "Article submitted successfully" });
@@ -232,6 +239,8 @@ app.put('/admin/:id', upload.single('image'), async (req, res) => {
           date: req.body.date || existingPost.date,
           handle: req.body.handle || existingPost.handle,
           category: req.body.category || existingPost.category,
+          pagetitle: req.body.pagetitle || existingPost.pagetitle,
+          pagedescription: req.body.pagedescription || existingPost.pagedescription,
           status: req.body.status || existingPost.status,
           image: req.file ? req.file.filename : existingPost.image
       };

@@ -54,7 +54,7 @@ function Product() {
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path></svg>
                                     </div>
                                     <div className="display-section-Optimization-elements">
-                                        <p>Use Hubsyntax to grow your Shopify plus brand via checkout upsells, one-click upsells and thank you page customization.
+                                        <p>High-quality images and videos represent your products, as this helps build trust and gives customers a clear idea of what they are purchasing.
 
                                         </p>
                                     </div>
@@ -64,7 +64,7 @@ function Product() {
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path></svg>
                                     </div>
                                     <div className="display-section-Optimization-elements">
-                                        <p>Enjoy complimentary migratin and frictionless implementation with ayour own plus account manager.
+                                        <p>Ensure that product descriptions are concise and informative, highlighting key features and benefit of product.
                                         </p>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ function Product() {
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path></svg>
                                     </div>
                                     <div className="display-section-Optimization-elements">
-                                        <p>Easy move elements and play around with different color schemes and fonts.
+                                        <p>Organize product listings with intuitive categorization and filtering options, allowing customers to easily navigate your store and find exactly what they're looking for. 
                                         </p>
                                     </div>
                                 </div>

@@ -189,8 +189,8 @@ function Head() {
                                         </div>
                                     </div>
                                 </li> 
-                                    <li className='product-shopify-show-after'>
-                                    <NavLink
+                                    <li  className='product-shopify-show-after'>
+                                    <NavLink 
                                         onClick={handleMegaLinkClick}
                                         style={{ color: activeLink === 'services' ? "#fe3e5e" : navbarColor ? 'white' : 'white' }}
                                         className="drop_blog"
@@ -200,7 +200,9 @@ function Head() {
                                     </NavLink>
                                     {megaVisible && (
                                         <ul ref={megaMenuRef} className="product-shopify show">
-                                            <Mega onLinkClick={() => handleOtherLinkClick('services')} />
+                                            <Mega onLinkClick={() => handleOtherLinkClick('services')}
+                                            
+                                             />
                                         </ul>
                                     )}
                                 </li>
@@ -231,11 +233,9 @@ function Head() {
                                                         </div>
                                                     </div>
                                                 </li>
-                                                </Link>
-                                                
-                                               
+                                                </Link>                                                  
                                             </ul>
-                                            <ul>
+                                            {/* <ul>
                                                     <Link to="/store" onClick={handleOtherLinkClick} >  <li>
                                                         <div className="servics-page-flex-nav">
                                                             <div className="servics-images-start">
@@ -249,7 +249,7 @@ function Head() {
                                                     </Link>
 
 
-                                                </ul>
+                                                </ul> */}
                                         </div>
                                     )}
                                 </li>

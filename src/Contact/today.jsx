@@ -74,7 +74,7 @@ function Today() {
                         <div className="container">
                             <div className="today-section-eco">
                                 <div className="today-section-eco-elements">
-                                    <h2>Contact <span style={{ color: '#fc5569' }}>EcombitHub Today!</span></h2>
+                                    <h1>Contact <span style={{ color: '#fc5569' }}>EcombitHub Today!</span></h1>
                                     <p>or Just reach out manually to <span className="today-email-info" style={{ color: "#b3414e" }}>hello@hubsyntax.com</span></p>
                                     <div className="today-section-inputs">
                                         <div className="today-section-inputs-all">

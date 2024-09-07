@@ -47,7 +47,7 @@ function Cro() {
                         </div>
                         <div className='cro-friendly customization-element'>
                             <h2>CRO/SEO friendly customization.</h2>
-                            <p>Use HubSyntax to grow your Shopify plus brand via checkout upsells, one-click upsells and thank you page customization. Enjoy complimentary migration and frictionless implementatioin with a your own plus account manager.</p>
+                            <p>Optimizing Shopify store conversions rate and search engines visibility to improve user experience and discoverability. EcombitHub implement advance CRO and SEO best practices to increase organic traffic, responsive design, and fast loading times. </p>
                         </div>
                     </div>
                 </div>
